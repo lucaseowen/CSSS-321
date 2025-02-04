@@ -1,0 +1,139 @@
+---
+title: "Best predictor and intercept-only model"
+author: "Your name"
+date: "2024-02-05"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = F, message = F, error = F)
+```
+
+
+## Prerequisites
+
+Run the code of the following code chunk but do not modify the code in it. I created a function that you will need to use to compute the MSE in the first exercise.
+
+
+```{r}
+
+## Function for MSE
+
+best_guess <- 
+  function(data, guess) {
+  mse <- round(
+    mean((data - guess)^2),
+    digits = 3
+  )
+  return(paste("Mean Squared Error:", mse))
+}
+
+
+```
+
+
+
+# What is the best guess?
+
+Load the `grades_sim.csv` dataset containing three variables: *grades_A*, *grades_B*, and *grades_C*, representing random samples from different classes. Use the `best_guess` function to manually compute the MSE for each group and select the guess yielding the minimum MSE value. Obtain three distinct best guesses, one for each class (A, B, and C).
+
+
+```{r}
+# load data
+
+df <- read.csv(file="data/grades_sim.csv")
+
+
+# What is your best guess for quiz A?
+
+best_guess(data=df$grades_A,
+           guess=80.58)
+
+# What is your best guess for quiz B?
+
+best_guess(data=df$grades_B,
+           guess=76.66)
+
+# What is your best guess for quiz C?
+
+best_guess(data=df$grades_C,
+           guess=83.42)
+```
+
+
+
+
+After finding the best guess (or the number yielding the lowest MSE), compute the `summary` for the `df` data frame. Examine the distribution of each class and compare it with your best guess. What observations can you make?
+
+
+
+```{r}
+# Look at the summary
+
+summary(df)
+
+
+```
+
+
+
+
+# Estimating the Intercept-Only Model
+
+
+
+In this section, estimate an intercept-only linear regression model using the `lm()` function. Fit three distinct models, with the grades of each class as the outcome variable. Assign the output of each model to different objects. After estimating these models, use the `summary()` function to print their output. Compare the coefficients under **Estimate** in each model with your best guess from the previous exercise, and provide a brief explanation of your observations.
+
+
+- **lm() Function in R:**
+  - The `lm()` function in R is a fundamental tool for fitting linear regression models.
+  - It stands for "linear model" and is used to estimate the relationships between variables using the method of least squares.
+
+  - To estimate an intercept-only model, use the formula: `lm(outcome_variable ~ 1, data = your_data)`.
+  
+  - The `~ 1` specifies that only the intercept should be included in the model, effectively fitting a model where the response variable is explained by a constant term.
+
+
+```{r}
+
+# Fit a linear model with a formula of intercept only
+
+
+?lm # need help?
+
+# Fit a model for Class A
+
+mA <- lm(grades_A ~ 1, data=df)
+
+
+# Fit a model for Class B
+
+mB <- lm(grades_B ~ 1, data=df)
+
+
+# Fit a model for Class C
+
+mC <- lm(grades_C ~ 1, data=df)
+
+
+# Use the function summary to display the output of the model
+
+summary(mA)
+summary(mB)
+summary(mC)
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+

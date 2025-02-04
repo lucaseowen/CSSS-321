@@ -1,0 +1,237 @@
+---
+title: "Regression"
+author: "Lucas Owen"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+# Prerequisite
+
+```{r}
+
+rm(list = ls()) # clean environment
+
+# install.packages("stargazer")
+
+library(stargazer)
+library(tidyverse)
+
+# load data
+df <- read_csv(file = "data/sim.csv")
+```
+
+
+# Regression analysis
+
+Load the dataset **sim.csv**, examine the correlation matrix of the numerical variables, and create a scatterplot with the y and x variables using **ggplot**. Next, apply linear regression using `geom_smooth()` with the argument `se=FALSE`.
+
+```{r}
+
+# correlation
+
+cor(df)
+
+round(cor(df), digits = 2)
+
+# scatter plot
+
+ggplot(data = df,
+       mapping = aes(y=y,
+             x=x)) +
+  geom_point()
+
+# scatter + linear fit
+
+ggplot(data = df,
+       mapping = aes(y=y,
+             x=x)) +
+  geom_point()+
+  geom_smooth(method = "lm",
+              se=FALSE)
+
+
+```
+
+
+Run a regression of y on x and use the `stargazer()` function to report the estimated table. 
+
+**Note**: remember to set the argument type to choose whether to print the results in \LaTeX (for PDF) or *"text"* (for R console). Also, if you want to knit the document in PDF, make sure to activate the code chunk option `results='asis'`.
+
+```{r,results='asis'}
+m1 <- lm(y ~ x,data=df)
+
+stargazer::stargazer(m1,type="text")
+```
+
+
+# Confounding
+
+First, generate a **scatter plot** between x and y, visually distinguishing the data points based on the categorical variable z using color aesthetics. Then, construct two boxplots comparing the distributions of y and x with respect to the binary indicator variable z. 
+
+*Note: z is a binary categorical indicator, so it's preferable to create a factor variable version of z to ensure proper mapping of dichotomous colors in ggplot.*
+
+```{r}
+
+df$z_f <- factor(df$z,
+                 levels = c(0,1),
+                 labels = c("baseline","reference"))
+
+# scatter plot of y on x, conditional on z
+
+ggplot(data = df,
+       mapping = aes(y=y,
+                     x=x,
+                     color=z_f)) +
+  geom_point()
+
+
+# boxplot of y on z, use the fill aesthetics
+
+ggplot(data = df,
+       mapping = aes(y=y,
+                     fill=z_f)) +
+  geom_boxplot()
+
+# boxplot of x on z, use the fill aesthetics
+
+ggplot(data = df,
+       mapping = aes(y=x,
+                     fill=z_f)) +
+  geom_boxplot()
+
+
+```
+
+Now, conduct a regression of y on both x and z. Report the regression model for y with both x and z, and compare it to the previous model using stargazer.
+
+```{r,results='asis'}
+m2 <- lm(y ~ x + z,data=df)
+
+stargazer::stargazer(m1,m2,type="text")
+
+```
+
+
+Visualize the regression line between y and x, this time conditioning on z. Simply run the same code as before, but include z in the color `aes`thetics.
+
+
+```{r}
+
+# scatter + linear fit, of y on x
+
+ggplot(data = df,
+       mapping = aes(y=y,
+             x=x)) +
+  geom_point()
+
+# scatter + linear fit, of y on x conditional on z
+
+ggplot(data = df,
+       mapping = aes(y=y,
+                     x=x,
+                     color=z_f)) +
+  geom_point()+
+  geom_smooth(method = "lm",
+              se=FALSE)
+
+
+```
+
+
+
+# Extra: Prediction
+
+
+*Note: This final section is optional and does not need to be submitted for earning participation points in this activity.*
+
+To compare the slope of x between the two estimated models, we can calculate the predicted values of y for a range of hypothetical x values. To achieve this, we will create a `data.frame()` containing hypothetical x values ranging from 1 to 12 and then use the `predict()` function.
+
+For the second model, which incorporates z as a covariate, we will need to generate another dataset of hypothetical values that includes the mean value of z. This ensures that the prediction is based on changes in x while maintaining z constant at its mean.
+
+```{r}
+# Predictions for first model
+
+hyp_x <- data.frame(x=1:12) # hypothetical values
+
+pred_m1 <- predict(m1, # estimated model 1
+                   newdata=hyp_x)
+
+
+# Predictions for second model
+
+hyp_x2 <- data.frame(x=1:12,
+                     z=mean(df$z))
+
+pred_m2 <- predict(m2, newdata=hyp_x2)
+
+
+# combine hypothetical values and predictions
+
+pred_df <- cbind(hyp_x,pred_m1,pred_m2)
+
+pred_df
+
+```
+
+
+
+# Extra code: visualize the predictions
+
+
+```{r}
+
+# first, pivot the data frame into long format
+
+pred_df_long <-
+  pivot_longer(data=pred_df,
+             cols = c(pred_m1,pred_m2),
+             names_to = "model",
+             values_to = "fit")
+
+ggplot(data=pred_df_long,
+       mapping=aes(y=fit,
+                   x=x,
+                   color=model)) +
+  geom_line() +
+  theme_minimal()
+
+
+```
+
+
+
+
+
+
+```{r}
+
+# notice that we can also create the same predictions by
+# using the coef() function and use the parameters directly
+
+coef(m1)
+
+coef(m2)
+
+# extract parameters from model 1:
+
+intercept_m1 <- coef(m1)[1]
+B1_m1 <- coef(m1)[2]
+
+
+# extract parameters from model 2:
+
+intercept_m2 <- coef(m2)[1]
+B1_m2 <- coef(m2)[2]
+
+# create data set with predictions using the extracted parameters:
+
+data.frame(
+  fit1 = intercept_m1 + B1_m1*1:12,
+  fit2 = intercept_m2 + B1_m2*1:12
+)
+
+
+```

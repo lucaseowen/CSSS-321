@@ -1,0 +1,1290 @@
+Country,income,gndr,gndr_f,union,union_f,gincdif,sector,lrscale,union_gndr
+Sweden,12620.11795273642,1,Female,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,cntrl_female
+Sweden,20997.108197068264,0,Male,0,control,5,F: Construction,1,cntrl_male
+Sweden,5691.425743390935,0,Male,0,control,4,C: Manufacturing,2,cntrl_male
+Sweden,27753.866457706103,0,Male,0,control,4,F: Construction,5,cntrl_male
+Sweden,15397.879344516728,0,Male,0,control,4,"O: Public adminsitration and defence, compulsory social security",7,cntrl_male
+Sweden,21775.889800800094,0,Male,0,control,3,L: Real estate activities,6,cntrl_male
+Sweden,12948.21672152543,0,Male,0,control,3,J: Information and communication,10,cntrl_male
+Sweden,15397.879344516728,0,Male,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,cntrl_male
+Sweden,23796.72262334403,0,Male,0,control,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,cntrl_male
+Sweden,39249.8943527797,1,Female,0,control,3,H: Transportation and storage,8,cntrl_female
+Sweden,27996.144262757683,0,Male,0,control,3,F: Construction,4,cntrl_male
+Sweden,12620.11795273642,1,Female,0,control,5,Q: Human health and social work,7,cntrl_female
+Sweden,25735.14249185466,1,Female,0,control,4,"M: Professional, scientific, and technical activites",6,cntrl_female
+Sweden,5691.425743390935,1,Female,0,control,4,Q: Human health and social work,7,cntrl_female
+Sweden,5691.425743390935,1,Female,0,control,4,I: Accommodation and food services,4,cntrl_female
+Sweden,39249.8943527797,0,Male,0,control,2,C: Manufacturing,7,cntrl_male
+Sweden,39249.8943527797,0,Male,0,control,3,P: Education,8,cntrl_male
+Sweden,23796.72262334403,0,Male,0,control,4,C: Manufacturing,7,cntrl_male
+Sweden,27753.866457706103,0,Male,0,control,2,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,cntrl_male
+Sweden,27753.866457706103,0,Male,0,control,1,P: Education,10,cntrl_male
+Sweden,12948.21672152543,1,Female,0,control,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,cntrl_female
+Sweden,23796.72262334403,1,Female,0,control,2,Q: Human health and social work,7,cntrl_female
+Sweden,15397.879344516728,0,Male,0,control,4,"A: Agriculture, forestry and fishing",5,cntrl_male
+Sweden,15397.879344516728,1,Female,0,control,5,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",6,cntrl_female
+Sweden,5691.425743390935,1,Female,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",4,cntrl_female
+Sweden,5691.425743390935,0,Male,0,control,2,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,3,I: Accommodation and food services,5,cntrl_female
+Sweden,12867.57124592733,0,Male,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,cntrl_male
+Sweden,12867.57124592733,0,Male,0,control,4,"A: Agriculture, forestry and fishing",7,cntrl_male
+Sweden,15397.879344516728,1,Female,0,control,4,"M: Professional, scientific, and technical activites",8,cntrl_female
+Sweden,16826.823936981895,1,Female,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,cntrl_female
+Sweden,18197.493770792495,0,Male,0,control,3,J: Information and communication,8,cntrl_male
+Sweden,12620.11795273642,0,Male,0,control,4,"A: Agriculture, forestry and fishing",7,cntrl_male
+Sweden,12948.21672152543,0,Male,0,control,4,C: Manufacturing,5,cntrl_male
+Sweden,12867.57124592733,0,Male,0,control,4,"A: Agriculture, forestry and fishing",7,cntrl_male
+Sweden,14858.191445305669,0,Male,0,control,2,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,cntrl_male
+Sweden,15397.879344516728,0,Male,0,control,2,H: Transportation and storage,10,cntrl_male
+Sweden,21775.889800800094,1,Female,0,control,4,"M: Professional, scientific, and technical activites",6,cntrl_female
+Sweden,21775.889800800094,1,Female,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",4,cntrl_female
+Sweden,3285.946185019522,1,Female,0,control,2,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,cntrl_female
+Sweden,27753.866457706103,1,Female,0,control,2,"M: Professional, scientific, and technical activites",7,cntrl_female
+Sweden,29694.395182909226,0,Male,0,control,2,J: Information and communication,5,cntrl_male
+Sweden,10848.505901818604,1,Female,0,control,4,P: Education,9,cntrl_female
+Sweden,12948.21672152543,1,Female,0,control,5,Q: Human health and social work,5,cntrl_female
+Sweden,20997.108197068264,0,Male,0,control,4,C: Manufacturing,1,cntrl_male
+Sweden,15397.879344516728,1,Female,0,control,2,I: Accommodation and food services,9,cntrl_female
+Sweden,19429.942659245873,0,Male,0,control,4,C: Manufacturing,5,cntrl_male
+Sweden,12948.21672152543,1,Female,0,control,1,C: Manufacturing,5,cntrl_female
+Sweden,5691.425743390935,1,Female,0,control,4,C: Manufacturing,2,cntrl_female
+Sweden,23796.72262334403,0,Male,0,control,4,Q: Human health and social work,5,cntrl_male
+Sweden,19796.263455272816,0,Male,0,control,2,J: Information and communication,8,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,5,C: Manufacturing,4,cntrl_female
+Sweden,12620.11795273642,0,Male,0,control,5,C: Manufacturing,1,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,3,"M: Professional, scientific, and technical activites",10,cntrl_female
+Sweden,5691.425743390935,1,Female,0,control,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",10,cntrl_female
+Sweden,15397.879344516728,0,Male,0,control,4,C: Manufacturing,8,cntrl_male
+Sweden,39249.8943527797,0,Male,0,control,3,J: Information and communication,7,cntrl_male
+Sweden,12867.57124592733,1,Female,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,cntrl_female
+Sweden,15342.104177836434,0,Male,0,control,4,"R: Arts, entertainment and recreation",2,cntrl_male
+Sweden,5691.425743390935,0,Male,0,control,5,"D: Electricity, gas, steam and air conditioning",7,cntrl_male
+Sweden,16826.823936981895,0,Male,0,control,2,F: Construction,7,cntrl_male
+Sweden,12948.21672152543,1,Female,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,cntrl_female
+Sweden,27753.866457706103,0,Male,0,control,2,K: Financial and insurance activities,7,cntrl_male
+Sweden,32047.404540819098,1,Female,0,control,4,J: Information and communication,8,cntrl_female
+Sweden,32047.404540819098,0,Male,0,control,2,K: Financial and insurance activities,7,cntrl_male
+Sweden,15397.879344516728,0,Male,0,control,3,C: Manufacturing,5,cntrl_male
+Sweden,39249.8943527797,0,Male,0,control,4,F: Construction,7,cntrl_male
+Sweden,39249.8943527797,0,Male,0,control,3,L: Real estate activities,7,cntrl_male
+Sweden,15397.879344516728,1,Female,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",9,cntrl_female
+Sweden,20997.108197068264,0,Male,0,control,4,N: Adminsitrative and support service activities,4,cntrl_male
+Sweden,23796.72262334403,1,Female,0,control,3,H: Transportation and storage,5,cntrl_female
+Sweden,17706.316314593954,0,Male,0,control,4,"M: Professional, scientific, and technical activites",9,cntrl_male
+Sweden,10887.944900400047,0,Male,0,control,4,F: Construction,3,cntrl_male
+Sweden,27996.144262757683,0,Male,0,control,3,C: Manufacturing,8,cntrl_male
+Sweden,12948.21672152543,1,Female,0,control,4,P: Education,4,cntrl_female
+Sweden,27753.866457706103,0,Male,0,control,3,"M: Professional, scientific, and technical activites",7,cntrl_male
+Sweden,18197.493770792495,0,Male,0,control,4,S: Other service activities,7,cntrl_male
+Sweden,20997.108197068264,0,Male,0,control,4,"R: Arts, entertainment and recreation",4,cntrl_male
+Sweden,22858.756069701023,0,Male,0,control,4,Q: Human health and social work,5,cntrl_male
+Sweden,17706.316314593954,0,Male,0,control,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",3,cntrl_male
+Sweden,4024.445737771417,0,Male,0,control,3,F: Construction,3,cntrl_male
+Sweden,39249.8943527797,0,Male,0,control,4,L: Real estate activities,9,cntrl_male
+Sweden,4024.445737771417,1,Female,0,control,5,Q: Human health and social work,5,cntrl_female
+Sweden,5691.425743390935,1,Female,0,control,4,Q: Human health and social work,2,cntrl_female
+Sweden,5691.425743390935,1,Female,0,control,5,Q: Human health and social work,8,cntrl_female
+Sweden,18197.493770792495,1,Female,0,control,4,"R: Arts, entertainment and recreation",5,cntrl_female
+Sweden,19796.263455272816,0,Male,0,control,3,F: Construction,5,cntrl_male
+Sweden,27753.866457706103,0,Male,0,control,3,"M: Professional, scientific, and technical activites",7,cntrl_male
+Sweden,10848.505901818604,1,Female,0,control,2,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,cntrl_female
+Sweden,8923.770983754011,1,Female,0,control,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",6,cntrl_female
+Sweden,39592.52691054563,0,Male,0,control,2,N: Adminsitrative and support service activities,5,cntrl_male
+Sweden,32047.404540819098,0,Male,0,control,2,"M: Professional, scientific, and technical activites",8,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,3,P: Education,2,cntrl_female
+Sweden,8230.512712866415,1,Female,0,control,3,P: Education,5,cntrl_female
+Sweden,18197.493770792495,1,Female,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,cntrl_female
+Sweden,18197.493770792495,1,Female,0,control,5,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",9,cntrl_female
+Sweden,12948.21672152543,1,Female,0,control,2,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,cntrl_female
+Sweden,19796.263455272816,0,Male,0,control,3,C: Manufacturing,6,cntrl_male
+Sweden,12620.11795273642,1,Female,0,control,4,P: Education,0,cntrl_female
+Sweden,15342.104177836434,1,Female,0,control,4,Q: Human health and social work,3,cntrl_female
+Sweden,12572.315838335564,0,Male,0,control,4,S: Other service activities,5,cntrl_male
+Sweden,12620.11795273642,0,Male,0,control,4,P: Education,4,cntrl_male
+Sweden,12620.11795273642,1,Female,0,control,3,"R: Arts, entertainment and recreation",8,cntrl_female
+Sweden,23796.72262334403,1,Female,0,control,4,L: Real estate activities,2,cntrl_female
+Sweden,32047.404540819098,0,Male,0,control,3,"M: Professional, scientific, and technical activites",8,cntrl_male
+Sweden,5691.425743390935,0,Male,0,control,3,H: Transportation and storage,3,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,5,K: Financial and insurance activities,2,cntrl_female
+Sweden,29694.395182909226,1,Female,0,control,2,F: Construction,6,cntrl_female
+Sweden,12620.11795273642,0,Male,0,control,5,F: Construction,2,cntrl_male
+Sweden,5691.425743390935,0,Male,0,control,4,"R: Arts, entertainment and recreation",3,cntrl_male
+Sweden,12867.57124592733,0,Male,0,control,3,H: Transportation and storage,5,cntrl_male
+Sweden,27753.866457706103,0,Male,0,control,3,"M: Professional, scientific, and technical activites",7,cntrl_male
+Sweden,7286.228497217202,1,Female,0,control,4,P: Education,6,cntrl_female
+Sweden,5691.425743390935,0,Male,0,control,5,H: Transportation and storage,4,cntrl_male
+Sweden,23796.72262334403,0,Male,0,control,5,C: Manufacturing,6,cntrl_male
+Sweden,5691.425743390935,0,Male,0,control,4,C: Manufacturing,5,cntrl_male
+Sweden,18197.493770792495,0,Male,0,control,5,K: Financial and insurance activities,7,cntrl_male
+Sweden,32047.404540819098,0,Male,0,control,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,cntrl_male
+Sweden,15397.879344516728,1,Female,0,control,3,P: Education,9,cntrl_female
+Sweden,18311.543696127355,1,Female,0,control,5,J: Information and communication,7,cntrl_female
+Sweden,18311.543696127355,1,Female,0,control,5,Q: Human health and social work,4,cntrl_female
+Sweden,23796.72262334403,0,Male,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,cntrl_male
+Sweden,5691.425743390935,0,Male,0,control,5,"A: Agriculture, forestry and fishing",3,cntrl_male
+Sweden,20997.108197068264,0,Male,0,control,5,H: Transportation and storage,4,cntrl_male
+Sweden,12948.21672152543,0,Male,0,control,5,J: Information and communication,5,cntrl_male
+Sweden,27996.144262757683,0,Male,0,control,3,C: Manufacturing,7,cntrl_male
+Sweden,19429.942659245873,0,Male,0,control,3,F: Construction,5,cntrl_male
+Sweden,22858.756069701023,0,Male,0,control,2,I: Accommodation and food services,7,cntrl_male
+Sweden,9738.473973026676,0,Male,0,control,2,N: Adminsitrative and support service activities,3,cntrl_male
+Sweden,39592.52691054563,1,Female,0,control,2,"M: Professional, scientific, and technical activites",7,cntrl_female
+Sweden,20997.108197068264,1,Female,0,control,2,"M: Professional, scientific, and technical activites",6,cntrl_female
+Sweden,20979.951019310713,1,Female,0,control,2,C: Manufacturing,3,cntrl_female
+Sweden,12948.21672152543,0,Male,0,control,5,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,cntrl_male
+Sweden,32047.404540819098,0,Male,0,control,3,N: Adminsitrative and support service activities,2,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,4,"R: Arts, entertainment and recreation",8,cntrl_female
+Sweden,4024.445737771417,1,Female,0,control,5,Q: Human health and social work,9,cntrl_female
+Sweden,10848.505901818604,0,Male,0,control,3,C: Manufacturing,3,cntrl_male
+Sweden,18197.493770792495,0,Male,0,control,3,C: Manufacturing,7,cntrl_male
+Sweden,12620.11795273642,0,Male,0,control,2,"A: Agriculture, forestry and fishing",10,cntrl_male
+Sweden,39249.8943527797,0,Male,0,control,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",9,cntrl_male
+Sweden,5691.425743390935,0,Male,0,control,4,C: Manufacturing,3,cntrl_male
+Sweden,5691.425743390935,0,Male,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",4,cntrl_male
+Sweden,32047.404540819098,0,Male,0,control,4,"O: Public adminsitration and defence, compulsory social security",5,cntrl_male
+Sweden,18311.543696127355,1,Female,0,control,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,cntrl_female
+Sweden,18197.493770792495,0,Male,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,cntrl_male
+Sweden,15397.879344516728,1,Female,0,control,5,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,cntrl_female
+Sweden,8857.767977009147,1,Female,0,control,4,I: Accommodation and food services,4,cntrl_female
+Sweden,27996.144262757683,0,Male,0,control,5,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",2,cntrl_male
+Sweden,12948.21672152543,0,Male,0,control,5,"O: Public adminsitration and defence, compulsory social security",3,cntrl_male
+Sweden,12948.21672152543,0,Male,0,control,4,"R: Arts, entertainment and recreation",7,cntrl_male
+Sweden,7286.228497217202,0,Male,0,control,4,N: Adminsitrative and support service activities,2,cntrl_male
+Sweden,12620.11795273642,0,Male,0,control,4,Q: Human health and social work,9,cntrl_male
+Sweden,10572.174682236724,0,Male,0,control,3,"R: Arts, entertainment and recreation",6,cntrl_male
+Sweden,32047.404540819098,1,Female,0,control,4,"M: Professional, scientific, and technical activites",3,cntrl_female
+Sweden,15397.879344516728,1,Female,0,control,4,P: Education,8,cntrl_female
+Sweden,10848.505901818604,1,Female,0,control,3,"R: Arts, entertainment and recreation",8,cntrl_female
+Sweden,9738.473973026676,0,Male,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",4,cntrl_male
+Sweden,27996.144262757683,0,Male,0,control,4,F: Construction,7,cntrl_male
+Sweden,27753.866457706103,1,Female,0,control,3,I: Accommodation and food services,8,cntrl_female
+Sweden,27996.144262757683,0,Male,0,control,4,S: Other service activities,8,cntrl_male
+Sweden,23796.72262334403,1,Female,0,control,4,I: Accommodation and food services,7,cntrl_female
+Sweden,20997.108197068264,0,Male,0,control,3,C: Manufacturing,8,cntrl_male
+Sweden,12620.11795273642,0,Male,0,control,5,C: Manufacturing,2,cntrl_male
+Sweden,20997.108197068264,1,Female,0,control,4,"O: Public adminsitration and defence, compulsory social security",7,cntrl_female
+Sweden,5691.425743390935,0,Male,0,control,4,C: Manufacturing,9,cntrl_male
+Sweden,12620.11795273642,0,Male,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,cntrl_male
+Sweden,5691.425743390935,0,Male,0,control,4,"R: Arts, entertainment and recreation",3,cntrl_male
+Sweden,20997.108197068264,0,Male,0,control,4,C: Manufacturing,9,cntrl_male
+Sweden,12572.315838335564,0,Male,0,control,2,"M: Professional, scientific, and technical activites",7,cntrl_male
+Sweden,15397.879344516728,1,Female,0,control,3,"O: Public adminsitration and defence, compulsory social security",8,cntrl_female
+Sweden,20997.108197068264,1,Female,0,control,4,P: Education,7,cntrl_female
+Sweden,5691.425743390935,1,Female,0,control,4,C: Manufacturing,5,cntrl_female
+Sweden,20997.108197068264,1,Female,0,control,5,P: Education,3,cntrl_female
+Sweden,18311.543696127355,1,Female,0,control,3,J: Information and communication,8,cntrl_female
+Sweden,39249.8943527797,1,Female,0,control,2,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,cntrl_female
+Sweden,18197.493770792495,0,Male,0,control,4,P: Education,5,cntrl_male
+Sweden,12867.57124592733,1,Female,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",0,cntrl_female
+Sweden,39249.8943527797,1,Female,0,control,3,Q: Human health and social work,6,cntrl_female
+Sweden,18197.493770792495,1,Female,0,control,4,S: Other service activities,8,cntrl_female
+Sweden,19429.942659245873,0,Male,0,control,4,S: Other service activities,6,cntrl_male
+Sweden,29694.395182909226,0,Male,0,control,4,"M: Professional, scientific, and technical activites",8,cntrl_male
+Sweden,32047.404540819098,1,Female,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",6,cntrl_female
+Sweden,12948.21672152543,0,Male,0,control,5,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",6,cntrl_male
+Sweden,18197.493770792495,0,Male,0,control,4,L: Real estate activities,8,cntrl_male
+Sweden,39249.8943527797,1,Female,0,control,2,S: Other service activities,7,cntrl_female
+Sweden,27996.144262757683,1,Female,0,control,3,Q: Human health and social work,9,cntrl_female
+Sweden,39249.8943527797,1,Female,0,control,2,Q: Human health and social work,8,cntrl_female
+Sweden,13279.737235945466,1,Female,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",3,cntrl_female
+Sweden,27753.866457706103,1,Female,0,control,4,I: Accommodation and food services,10,cntrl_female
+Sweden,29694.395182909226,1,Female,0,control,5,S: Other service activities,1,cntrl_female
+Sweden,19796.263455272816,1,Female,0,control,4,J: Information and communication,5,cntrl_female
+Sweden,14847.197591454613,0,Male,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,cntrl_male
+Sweden,39249.8943527797,0,Male,0,control,4,P: Education,4,cntrl_male
+Sweden,5691.425743390935,0,Male,0,control,5,Q: Human health and social work,0,cntrl_male
+Sweden,18311.543696127355,0,Male,0,control,4,C: Manufacturing,3,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,5,Q: Human health and social work,3,cntrl_female
+Sweden,18197.493770792495,0,Male,0,control,3,"M: Professional, scientific, and technical activites",8,cntrl_male
+Sweden,27996.144262757683,1,Female,0,control,4,"R: Arts, entertainment and recreation",5,cntrl_female
+Sweden,17144.06705227577,0,Male,0,control,4,L: Real estate activities,8,cntrl_male
+Sweden,6861.197571905158,1,Female,0,control,4,"A: Agriculture, forestry and fishing",10,cntrl_female
+Sweden,19429.942659245873,1,Female,0,control,4,Q: Human health and social work,3,cntrl_female
+Sweden,17706.316314593954,0,Male,0,control,2,Q: Human health and social work,6,cntrl_male
+Sweden,12620.11795273642,1,Female,0,control,4,Q: Human health and social work,8,cntrl_female
+Sweden,12948.21672152543,0,Male,0,control,4,C: Manufacturing,8,cntrl_male
+Sweden,9155.771848063678,0,Male,0,control,4,"A: Agriculture, forestry and fishing",5,cntrl_male
+Sweden,10848.505901818604,1,Female,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",6,cntrl_female
+Sweden,5691.425743390935,1,Female,0,control,5,C: Manufacturing,6,cntrl_female
+Sweden,27753.866457706103,1,Female,0,control,3,I: Accommodation and food services,6,cntrl_female
+Sweden,18311.543696127355,1,Female,0,control,4,Q: Human health and social work,8,cntrl_female
+Sweden,18197.493770792495,1,Female,0,control,3,P: Education,7,cntrl_female
+Sweden,23796.72262334403,0,Male,0,control,4,"M: Professional, scientific, and technical activites",6,cntrl_male
+Sweden,21775.889800800094,1,Female,0,control,4,P: Education,4,cntrl_female
+Sweden,27996.144262757683,0,Male,0,control,2,F: Construction,5,cntrl_male
+Sweden,20997.108197068264,0,Male,0,control,3,H: Transportation and storage,7,cntrl_male
+Sweden,24823.81281515286,0,Male,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,cntrl_male
+Sweden,39249.8943527797,0,Male,0,control,1,C: Manufacturing,9,cntrl_male
+Sweden,27996.144262757683,0,Male,0,control,4,J: Information and communication,7,cntrl_male
+Sweden,18311.543696127355,0,Male,0,control,3,"M: Professional, scientific, and technical activites",7,cntrl_male
+Sweden,12867.57124592733,1,Female,0,control,2,"O: Public adminsitration and defence, compulsory social security",8,cntrl_female
+Sweden,27996.144262757683,0,Male,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,cntrl_male
+Sweden,12948.21672152543,1,Female,0,control,5,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,cntrl_female
+Sweden,27753.866457706103,0,Male,0,control,2,H: Transportation and storage,8,cntrl_male
+Sweden,5691.425743390935,0,Male,0,control,5,P: Education,2,cntrl_male
+Sweden,15397.879344516728,0,Male,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,cntrl_male
+Sweden,12948.21672152543,1,Female,0,control,4,C: Manufacturing,6,cntrl_female
+Sweden,15397.879344516728,1,Female,0,control,4,P: Education,5,cntrl_female
+Sweden,10572.174682236724,0,Male,0,control,4,C: Manufacturing,4,cntrl_male
+Sweden,18197.493770792495,1,Female,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",6,cntrl_female
+Sweden,9738.473973026676,0,Male,0,control,4,F: Construction,5,cntrl_male
+Sweden,23796.72262334403,0,Male,0,control,3,"O: Public adminsitration and defence, compulsory social security",7,cntrl_male
+Sweden,5691.425743390935,0,Male,0,control,4,P: Education,2,cntrl_male
+Sweden,3285.946185019522,0,Male,0,control,5,I: Accommodation and food services,1,cntrl_male
+Sweden,10848.505901818604,1,Female,0,control,4,I: Accommodation and food services,5,cntrl_female
+Sweden,10848.505901818604,1,Female,0,control,4,"A: Agriculture, forestry and fishing",6,cntrl_female
+Sweden,19796.263455272816,0,Male,0,control,4,C: Manufacturing,8,cntrl_male
+Sweden,21775.889800800094,0,Male,0,control,5,H: Transportation and storage,4,cntrl_male
+Sweden,10848.505901818604,0,Male,0,control,4,H: Transportation and storage,5,cntrl_male
+Sweden,14858.191445305669,1,Female,0,control,3,N: Adminsitrative and support service activities,3,cntrl_female
+Sweden,32047.404540819098,0,Male,0,control,4,"M: Professional, scientific, and technical activites",4,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,5,C: Manufacturing,6,cntrl_female
+Sweden,12948.21672152543,1,Female,0,control,5,"O: Public adminsitration and defence, compulsory social security",5,cntrl_female
+Sweden,12948.21672152543,1,Female,0,control,5,Q: Human health and social work,7,cntrl_female
+Sweden,39249.8943527797,1,Female,0,control,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,cntrl_female
+Sweden,10848.505901818604,0,Male,0,control,5,C: Manufacturing,7,cntrl_male
+Sweden,12620.11795273642,0,Male,0,control,2,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,cntrl_male
+Sweden,24823.81281515286,1,Female,0,control,4,Q: Human health and social work,2,cntrl_female
+Sweden,14847.197591454613,0,Male,0,control,3,P: Education,8,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,4,P: Education,3,cntrl_female
+Sweden,15397.879344516728,1,Female,0,control,2,"M: Professional, scientific, and technical activites",7,cntrl_female
+Sweden,5691.425743390935,1,Female,0,control,5,"R: Arts, entertainment and recreation",2,cntrl_female
+Sweden,24823.81281515286,0,Male,0,control,1,"M: Professional, scientific, and technical activites",8,cntrl_male
+Sweden,8857.767977009147,0,Male,0,control,5,"M: Professional, scientific, and technical activites",3,cntrl_male
+Sweden,10848.505901818604,1,Female,0,control,4,"O: Public adminsitration and defence, compulsory social security",5,cntrl_female
+Sweden,19429.942659245873,1,Female,0,control,4,L: Real estate activities,10,cntrl_female
+Sweden,4024.445737771417,1,Female,0,control,4,Q: Human health and social work,2,cntrl_female
+Sweden,15397.879344516728,1,Female,0,control,4,I: Accommodation and food services,5,cntrl_female
+Sweden,5691.425743390935,1,Female,0,control,4,P: Education,5,cntrl_female
+Sweden,21775.889800800094,1,Female,0,control,5,Q: Human health and social work,7,cntrl_female
+Sweden,15397.879344516728,1,Female,0,control,4,P: Education,7,cntrl_female
+Sweden,7286.228497217202,1,Female,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",6,cntrl_female
+Sweden,18311.543696127355,0,Male,0,control,2,P: Education,8,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,4,C: Manufacturing,5,cntrl_female
+Sweden,39249.8943527797,1,Female,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,cntrl_female
+Sweden,17144.06705227577,0,Male,0,control,3,Q: Human health and social work,4,cntrl_male
+Sweden,12620.11795273642,1,Female,0,control,5,Q: Human health and social work,0,cntrl_female
+Sweden,4024.445737771417,1,Female,0,control,1,I: Accommodation and food services,6,cntrl_female
+Sweden,8923.770983754011,0,Male,0,control,4,H: Transportation and storage,7,cntrl_male
+Sweden,39249.8943527797,1,Female,0,control,2,N: Adminsitrative and support service activities,8,cntrl_female
+Sweden,8923.770983754011,0,Male,0,control,4,H: Transportation and storage,2,cntrl_male
+Sweden,8857.767977009147,1,Female,0,control,3,Q: Human health and social work,5,cntrl_female
+Sweden,15342.104177836434,0,Male,0,control,3,Q: Human health and social work,10,cntrl_male
+Sweden,27996.144262757683,0,Male,0,control,3,"M: Professional, scientific, and technical activites",6,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,1,"R: Arts, entertainment and recreation",6,cntrl_female
+Sweden,17706.316314593954,0,Male,0,control,2,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",4,cntrl_male
+Sweden,10848.505901818604,1,Female,0,control,3,I: Accommodation and food services,5,cntrl_female
+Sweden,15397.879344516728,1,Female,0,control,2,"R: Arts, entertainment and recreation",7,cntrl_female
+Sweden,32047.404540819098,0,Male,0,control,2,J: Information and communication,7,cntrl_male
+Sweden,5691.425743390935,0,Male,0,control,4,I: Accommodation and food services,4,cntrl_male
+Sweden,21775.889800800094,0,Male,0,control,2,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,cntrl_male
+Sweden,17144.06705227577,0,Male,0,control,2,F: Construction,8,cntrl_male
+Sweden,39249.8943527797,0,Male,0,control,4,C: Manufacturing,6,cntrl_male
+Sweden,5643.888325276823,1,Female,0,control,4,C: Manufacturing,6,cntrl_female
+Sweden,12620.11795273642,0,Male,0,control,3,H: Transportation and storage,5,cntrl_male
+Sweden,39249.8943527797,0,Male,0,control,4,"O: Public adminsitration and defence, compulsory social security",5,cntrl_male
+Sweden,12948.21672152543,1,Female,0,control,5,P: Education,3,cntrl_female
+Sweden,14847.197591454613,0,Male,0,control,3,Q: Human health and social work,8,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,4,N: Adminsitrative and support service activities,4,cntrl_female
+Sweden,9738.473973026676,0,Male,0,control,2,C: Manufacturing,5,cntrl_male
+Sweden,27753.866457706103,0,Male,0,control,4,"R: Arts, entertainment and recreation",3,cntrl_male
+Sweden,18311.543696127355,1,Female,0,control,3,K: Financial and insurance activities,8,cntrl_female
+Sweden,12572.315838335564,0,Male,0,control,5,P: Education,2,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,4,Q: Human health and social work,7,cntrl_female
+Sweden,27753.866457706103,1,Female,0,control,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,cntrl_female
+Sweden,14847.197591454613,1,Female,0,control,5,Q: Human health and social work,9,cntrl_female
+Sweden,12620.11795273642,0,Male,0,control,4,H: Transportation and storage,7,cntrl_male
+Sweden,12948.21672152543,1,Female,0,control,5,P: Education,6,cntrl_female
+Sweden,19429.942659245873,1,Female,0,control,4,"R: Arts, entertainment and recreation",5,cntrl_female
+Sweden,20997.108197068264,0,Male,0,control,4,C: Manufacturing,4,cntrl_male
+Sweden,8923.770983754011,1,Female,0,control,5,Q: Human health and social work,7,cntrl_female
+Sweden,12620.11795273642,1,Female,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",2,cntrl_female
+Sweden,32047.404540819098,0,Male,0,control,3,F: Construction,7,cntrl_male
+Sweden,23796.72262334403,0,Male,0,control,4,L: Real estate activities,8,cntrl_male
+Sweden,22858.756069701023,0,Male,0,control,4,C: Manufacturing,8,cntrl_male
+Sweden,12572.315838335564,1,Female,0,control,4,"R: Arts, entertainment and recreation",4,cntrl_female
+Sweden,5691.425743390935,1,Female,0,control,4,Q: Human health and social work,5,cntrl_female
+Sweden,15397.879344516728,1,Female,0,control,4,J: Information and communication,4,cntrl_female
+Sweden,10848.505901818604,0,Male,0,control,4,C: Manufacturing,7,cntrl_male
+Sweden,15342.104177836434,1,Female,0,control,3,P: Education,5,cntrl_female
+Sweden,24823.81281515286,0,Male,0,control,2,J: Information and communication,6,cntrl_male
+Sweden,27996.144262757683,1,Female,0,control,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,cntrl_female
+Sweden,15342.104177836434,1,Female,0,control,3,Q: Human health and social work,3,cntrl_female
+Sweden,4024.445737771417,0,Male,0,control,4,"M: Professional, scientific, and technical activites",6,cntrl_male
+Sweden,23796.72262334403,1,Female,0,control,3,P: Education,6,cntrl_female
+Sweden,18311.543696127355,0,Male,0,control,3,"M: Professional, scientific, and technical activites",5,cntrl_male
+Sweden,10848.505901818604,0,Male,0,control,5,C: Manufacturing,6,cntrl_male
+Sweden,14847.197591454613,1,Female,0,control,4,Q: Human health and social work,1,cntrl_female
+Sweden,15397.879344516728,1,Female,0,control,4,K: Financial and insurance activities,5,cntrl_female
+Sweden,23796.72262334403,1,Female,0,control,4,I: Accommodation and food services,8,cntrl_female
+Sweden,10848.505901818604,1,Female,0,control,2,C: Manufacturing,5,cntrl_female
+Sweden,8230.512712866415,1,Female,0,control,4,"O: Public adminsitration and defence, compulsory social security",7,cntrl_female
+Sweden,15342.104177836434,1,Female,0,control,3,C: Manufacturing,8,cntrl_female
+Sweden,8857.767977009147,1,Female,0,control,5,"M: Professional, scientific, and technical activites",5,cntrl_female
+Sweden,15342.104177836434,1,Female,0,control,4,Q: Human health and social work,6,cntrl_female
+Sweden,27996.144262757683,0,Male,0,control,4,C: Manufacturing,4,cntrl_male
+Sweden,12572.315838335564,1,Female,0,control,5,I: Accommodation and food services,2,cntrl_female
+Sweden,32047.404540819098,0,Male,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,cntrl_male
+Sweden,2545.282970222881,1,Female,0,control,5,P: Education,7,cntrl_female
+Sweden,12620.11795273642,0,Male,0,control,4,C: Manufacturing,8,cntrl_male
+Sweden,4024.445737771417,0,Male,0,control,4,"M: Professional, scientific, and technical activites",3,cntrl_male
+Sweden,23796.72262334403,0,Male,0,control,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,cntrl_male
+Sweden,13739.044212418536,0,Male,0,control,3,P: Education,7,cntrl_male
+Sweden,20979.951019310713,0,Male,0,control,3,"M: Professional, scientific, and technical activites",5,cntrl_male
+Sweden,15397.879344516728,0,Male,0,control,2,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",6,cntrl_male
+Sweden,21775.889800800094,1,Female,0,control,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,cntrl_female
+Sweden,15050.368867404864,0,Male,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,cntrl_male
+Sweden,15050.368867404864,1,Female,0,control,4,J: Information and communication,5,cntrl_female
+Sweden,18197.493770792495,0,Male,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,cntrl_male
+Sweden,23796.72262334403,0,Male,0,control,4,H: Transportation and storage,6,cntrl_male
+Sweden,20997.108197068264,0,Male,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,cntrl_male
+Sweden,39249.8943527797,1,Female,0,control,4,"M: Professional, scientific, and technical activites",4,cntrl_female
+Sweden,18197.493770792495,1,Female,0,control,4,K: Financial and insurance activities,8,cntrl_female
+Sweden,5691.425743390935,0,Male,0,control,4,C: Manufacturing,5,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,3,C: Manufacturing,7,cntrl_female
+Sweden,32047.404540819098,0,Male,0,control,2,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,cntrl_male
+Sweden,12948.21672152543,0,Male,0,control,4,F: Construction,6,cntrl_male
+Sweden,17144.06705227577,1,Female,0,control,3,S: Other service activities,3,cntrl_female
+Sweden,5691.425743390935,1,Female,0,control,4,P: Education,5,cntrl_female
+Sweden,27996.144262757683,1,Female,0,control,4,P: Education,8,cntrl_female
+Sweden,21775.889800800094,1,Female,0,control,1,Q: Human health and social work,4,cntrl_female
+Sweden,5691.425743390935,0,Male,0,control,4,P: Education,4,cntrl_male
+Sweden,15397.879344516728,0,Male,0,control,4,J: Information and communication,5,cntrl_male
+Sweden,15397.879344516728,1,Female,0,control,5,Q: Human health and social work,5,cntrl_female
+Sweden,39249.8943527797,0,Male,0,control,3,"O: Public adminsitration and defence, compulsory social security",9,cntrl_male
+Sweden,27996.144262757683,1,Female,0,control,5,I: Accommodation and food services,6,cntrl_female
+Sweden,39249.8943527797,1,Female,0,control,4,K: Financial and insurance activities,5,cntrl_female
+Sweden,19796.263455272816,0,Male,0,control,2,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,cntrl_male
+Sweden,12620.11795273642,1,Female,0,control,4,Q: Human health and social work,6,cntrl_female
+Sweden,19796.263455272816,1,Female,0,control,4,Q: Human health and social work,9,cntrl_female
+Sweden,20997.108197068264,0,Male,0,control,2,C: Manufacturing,6,cntrl_male
+Sweden,32047.404540819098,1,Female,0,control,2,I: Accommodation and food services,8,cntrl_female
+Sweden,12948.21672152543,1,Female,0,control,5,Q: Human health and social work,5,cntrl_female
+Sweden,12620.11795273642,0,Male,0,control,5,K: Financial and insurance activities,5,cntrl_male
+Sweden,24823.81281515286,0,Male,0,control,4,"R: Arts, entertainment and recreation",8,cntrl_male
+Sweden,7286.228497217202,0,Male,0,control,3,"A: Agriculture, forestry and fishing",7,cntrl_male
+Sweden,19429.942659245873,0,Male,0,control,4,F: Construction,10,cntrl_male
+Sweden,39249.8943527797,1,Female,0,control,4,Q: Human health and social work,7,cntrl_female
+Sweden,15397.879344516728,0,Male,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",3,cntrl_male
+Sweden,22660.937070241736,1,Female,0,control,3,Q: Human health and social work,7,cntrl_female
+Sweden,12948.21672152543,1,Female,0,control,5,C: Manufacturing,4,cntrl_female
+Sweden,5691.425743390935,1,Female,0,control,3,Q: Human health and social work,5,cntrl_female
+Sweden,10848.505901818604,0,Male,0,control,5,"A: Agriculture, forestry and fishing",10,cntrl_male
+Sweden,18197.493770792495,1,Female,0,control,4,P: Education,9,cntrl_female
+Sweden,5691.425743390935,1,Female,0,control,5,"O: Public adminsitration and defence, compulsory social security",8,cntrl_female
+Sweden,23796.72262334403,1,Female,0,control,4,"M: Professional, scientific, and technical activites",7,cntrl_female
+Sweden,8189.171295499703,1,Female,0,control,3,Q: Human health and social work,5,cntrl_female
+Sweden,27753.866457706103,1,Female,0,control,3,F: Construction,9,cntrl_female
+Sweden,18311.543696127355,0,Male,0,control,5,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",0,cntrl_male
+Sweden,27996.144262757683,1,Female,0,control,3,P: Education,7,cntrl_female
+Sweden,23796.72262334403,0,Male,0,control,4,"O: Public adminsitration and defence, compulsory social security",8,cntrl_male
+Sweden,32047.404540819098,1,Female,0,control,3,"O: Public adminsitration and defence, compulsory social security",8,cntrl_female
+Sweden,24823.81281515286,0,Male,0,control,2,"O: Public adminsitration and defence, compulsory social security",6,cntrl_male
+Sweden,10572.174682236724,0,Male,0,control,3,Q: Human health and social work,8,cntrl_male
+Sweden,12948.21672152543,0,Male,0,control,5,C: Manufacturing,5,cntrl_male
+Sweden,4024.445737771417,0,Male,0,control,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",3,cntrl_male
+Sweden,10848.505901818604,0,Male,0,control,4,F: Construction,10,cntrl_male
+Sweden,18197.493770792495,0,Male,0,control,4,"A: Agriculture, forestry and fishing",6,cntrl_male
+Sweden,8923.770983754011,1,Female,0,control,5,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",3,cntrl_female
+Sweden,6861.197571905158,1,Female,0,control,4,"M: Professional, scientific, and technical activites",5,cntrl_female
+Sweden,27996.144262757683,0,Male,0,control,3,H: Transportation and storage,8,cntrl_male
+Sweden,24823.81281515286,0,Male,0,control,4,N: Adminsitrative and support service activities,4,cntrl_male
+Sweden,15397.879344516728,1,Female,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",3,cntrl_female
+Sweden,13279.737235945466,0,Male,0,control,4,C: Manufacturing,6,cntrl_male
+Sweden,18311.543696127355,0,Male,0,control,4,"O: Public adminsitration and defence, compulsory social security",4,cntrl_male
+Sweden,7671.052088918217,1,Female,0,control,4,Q: Human health and social work,8,cntrl_female
+Sweden,12867.57124592733,1,Female,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",3,cntrl_female
+Sweden,19796.263455272816,1,Female,0,control,5,P: Education,2,cntrl_female
+Sweden,27996.144262757683,0,Male,0,control,4,H: Transportation and storage,6,cntrl_male
+Sweden,27996.144262757683,1,Female,0,control,4,"M: Professional, scientific, and technical activites",5,cntrl_female
+Sweden,4024.445737771417,1,Female,0,control,5,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",1,cntrl_female
+Sweden,18197.493770792495,0,Male,0,control,3,"M: Professional, scientific, and technical activites",7,cntrl_male
+Sweden,18197.493770792495,1,Female,0,control,2,P: Education,8,cntrl_female
+Sweden,12572.315838335564,0,Male,0,control,2,F: Construction,8,cntrl_male
+Sweden,12948.21672152543,0,Male,0,control,4,C: Manufacturing,4,cntrl_male
+Sweden,18197.493770792495,0,Male,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",4,cntrl_male
+Sweden,12948.21672152543,0,Male,0,control,5,J: Information and communication,3,cntrl_male
+Sweden,23796.72262334403,0,Male,0,control,4,J: Information and communication,9,cntrl_male
+Sweden,39249.8943527797,0,Male,0,control,2,C: Manufacturing,7,cntrl_male
+Sweden,15342.104177836434,0,Male,0,control,3,C: Manufacturing,8,cntrl_male
+Sweden,39249.8943527797,1,Female,0,control,4,K: Financial and insurance activities,8,cntrl_female
+Sweden,5691.425743390935,0,Male,0,control,4,H: Transportation and storage,8,cntrl_male
+Sweden,18197.493770792495,0,Male,0,control,5,H: Transportation and storage,7,cntrl_male
+Sweden,10848.505901818604,0,Male,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,cntrl_male
+Sweden,21775.889800800094,0,Male,0,control,4,I: Accommodation and food services,4,cntrl_male
+Sweden,12572.315838335564,0,Male,0,control,5,C: Manufacturing,5,cntrl_male
+Sweden,15397.879344516728,1,Female,0,control,5,Q: Human health and social work,9,cntrl_female
+Sweden,27753.866457706103,0,Male,0,control,4,J: Information and communication,5,cntrl_male
+Sweden,14858.191445305669,1,Female,0,control,3,Q: Human health and social work,8,cntrl_female
+Sweden,13279.737235945466,1,Female,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,cntrl_female
+Sweden,15342.104177836434,1,Female,0,control,4,F: Construction,5,cntrl_female
+Sweden,14847.197591454613,0,Male,0,control,3,F: Construction,5,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,4,Q: Human health and social work,8,cntrl_female
+Sweden,18197.493770792495,1,Female,0,control,2,K: Financial and insurance activities,9,cntrl_female
+Sweden,15397.879344516728,0,Male,0,control,5,C: Manufacturing,8,cntrl_male
+Sweden,15397.879344516728,1,Female,0,control,5,Q: Human health and social work,2,cntrl_female
+Sweden,39249.8943527797,0,Male,0,control,4,S: Other service activities,9,cntrl_male
+Sweden,5691.425743390935,0,Male,0,control,4,H: Transportation and storage,7,cntrl_male
+Sweden,22858.756069701023,0,Male,0,control,3,"M: Professional, scientific, and technical activites",6,cntrl_male
+Sweden,20997.108197068264,1,Female,0,control,4,K: Financial and insurance activities,4,cntrl_female
+Sweden,5691.425743390935,0,Male,0,control,4,F: Construction,8,cntrl_male
+Sweden,18197.493770792495,0,Male,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,cntrl_male
+Sweden,9155.771848063678,0,Male,0,control,5,H: Transportation and storage,5,cntrl_male
+Sweden,8923.770983754011,1,Female,0,control,3,S: Other service activities,5,cntrl_female
+Sweden,5691.425743390935,1,Female,0,control,1,Q: Human health and social work,10,cntrl_female
+Sweden,16826.823936981895,0,Male,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",1,cntrl_male
+Sweden,14858.191445305669,0,Male,0,control,4,C: Manufacturing,7,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,4,Q: Human health and social work,6,cntrl_female
+Sweden,39249.8943527797,1,Female,0,control,5,Q: Human health and social work,10,cntrl_female
+Sweden,20997.108197068264,1,Female,0,control,5,P: Education,3,cntrl_female
+Sweden,14847.197591454613,0,Male,0,control,4,F: Construction,0,cntrl_male
+Sweden,27996.144262757683,0,Male,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",3,cntrl_male
+Sweden,15397.879344516728,1,Female,0,control,5,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,cntrl_female
+Sweden,9738.473973026676,1,Female,0,control,5,Q: Human health and social work,2,cntrl_female
+Sweden,23796.72262334403,0,Male,0,control,4,C: Manufacturing,3,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,4,I: Accommodation and food services,5,cntrl_female
+Sweden,3285.946185019522,0,Male,0,control,4,N: Adminsitrative and support service activities,2,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,3,Q: Human health and social work,8,cntrl_female
+Sweden,12620.11795273642,0,Male,0,control,4,L: Real estate activities,6,cntrl_male
+Sweden,23796.72262334403,1,Female,0,control,2,"R: Arts, entertainment and recreation",7,cntrl_female
+Sweden,16826.823936981895,1,Female,0,control,4,I: Accommodation and food services,10,cntrl_female
+Sweden,27753.866457706103,0,Male,0,control,3,T: Activities of households as employers,6,cntrl_male
+Sweden,10572.174682236724,0,Male,0,control,2,"A: Agriculture, forestry and fishing",7,cntrl_male
+Sweden,12948.21672152543,0,Male,0,control,4,J: Information and communication,10,cntrl_male
+Sweden,21775.889800800094,0,Male,0,control,5,F: Construction,3,cntrl_male
+Sweden,20997.108197068264,1,Female,0,control,2,"M: Professional, scientific, and technical activites",4,cntrl_female
+Sweden,11509.105604486069,0,Male,0,control,1,C: Manufacturing,9,cntrl_male
+Sweden,18197.493770792495,0,Male,0,control,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",9,cntrl_male
+Sweden,27996.144262757683,0,Male,0,control,3,H: Transportation and storage,2,cntrl_male
+Sweden,20997.108197068264,1,Female,0,control,3,P: Education,8,cntrl_female
+Sweden,8923.770983754011,1,Female,0,control,5,C: Manufacturing,7,cntrl_female
+Sweden,8923.770983754011,1,Female,0,control,4,Q: Human health and social work,10,cntrl_female
+Sweden,21775.889800800094,1,Female,0,control,2,K: Financial and insurance activities,7,cntrl_female
+Sweden,15397.879344516728,0,Male,0,control,4,C: Manufacturing,2,cntrl_male
+Sweden,19429.942659245873,0,Male,0,control,4,I: Accommodation and food services,8,cntrl_male
+Sweden,16826.823936981895,1,Female,0,control,3,S: Other service activities,5,cntrl_female
+Sweden,22858.756069701023,1,Female,0,control,4,I: Accommodation and food services,2,cntrl_female
+Sweden,5691.425743390935,0,Male,0,control,4,C: Manufacturing,8,cntrl_male
+Sweden,32047.404540819098,0,Male,0,control,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,cntrl_male
+Sweden,27996.144262757683,1,Female,0,control,4,Q: Human health and social work,5,cntrl_female
+Sweden,23796.72262334403,0,Male,0,control,4,"O: Public adminsitration and defence, compulsory social security",8,cntrl_male
+Sweden,12620.11795273642,1,Female,0,control,5,Q: Human health and social work,3,cntrl_female
+Sweden,12948.21672152543,1,Female,0,control,3,"O: Public adminsitration and defence, compulsory social security",7,cntrl_female
+Sweden,4024.445737771417,1,Female,0,control,4,Q: Human health and social work,4,cntrl_female
+Sweden,15397.879344516728,0,Male,0,control,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,cntrl_male
+Sweden,5691.425743390935,0,Male,0,control,3,J: Information and communication,6,cntrl_male
+Sweden,15342.104177836434,1,Female,0,control,4,S: Other service activities,7,cntrl_female
+Sweden,19796.263455272816,0,Male,0,control,4,"M: Professional, scientific, and technical activites",2,cntrl_male
+Sweden,18311.543696127355,1,Female,0,control,3,Q: Human health and social work,7,cntrl_female
+Sweden,5691.425743390935,1,Female,0,control,2,P: Education,5,cntrl_female
+Sweden,5691.425743390935,0,Male,0,control,4,C: Manufacturing,5,cntrl_male
+Sweden,27753.866457706103,1,Female,0,control,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,cntrl_female
+Sweden,15342.104177836434,1,Female,0,control,3,"O: Public adminsitration and defence, compulsory social security",5,cntrl_female
+Sweden,15397.879344516728,1,Female,0,control,4,I: Accommodation and food services,4,cntrl_female
+Sweden,18197.493770792495,1,Female,0,control,4,Q: Human health and social work,5,cntrl_female
+Sweden,20997.108197068264,0,Male,0,control,5,"O: Public adminsitration and defence, compulsory social security",10,cntrl_male
+Sweden,18197.493770792495,1,Female,0,control,4,P: Education,7,cntrl_female
+Sweden,15342.104177836434,1,Female,0,control,3,Q: Human health and social work,8,cntrl_female
+Sweden,12620.11795273642,1,Female,0,control,4,"O: Public adminsitration and defence, compulsory social security",8,cntrl_female
+Sweden,20997.108197068264,0,Male,0,control,4,K: Financial and insurance activities,8,cntrl_male
+Sweden,19429.942659245873,0,Male,0,control,3,"M: Professional, scientific, and technical activites",7,cntrl_male
+Sweden,15397.879344516728,1,Female,0,control,4,Q: Human health and social work,3,cntrl_female
+Sweden,39249.8943527797,1,Female,0,control,2,K: Financial and insurance activities,8,cntrl_female
+Sweden,5691.425743390935,1,Female,0,control,5,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",0,cntrl_female
+Sweden,10848.505901818604,0,Male,0,control,5,F: Construction,2,cntrl_male
+Sweden,18311.543696127355,0,Male,0,control,2,"A: Agriculture, forestry and fishing",7,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,5,P: Education,5,cntrl_female
+Sweden,18311.543696127355,0,Male,0,control,3,I: Accommodation and food services,8,cntrl_male
+Sweden,6861.197571905158,1,Female,0,control,4,Q: Human health and social work,4,cntrl_female
+Sweden,15342.104177836434,1,Female,0,control,2,P: Education,10,cntrl_female
+Sweden,18197.493770792495,1,Female,0,control,4,J: Information and communication,5,cntrl_female
+Sweden,15397.879344516728,1,Female,0,control,4,Q: Human health and social work,6,cntrl_female
+Sweden,12867.57124592733,1,Female,0,control,4,Q: Human health and social work,5,cntrl_female
+Sweden,6310.05897636821,0,Male,0,control,3,C: Manufacturing,5,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,4,C: Manufacturing,0,cntrl_female
+Sweden,10848.505901818604,0,Male,0,control,4,P: Education,10,cntrl_male
+Sweden,14858.191445305669,0,Male,0,control,3,F: Construction,8,cntrl_male
+Sweden,22858.756069701023,0,Male,0,control,4,F: Construction,6,cntrl_male
+Sweden,23796.72262334403,0,Male,0,control,3,F: Construction,8,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,4,C: Manufacturing,3,cntrl_female
+Sweden,12867.57124592733,0,Male,0,control,4,F: Construction,2,cntrl_male
+Sweden,18197.493770792495,0,Male,0,control,4,C: Manufacturing,6,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,4,"O: Public adminsitration and defence, compulsory social security",8,cntrl_female
+Sweden,12719.883283520823,0,Male,0,control,4,C: Manufacturing,7,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,4,I: Accommodation and food services,3,cntrl_female
+Sweden,18197.493770792495,0,Male,0,control,5,F: Construction,4,cntrl_male
+Sweden,12620.11795273642,1,Female,0,control,5,P: Education,7,cntrl_female
+Sweden,32047.404540819098,0,Male,0,control,2,K: Financial and insurance activities,7,cntrl_male
+Sweden,15397.879344516728,0,Male,0,control,3,"A: Agriculture, forestry and fishing",8,cntrl_male
+Sweden,27996.144262757683,0,Male,0,control,3,"R: Arts, entertainment and recreation",6,cntrl_male
+Sweden,10848.505901818604,0,Male,0,control,4,C: Manufacturing,5,cntrl_male
+Sweden,10887.944900400047,0,Male,0,control,2,Q: Human health and social work,8,cntrl_male
+Sweden,39249.8943527797,1,Female,0,control,4,"M: Professional, scientific, and technical activites",9,cntrl_female
+Sweden,20997.108197068264,1,Female,0,control,5,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,cntrl_female
+Sweden,15397.879344516728,1,Female,0,control,2,Q: Human health and social work,8,cntrl_female
+Sweden,5691.425743390935,0,Male,0,control,5,F: Construction,5,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,3,Q: Human health and social work,8,cntrl_female
+Sweden,39249.8943527797,0,Male,0,control,3,"O: Public adminsitration and defence, compulsory social security",4,cntrl_male
+Sweden,23796.72262334403,0,Male,0,control,4,F: Construction,8,cntrl_male
+Sweden,19796.263455272816,0,Male,0,control,3,F: Construction,6,cntrl_male
+Sweden,15397.879344516728,1,Female,0,control,3,Q: Human health and social work,9,cntrl_female
+Sweden,8923.770983754011,1,Female,0,control,5,F: Construction,6,cntrl_female
+Sweden,12122.68606978106,0,Male,0,control,3,"A: Agriculture, forestry and fishing",10,cntrl_male
+Sweden,12948.21672152543,0,Male,0,control,5,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,cntrl_male
+Sweden,20997.108197068264,0,Male,0,control,4,S: Other service activities,7,cntrl_male
+Sweden,15397.879344516728,0,Male,0,control,5,F: Construction,5,cntrl_male
+Sweden,8923.770983754011,0,Male,0,control,5,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",2,cntrl_male
+Sweden,27996.144262757683,1,Female,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",6,cntrl_female
+Sweden,22858.756069701023,0,Male,0,control,4,"M: Professional, scientific, and technical activites",8,cntrl_male
+Sweden,8923.770983754011,1,Female,0,control,2,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",4,cntrl_female
+Sweden,12948.21672152543,1,Female,0,control,3,"O: Public adminsitration and defence, compulsory social security",9,cntrl_female
+Sweden,20997.108197068264,1,Female,0,control,3,Q: Human health and social work,7,cntrl_female
+Sweden,18197.493770792495,0,Male,0,control,3,"M: Professional, scientific, and technical activites",8,cntrl_male
+Sweden,23796.72262334403,1,Female,0,control,3,"M: Professional, scientific, and technical activites",8,cntrl_female
+Sweden,27753.866457706103,1,Female,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,cntrl_female
+Sweden,15342.104177836434,1,Female,0,control,5,K: Financial and insurance activities,5,cntrl_female
+Sweden,17144.06705227577,1,Female,0,control,4,F: Construction,7,cntrl_female
+Sweden,27996.144262757683,1,Female,0,control,4,P: Education,4,cntrl_female
+Sweden,8923.770983754011,1,Female,0,control,4,Q: Human health and social work,10,cntrl_female
+Sweden,39592.52691054563,0,Male,0,control,2,F: Construction,7,cntrl_male
+Sweden,10848.505901818604,1,Female,0,control,5,Q: Human health and social work,7,cntrl_female
+Sweden,19796.263455272816,0,Male,0,control,2,"D: Electricity, gas, steam and air conditioning",6,cntrl_male
+Sweden,22858.756069701023,1,Female,0,control,5,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,cntrl_female
+Sweden,27753.866457706103,0,Male,0,control,2,P: Education,7,cntrl_male
+Sweden,22660.937070241736,0,Male,0,control,2,C: Manufacturing,8,cntrl_male
+Sweden,15050.368867404864,1,Female,0,control,4,"M: Professional, scientific, and technical activites",4,cntrl_female
+Sweden,16826.823936981895,1,Female,0,control,2,I: Accommodation and food services,5,cntrl_female
+Sweden,39249.8943527797,0,Male,0,control,4,S: Other service activities,6,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,5,P: Education,5,cntrl_female
+Sweden,18197.493770792495,1,Female,0,control,3,"M: Professional, scientific, and technical activites",7,cntrl_female
+Sweden,32047.404540819098,1,Female,0,control,4,"M: Professional, scientific, and technical activites",5,cntrl_female
+Sweden,12948.21672152543,1,Female,0,control,4,P: Education,4,cntrl_female
+Sweden,12620.11795273642,1,Female,0,control,4,C: Manufacturing,7,cntrl_female
+Sweden,27996.144262757683,0,Male,0,control,3,"M: Professional, scientific, and technical activites",7,cntrl_male
+Sweden,15342.104177836434,0,Male,0,control,5,C: Manufacturing,4,cntrl_male
+Sweden,5691.425743390935,1,Female,0,control,5,Q: Human health and social work,5,cntrl_female
+Sweden,12948.21672152543,0,Male,0,control,3,Q: Human health and social work,5,cntrl_male
+Sweden,16826.823936981895,0,Male,0,control,4,F: Construction,8,cntrl_male
+Sweden,39249.8943527797,1,Female,0,control,3,P: Education,9,cntrl_female
+Sweden,8923.770983754011,0,Male,0,control,5,I: Accommodation and food services,6,cntrl_male
+Sweden,20997.108197068264,0,Male,0,control,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",6,cntrl_male
+Sweden,16826.823936981895,1,Female,0,control,3,Q: Human health and social work,4,cntrl_female
+Sweden,15342.104177836434,0,Male,0,control,3,C: Manufacturing,2,cntrl_male
+Sweden,15397.879344516728,0,Male,0,control,5,P: Education,0,cntrl_male
+Sweden,12620.11795273642,0,Male,0,control,4,C: Manufacturing,4,cntrl_male
+Sweden,17706.316314593954,1,Female,0,control,5,F: Construction,3,cntrl_female
+Sweden,12122.68606978106,1,Female,0,control,4,I: Accommodation and food services,2,cntrl_female
+Sweden,12620.11795273642,1,Female,0,control,4,J: Information and communication,9,cntrl_female
+Sweden,12948.21672152543,0,Male,0,control,5,Q: Human health and social work,2,cntrl_male
+Sweden,12867.57124592733,0,Male,0,control,1,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,cntrl_male
+Sweden,39249.8943527797,1,Female,0,control,4,P: Education,10,cntrl_female
+Sweden,5691.425743390935,1,Female,0,control,5,H: Transportation and storage,5,cntrl_female
+Sweden,19796.263455272816,0,Male,0,control,3,"R: Arts, entertainment and recreation",8,cntrl_male
+Sweden,19796.263455272816,1,Female,0,control,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,cntrl_female
+Sweden,20997.108197068264,0,Male,0,control,5,"R: Arts, entertainment and recreation",10,cntrl_male
+Sweden,32047.404540819098,0,Male,0,control,5,Q: Human health and social work,6,cntrl_male
+Sweden,39249.8943527797,0,Male,0,control,1,K: Financial and insurance activities,9,cntrl_male
+Sweden,10887.944900400047,0,Male,0,control,4,N: Adminsitrative and support service activities,10,cntrl_male
+Sweden,15342.104177836434,0,Male,0,control,5,"M: Professional, scientific, and technical activites",5,cntrl_male
+Sweden,12620.11795273642,1,Female,0,control,4,Q: Human health and social work,2,cntrl_female
+Sweden,27753.866457706103,0,Male,0,control,4,"R: Arts, entertainment and recreation",2,cntrl_male
+Sweden,20997.108197068264,1,Female,0,control,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,cntrl_female
+Sweden,27753.866457706103,0,Male,0,control,3,C: Manufacturing,7,cntrl_male
+Sweden,39249.8943527797,1,Female,0,control,4,N: Adminsitrative and support service activities,8,cntrl_female
+Sweden,16826.823936981895,0,Male,0,control,3,C: Manufacturing,3,cntrl_male
+Sweden,18311.543696127355,0,Male,0,control,3,H: Transportation and storage,6,cntrl_male
+Sweden,27996.144262757683,0,Male,0,control,2,F: Construction,9,cntrl_male
+Sweden,32047.404540819098,1,Female,0,control,2,P: Education,8,cntrl_female
+Sweden,5691.425743390935,1,Female,0,control,5,"O: Public adminsitration and defence, compulsory social security",5,cntrl_female
+Sweden,5691.425743390935,1,Female,0,control,4,Q: Human health and social work,5,cntrl_female
+Sweden,39249.8943527797,1,Female,0,control,2,P: Education,8,cntrl_female
+Sweden,18197.493770792495,0,Male,0,control,3,S: Other service activities,10,cntrl_male
+Sweden,33653.64787396379,0,Male,0,control,1,Q: Human health and social work,10,cntrl_male
+Sweden,2545.282970222881,1,Female,0,control,2,Q: Human health and social work,3,cntrl_female
+Sweden,10848.505901818604,0,Male,0,control,5,P: Education,6,cntrl_male
+Sweden,22858.756069701023,1,Female,1,treatment,5,"O: Public adminsitration and defence, compulsory social security",4,trt_female
+Sweden,5691.425743390935,1,Female,1,treatment,2,"A: Agriculture, forestry and fishing",10,trt_female
+Sweden,29694.395182909226,0,Male,1,treatment,4,C: Manufacturing,7,trt_male
+Sweden,15397.879344516728,1,Female,1,treatment,3,Q: Human health and social work,5,trt_female
+Sweden,20997.108197068264,1,Female,1,treatment,5,"E: Water supply, sewerage, waste management and remediation",1,trt_female
+Sweden,18311.543696127355,1,Female,1,treatment,4,K: Financial and insurance activities,7,trt_female
+Sweden,29694.395182909226,1,Female,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",3,trt_female
+Sweden,27996.144262757683,0,Male,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",4,trt_male
+Sweden,18197.493770792495,1,Female,1,treatment,4,K: Financial and insurance activities,8,trt_female
+Sweden,32047.404540819098,0,Male,1,treatment,2,P: Education,3,trt_male
+Sweden,9155.771848063678,1,Female,1,treatment,2,I: Accommodation and food services,6,trt_female
+Sweden,27753.866457706103,1,Female,1,treatment,3,P: Education,8,trt_female
+Sweden,12948.21672152543,0,Male,1,treatment,2,C: Manufacturing,5,trt_male
+Sweden,19796.263455272816,1,Female,1,treatment,5,Q: Human health and social work,5,trt_female
+Sweden,8923.770983754011,1,Female,1,treatment,5,"A: Agriculture, forestry and fishing",7,trt_female
+Sweden,17706.316314593954,0,Male,1,treatment,3,F: Construction,5,trt_male
+Sweden,24823.81281515286,1,Female,1,treatment,2,J: Information and communication,7,trt_female
+Sweden,23796.72262334403,0,Male,1,treatment,3,C: Manufacturing,8,trt_male
+Sweden,25735.14249185466,0,Male,1,treatment,4,"D: Electricity, gas, steam and air conditioning",7,trt_male
+Sweden,21775.889800800094,1,Female,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",5,trt_female
+Sweden,27996.144262757683,0,Male,1,treatment,4,S: Other service activities,6,trt_male
+Sweden,39249.8943527797,1,Female,1,treatment,4,Q: Human health and social work,9,trt_female
+Sweden,27753.866457706103,1,Female,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",6,trt_female
+Sweden,20997.108197068264,1,Female,1,treatment,5,"R: Arts, entertainment and recreation",3,trt_female
+Sweden,22858.756069701023,0,Male,1,treatment,4,C: Manufacturing,5,trt_male
+Sweden,12948.21672152543,0,Male,1,treatment,4,F: Construction,4,trt_male
+Sweden,12572.315838335564,1,Female,1,treatment,4,Q: Human health and social work,5,trt_female
+Sweden,12867.57124592733,0,Male,1,treatment,4,F: Construction,5,trt_male
+Sweden,14858.191445305669,0,Male,1,treatment,3,Q: Human health and social work,6,trt_male
+Sweden,39249.8943527797,1,Female,1,treatment,2,"M: Professional, scientific, and technical activites",4,trt_female
+Sweden,5691.425743390935,1,Female,1,treatment,5,Q: Human health and social work,0,trt_female
+Sweden,9738.473973026676,1,Female,1,treatment,5,P: Education,0,trt_female
+Sweden,10848.505901818604,1,Female,1,treatment,5,I: Accommodation and food services,5,trt_female
+Sweden,18197.493770792495,0,Male,1,treatment,4,C: Manufacturing,5,trt_male
+Sweden,16826.823936981895,0,Male,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,trt_male
+Sweden,27996.144262757683,1,Female,1,treatment,4,N: Adminsitrative and support service activities,3,trt_female
+Sweden,18197.493770792495,1,Female,1,treatment,4,P: Education,2,trt_female
+Sweden,17144.06705227577,1,Female,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",5,trt_female
+Sweden,39249.8943527797,1,Female,1,treatment,4,N: Adminsitrative and support service activities,8,trt_female
+Sweden,27996.144262757683,0,Male,1,treatment,4,P: Education,4,trt_male
+Sweden,12948.21672152543,1,Female,1,treatment,4,"R: Arts, entertainment and recreation",2,trt_female
+Sweden,25735.14249185466,1,Female,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",6,trt_female
+Sweden,20997.108197068264,0,Male,1,treatment,4,H: Transportation and storage,4,trt_male
+Sweden,39249.8943527797,1,Female,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",6,trt_female
+Sweden,39249.8943527797,0,Male,1,treatment,4,H: Transportation and storage,7,trt_male
+Sweden,18311.543696127355,0,Male,1,treatment,5,C: Manufacturing,2,trt_male
+Sweden,27753.866457706103,1,Female,1,treatment,3,C: Manufacturing,8,trt_female
+Sweden,19429.942659245873,1,Female,1,treatment,4,S: Other service activities,6,trt_female
+Sweden,18311.543696127355,0,Male,1,treatment,3,C: Manufacturing,4,trt_male
+Sweden,12867.57124592733,0,Male,1,treatment,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,trt_male
+Sweden,18197.493770792495,1,Female,1,treatment,4,"R: Arts, entertainment and recreation",4,trt_female
+Sweden,15342.104177836434,0,Male,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,trt_male
+Sweden,16826.823936981895,1,Female,1,treatment,4,H: Transportation and storage,5,trt_female
+Sweden,27996.144262757683,0,Male,1,treatment,3,K: Financial and insurance activities,8,trt_male
+Sweden,16826.823936981895,0,Male,1,treatment,4,C: Manufacturing,5,trt_male
+Sweden,15397.879344516728,1,Female,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,trt_female
+Sweden,20997.108197068264,1,Female,1,treatment,4,I: Accommodation and food services,2,trt_female
+Sweden,39249.8943527797,0,Male,1,treatment,5,N: Adminsitrative and support service activities,1,trt_male
+Sweden,32047.404540819098,0,Male,1,treatment,4,F: Construction,7,trt_male
+Sweden,32047.404540819098,0,Male,1,treatment,4,F: Construction,4,trt_male
+Sweden,27753.866457706103,0,Male,1,treatment,2,C: Manufacturing,7,trt_male
+Sweden,5691.425743390935,1,Female,1,treatment,3,"M: Professional, scientific, and technical activites",8,trt_female
+Sweden,27753.866457706103,0,Male,1,treatment,2,J: Information and communication,7,trt_male
+Sweden,15397.879344516728,0,Male,1,treatment,4,F: Construction,7,trt_male
+Sweden,12948.21672152543,0,Male,1,treatment,4,C: Manufacturing,7,trt_male
+Sweden,27753.866457706103,1,Female,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",4,trt_female
+Sweden,8923.770983754011,0,Male,1,treatment,5,H: Transportation and storage,5,trt_male
+Sweden,25735.14249185466,1,Female,1,treatment,4,P: Education,7,trt_female
+Sweden,27753.866457706103,0,Male,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",7,trt_male
+Sweden,14858.191445305669,1,Female,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",3,trt_female
+Sweden,27996.144262757683,0,Male,1,treatment,5,"R: Arts, entertainment and recreation",2,trt_male
+Sweden,12620.11795273642,1,Female,1,treatment,5,"A: Agriculture, forestry and fishing",9,trt_female
+Sweden,15397.879344516728,0,Male,1,treatment,5,S: Other service activities,3,trt_male
+Sweden,21775.889800800094,0,Male,1,treatment,4,I: Accommodation and food services,3,trt_male
+Sweden,24823.81281515286,0,Male,1,treatment,3,J: Information and communication,7,trt_male
+Sweden,7671.052088918217,1,Female,1,treatment,3,"A: Agriculture, forestry and fishing",8,trt_female
+Sweden,27753.866457706103,1,Female,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,trt_female
+Sweden,25735.14249185466,1,Female,1,treatment,3,"O: Public adminsitration and defence, compulsory social security",5,trt_female
+Sweden,27996.144262757683,1,Female,1,treatment,5,P: Education,3,trt_female
+Sweden,12620.11795273642,0,Male,1,treatment,4,F: Construction,5,trt_male
+Sweden,27753.866457706103,0,Male,1,treatment,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,trt_male
+Sweden,17144.06705227577,0,Male,1,treatment,3,"R: Arts, entertainment and recreation",8,trt_male
+Sweden,39249.8943527797,0,Male,1,treatment,4,"M: Professional, scientific, and technical activites",8,trt_male
+Sweden,21775.889800800094,0,Male,1,treatment,4,H: Transportation and storage,4,trt_male
+Sweden,10848.505901818604,1,Female,1,treatment,4,C: Manufacturing,6,trt_female
+Sweden,12620.11795273642,1,Female,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,trt_female
+Sweden,23796.72262334403,1,Female,1,treatment,3,P: Education,9,trt_female
+Sweden,24823.81281515286,1,Female,1,treatment,3,Q: Human health and social work,5,trt_female
+Sweden,12948.21672152543,1,Female,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",3,trt_female
+Sweden,12572.315838335564,0,Male,1,treatment,4,H: Transportation and storage,5,trt_male
+Sweden,5691.425743390935,1,Female,1,treatment,4,S: Other service activities,0,trt_female
+Sweden,18197.493770792495,0,Male,1,treatment,3,F: Construction,5,trt_male
+Sweden,19429.942659245873,0,Male,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",7,trt_male
+Sweden,21775.889800800094,0,Male,1,treatment,4,C: Manufacturing,4,trt_male
+Sweden,15397.879344516728,0,Male,1,treatment,4,N: Adminsitrative and support service activities,4,trt_male
+Sweden,4024.445737771417,0,Male,1,treatment,5,H: Transportation and storage,0,trt_male
+Sweden,12572.315838335564,1,Female,1,treatment,5,L: Real estate activities,0,trt_female
+Sweden,19796.263455272816,1,Female,1,treatment,4,Q: Human health and social work,5,trt_female
+Sweden,27753.866457706103,0,Male,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",7,trt_male
+Sweden,12620.11795273642,1,Female,1,treatment,4,S: Other service activities,4,trt_female
+Sweden,14847.197591454613,1,Female,1,treatment,5,P: Education,3,trt_female
+Sweden,6861.197571905158,0,Male,1,treatment,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,trt_male
+Sweden,39249.8943527797,0,Male,1,treatment,3,P: Education,9,trt_male
+Sweden,12948.21672152543,1,Female,1,treatment,5,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,trt_female
+Sweden,5691.425743390935,1,Female,1,treatment,2,P: Education,6,trt_female
+Sweden,15342.104177836434,0,Male,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,trt_male
+Sweden,27996.144262757683,1,Female,1,treatment,4,P: Education,3,trt_female
+Sweden,25735.14249185466,1,Female,1,treatment,3,Q: Human health and social work,7,trt_female
+Sweden,14858.191445305669,1,Female,1,treatment,2,P: Education,5,trt_female
+Sweden,27996.144262757683,1,Female,1,treatment,3,"M: Professional, scientific, and technical activites",7,trt_female
+Sweden,23796.72262334403,1,Female,1,treatment,3,Q: Human health and social work,5,trt_female
+Sweden,24823.81281515286,1,Female,1,treatment,4,P: Education,8,trt_female
+Sweden,12867.57124592733,0,Male,1,treatment,2,C: Manufacturing,0,trt_male
+Sweden,15397.879344516728,0,Male,1,treatment,4,F: Construction,2,trt_male
+Sweden,27753.866457706103,1,Female,1,treatment,4,Q: Human health and social work,7,trt_female
+Sweden,15050.368867404864,0,Male,1,treatment,1,C: Manufacturing,8,trt_male
+Sweden,27996.144262757683,1,Female,1,treatment,5,Q: Human health and social work,2,trt_female
+Sweden,12122.68606978106,1,Female,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",6,trt_female
+Sweden,27996.144262757683,1,Female,1,treatment,4,P: Education,7,trt_female
+Sweden,5691.425743390935,1,Female,1,treatment,4,Q: Human health and social work,6,trt_female
+Sweden,20997.108197068264,1,Female,1,treatment,4,Q: Human health and social work,5,trt_female
+Sweden,24823.81281515286,0,Male,1,treatment,4,K: Financial and insurance activities,7,trt_male
+Sweden,14847.197591454613,0,Male,1,treatment,5,Q: Human health and social work,3,trt_male
+Sweden,27996.144262757683,0,Male,1,treatment,5,S: Other service activities,5,trt_male
+Sweden,27996.144262757683,1,Female,1,treatment,4,Q: Human health and social work,4,trt_female
+Sweden,18197.493770792495,0,Male,1,treatment,4,J: Information and communication,4,trt_male
+Sweden,5691.425743390935,1,Female,1,treatment,4,P: Education,6,trt_female
+Sweden,23796.72262334403,0,Male,1,treatment,4,S: Other service activities,5,trt_male
+Sweden,16826.823936981895,1,Female,1,treatment,4,J: Information and communication,7,trt_female
+Sweden,39249.8943527797,0,Male,1,treatment,3,"O: Public adminsitration and defence, compulsory social security",8,trt_male
+Sweden,18197.493770792495,0,Male,1,treatment,3,C: Manufacturing,3,trt_male
+Sweden,29694.395182909226,1,Female,1,treatment,2,J: Information and communication,7,trt_female
+Sweden,27996.144262757683,1,Female,1,treatment,2,Q: Human health and social work,4,trt_female
+Sweden,18197.493770792495,0,Male,1,treatment,4,C: Manufacturing,0,trt_male
+Sweden,9155.771848063678,1,Female,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",3,trt_female
+Sweden,12620.11795273642,0,Male,1,treatment,4,F: Construction,3,trt_male
+Sweden,12620.11795273642,1,Female,1,treatment,3,"O: Public adminsitration and defence, compulsory social security",5,trt_female
+Sweden,5691.425743390935,0,Male,1,treatment,5,Q: Human health and social work,2,trt_male
+Sweden,20997.108197068264,0,Male,1,treatment,3,"A: Agriculture, forestry and fishing",8,trt_male
+Sweden,27996.144262757683,0,Male,1,treatment,3,C: Manufacturing,7,trt_male
+Sweden,23796.72262334403,1,Female,1,treatment,4,Q: Human health and social work,8,trt_female
+Sweden,27753.866457706103,0,Male,1,treatment,3,C: Manufacturing,8,trt_male
+Sweden,15397.879344516728,0,Male,1,treatment,5,F: Construction,10,trt_male
+Sweden,18197.493770792495,0,Male,1,treatment,3,C: Manufacturing,7,trt_male
+Sweden,19429.942659245873,1,Female,1,treatment,4,P: Education,4,trt_female
+Sweden,14847.197591454613,1,Female,1,treatment,5,Q: Human health and social work,1,trt_female
+Sweden,15342.104177836434,0,Male,1,treatment,5,H: Transportation and storage,4,trt_male
+Sweden,12572.315838335564,0,Male,1,treatment,2,C: Manufacturing,5,trt_male
+Sweden,12948.21672152543,1,Female,1,treatment,2,C: Manufacturing,5,trt_female
+Sweden,13739.044212418536,0,Male,1,treatment,2,"O: Public adminsitration and defence, compulsory social security",9,trt_male
+Sweden,29694.395182909226,1,Female,1,treatment,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,trt_female
+Sweden,32047.404540819098,0,Male,1,treatment,4,H: Transportation and storage,3,trt_male
+Sweden,21775.889800800094,0,Male,1,treatment,3,C: Manufacturing,6,trt_male
+Sweden,32047.404540819098,1,Female,1,treatment,4,S: Other service activities,6,trt_female
+Sweden,12948.21672152543,0,Male,1,treatment,4,Q: Human health and social work,7,trt_male
+Sweden,32047.404540819098,1,Female,1,treatment,3,N: Adminsitrative and support service activities,3,trt_female
+Sweden,11509.105604486069,0,Male,1,treatment,3,"A: Agriculture, forestry and fishing",7,trt_male
+Sweden,8923.770983754011,1,Female,1,treatment,5,"M: Professional, scientific, and technical activites",4,trt_female
+Sweden,32047.404540819098,1,Female,1,treatment,4,Q: Human health and social work,7,trt_female
+Sweden,22858.756069701023,0,Male,1,treatment,5,"O: Public adminsitration and defence, compulsory social security",3,trt_male
+Sweden,8923.770983754011,1,Female,1,treatment,4,Q: Human health and social work,6,trt_female
+Sweden,14858.191445305669,1,Female,1,treatment,5,P: Education,9,trt_female
+Sweden,15342.104177836434,1,Female,1,treatment,4,Q: Human health and social work,5,trt_female
+Sweden,12620.11795273642,0,Male,1,treatment,5,C: Manufacturing,4,trt_male
+Sweden,14847.197591454613,1,Female,1,treatment,4,Q: Human health and social work,6,trt_female
+Sweden,39249.8943527797,0,Male,1,treatment,4,"M: Professional, scientific, and technical activites",7,trt_male
+Sweden,18197.493770792495,0,Male,1,treatment,5,"O: Public adminsitration and defence, compulsory social security",7,trt_male
+Sweden,13998.072131378842,1,Female,1,treatment,3,F: Construction,8,trt_female
+Sweden,27996.144262757683,1,Female,1,treatment,4,Q: Human health and social work,7,trt_female
+Sweden,12867.57124592733,1,Female,1,treatment,4,P: Education,5,trt_female
+Sweden,27996.144262757683,0,Male,1,treatment,3,F: Construction,4,trt_male
+Sweden,15397.879344516728,0,Male,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,trt_male
+Sweden,23796.72262334403,1,Female,1,treatment,3,P: Education,6,trt_female
+Sweden,27753.866457706103,1,Female,1,treatment,4,Q: Human health and social work,5,trt_female
+Sweden,5691.425743390935,1,Female,1,treatment,4,P: Education,5,trt_female
+Sweden,18311.543696127355,1,Female,1,treatment,4,Q: Human health and social work,8,trt_female
+Sweden,4024.445737771417,0,Male,1,treatment,3,S: Other service activities,5,trt_male
+Sweden,23796.72262334403,1,Female,1,treatment,3,P: Education,6,trt_female
+Sweden,20997.108197068264,0,Male,1,treatment,3,F: Construction,9,trt_male
+Sweden,15397.879344516728,1,Female,1,treatment,4,P: Education,8,trt_female
+Sweden,22858.756069701023,0,Male,1,treatment,5,"M: Professional, scientific, and technical activites",4,trt_male
+Sweden,22858.756069701023,0,Male,1,treatment,3,N: Adminsitrative and support service activities,8,trt_male
+Sweden,27996.144262757683,0,Male,1,treatment,3,J: Information and communication,7,trt_male
+Sweden,32047.404540819098,0,Male,1,treatment,3,C: Manufacturing,8,trt_male
+Sweden,19429.942659245873,0,Male,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,trt_male
+Sweden,25735.14249185466,0,Male,1,treatment,3,F: Construction,6,trt_male
+Sweden,10848.505901818604,0,Male,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",4,trt_male
+Sweden,16826.823936981895,1,Female,1,treatment,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",4,trt_female
+Sweden,27996.144262757683,0,Male,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",8,trt_male
+Sweden,23796.72262334403,0,Male,1,treatment,3,"O: Public adminsitration and defence, compulsory social security",7,trt_male
+Sweden,39249.8943527797,1,Female,1,treatment,4,N: Adminsitrative and support service activities,4,trt_female
+Sweden,22858.756069701023,1,Female,1,treatment,3,P: Education,7,trt_female
+Sweden,10572.174682236724,0,Male,1,treatment,5,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",3,trt_male
+Sweden,13279.737235945466,1,Female,1,treatment,5,"R: Arts, entertainment and recreation",3,trt_female
+Sweden,4024.445737771417,0,Male,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,trt_male
+Sweden,27753.866457706103,1,Female,1,treatment,4,Q: Human health and social work,3,trt_female
+Sweden,13279.737235945466,1,Female,1,treatment,4,P: Education,6,trt_female
+Sweden,18197.493770792495,1,Female,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",4,trt_female
+Sweden,32047.404540819098,1,Female,1,treatment,4,K: Financial and insurance activities,4,trt_female
+Sweden,15050.368867404864,0,Male,1,treatment,5,H: Transportation and storage,6,trt_male
+Sweden,39249.8943527797,1,Female,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",2,trt_female
+Sweden,5691.425743390935,1,Female,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",4,trt_female
+Sweden,4024.445737771417,1,Female,1,treatment,3,C: Manufacturing,8,trt_female
+Sweden,39249.8943527797,0,Male,1,treatment,4,J: Information and communication,7,trt_male
+Sweden,19796.263455272816,0,Male,1,treatment,4,J: Information and communication,2,trt_male
+Sweden,5691.425743390935,1,Female,1,treatment,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,trt_female
+Sweden,22858.756069701023,0,Male,1,treatment,4,P: Education,2,trt_male
+Sweden,33653.64787396379,0,Male,1,treatment,4,C: Manufacturing,0,trt_male
+Sweden,20997.108197068264,1,Female,1,treatment,3,L: Real estate activities,8,trt_female
+Sweden,20997.108197068264,0,Male,1,treatment,4,Q: Human health and social work,6,trt_male
+Sweden,19796.263455272816,0,Male,1,treatment,3,H: Transportation and storage,7,trt_male
+Sweden,19429.942659245873,1,Female,1,treatment,4,P: Education,5,trt_female
+Sweden,27996.144262757683,0,Male,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",6,trt_male
+Sweden,15342.104177836434,1,Female,1,treatment,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,trt_female
+Sweden,39249.8943527797,0,Male,1,treatment,5,K: Financial and insurance activities,3,trt_male
+Sweden,21775.889800800094,0,Male,1,treatment,5,F: Construction,8,trt_male
+Sweden,18311.543696127355,1,Female,1,treatment,5,"O: Public adminsitration and defence, compulsory social security",3,trt_female
+Sweden,20997.108197068264,0,Male,1,treatment,5,C: Manufacturing,2,trt_male
+Sweden,15397.879344516728,1,Female,1,treatment,5,Q: Human health and social work,5,trt_female
+Sweden,7671.052088918217,0,Male,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",3,trt_male
+Sweden,18197.493770792495,0,Male,1,treatment,5,C: Manufacturing,2,trt_male
+Sweden,27996.144262757683,0,Male,1,treatment,3,"O: Public adminsitration and defence, compulsory social security",6,trt_male
+Sweden,15397.879344516728,1,Female,1,treatment,5,"A: Agriculture, forestry and fishing",3,trt_female
+Sweden,33653.64787396379,1,Female,1,treatment,3,"M: Professional, scientific, and technical activites",8,trt_female
+Sweden,23796.72262334403,0,Male,1,treatment,2,C: Manufacturing,8,trt_male
+Sweden,18197.493770792495,1,Female,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",0,trt_female
+Sweden,19429.942659245873,0,Male,1,treatment,2,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",10,trt_male
+Sweden,10848.505901818604,0,Male,1,treatment,4,"D: Electricity, gas, steam and air conditioning",0,trt_male
+Sweden,27996.144262757683,0,Male,1,treatment,4,"D: Electricity, gas, steam and air conditioning",6,trt_male
+Sweden,21775.889800800094,0,Male,1,treatment,3,"O: Public adminsitration and defence, compulsory social security",7,trt_male
+Sweden,22660.937070241736,0,Male,1,treatment,3,C: Manufacturing,9,trt_male
+Sweden,5691.425743390935,0,Male,1,treatment,3,"A: Agriculture, forestry and fishing",10,trt_male
+Sweden,21775.889800800094,1,Female,1,treatment,3,"M: Professional, scientific, and technical activites",7,trt_female
+Sweden,27753.866457706103,1,Female,1,treatment,3,C: Manufacturing,9,trt_female
+Sweden,20997.108197068264,0,Male,1,treatment,4,"A: Agriculture, forestry and fishing",6,trt_male
+Sweden,17706.316314593954,0,Male,1,treatment,3,J: Information and communication,5,trt_male
+Sweden,32047.404540819098,1,Female,1,treatment,5,Q: Human health and social work,1,trt_female
+Sweden,19796.263455272816,0,Male,1,treatment,4,"M: Professional, scientific, and technical activites",4,trt_male
+Sweden,5691.425743390935,1,Female,1,treatment,5,Q: Human health and social work,5,trt_female
+Sweden,10572.174682236724,1,Female,1,treatment,5,P: Education,0,trt_female
+Sweden,27996.144262757683,1,Female,1,treatment,4,C: Manufacturing,8,trt_female
+Sweden,19796.263455272816,0,Male,1,treatment,4,P: Education,10,trt_male
+Sweden,23796.72262334403,0,Male,1,treatment,5,Q: Human health and social work,6,trt_male
+Sweden,10848.505901818604,0,Male,1,treatment,5,H: Transportation and storage,1,trt_male
+Sweden,27753.866457706103,0,Male,1,treatment,2,C: Manufacturing,7,trt_male
+Sweden,39249.8943527797,0,Male,1,treatment,2,P: Education,7,trt_male
+Sweden,23796.72262334403,1,Female,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",4,trt_female
+Sweden,19796.263455272816,1,Female,1,treatment,4,P: Education,4,trt_female
+Sweden,12867.57124592733,1,Female,1,treatment,4,"M: Professional, scientific, and technical activites",5,trt_female
+Sweden,25735.14249185466,1,Female,1,treatment,5,"O: Public adminsitration and defence, compulsory social security",2,trt_female
+Sweden,21775.889800800094,0,Male,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",5,trt_male
+Sweden,39249.8943527797,1,Female,1,treatment,4,P: Education,7,trt_female
+Sweden,23796.72262334403,1,Female,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,trt_female
+Sweden,15397.879344516728,1,Female,1,treatment,4,Q: Human health and social work,7,trt_female
+Sweden,12620.11795273642,0,Male,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,trt_male
+Sweden,39249.8943527797,1,Female,1,treatment,5,Q: Human health and social work,3,trt_female
+Sweden,19796.263455272816,1,Female,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,trt_female
+Sweden,18197.493770792495,0,Male,1,treatment,2,C: Manufacturing,5,trt_male
+Sweden,18197.493770792495,1,Female,1,treatment,4,Q: Human health and social work,6,trt_female
+Sweden,39249.8943527797,1,Female,1,treatment,5,Q: Human health and social work,4,trt_female
+Sweden,10848.505901818604,1,Female,1,treatment,4,Q: Human health and social work,7,trt_female
+Sweden,27996.144262757683,0,Male,1,treatment,5,"M: Professional, scientific, and technical activites",7,trt_male
+Sweden,14847.197591454613,1,Female,1,treatment,3,Q: Human health and social work,5,trt_female
+Sweden,18197.493770792495,1,Female,1,treatment,3,Q: Human health and social work,5,trt_female
+Sweden,39249.8943527797,1,Female,1,treatment,4,P: Education,3,trt_female
+Sweden,32047.404540819098,0,Male,1,treatment,2,C: Manufacturing,6,trt_male
+Sweden,39249.8943527797,1,Female,1,treatment,4,Q: Human health and social work,7,trt_female
+Sweden,15050.368867404864,1,Female,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",2,trt_female
+Sweden,27753.866457706103,0,Male,1,treatment,2,"D: Electricity, gas, steam and air conditioning",8,trt_male
+Sweden,27996.144262757683,0,Male,1,treatment,3,"A: Agriculture, forestry and fishing",5,trt_male
+Sweden,19429.942659245873,0,Male,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",4,trt_male
+Sweden,12620.11795273642,1,Female,1,treatment,4,Q: Human health and social work,4,trt_female
+Sweden,23796.72262334403,0,Male,1,treatment,4,"D: Electricity, gas, steam and air conditioning",4,trt_male
+Sweden,15397.879344516728,0,Male,1,treatment,4,F: Construction,2,trt_male
+Sweden,4024.445737771417,0,Male,1,treatment,1,H: Transportation and storage,6,trt_male
+Sweden,27996.144262757683,0,Male,1,treatment,3,C: Manufacturing,9,trt_male
+Sweden,18197.493770792495,0,Male,1,treatment,3,C: Manufacturing,5,trt_male
+Sweden,32047.404540819098,1,Female,1,treatment,4,C: Manufacturing,7,trt_female
+Sweden,39249.8943527797,1,Female,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,trt_female
+Sweden,5691.425743390935,0,Male,1,treatment,2,F: Construction,8,trt_male
+Sweden,22858.756069701023,0,Male,1,treatment,4,C: Manufacturing,3,trt_male
+Sweden,27753.866457706103,1,Female,1,treatment,2,N: Adminsitrative and support service activities,8,trt_female
+Sweden,5691.425743390935,0,Male,1,treatment,4,"A: Agriculture, forestry and fishing",8,trt_male
+Sweden,19796.263455272816,1,Female,1,treatment,4,Q: Human health and social work,5,trt_female
+Sweden,39249.8943527797,0,Male,1,treatment,4,N: Adminsitrative and support service activities,5,trt_male
+Sweden,27996.144262757683,0,Male,1,treatment,2,C: Manufacturing,6,trt_male
+Sweden,16826.823936981895,1,Female,1,treatment,4,C: Manufacturing,4,trt_female
+Sweden,20997.108197068264,1,Female,1,treatment,4,N: Adminsitrative and support service activities,2,trt_female
+Sweden,32047.404540819098,0,Male,1,treatment,4,C: Manufacturing,9,trt_male
+Sweden,16826.823936981895,0,Male,1,treatment,4,F: Construction,4,trt_male
+Sweden,32047.404540819098,1,Female,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,trt_female
+Sweden,14847.197591454613,1,Female,1,treatment,3,C: Manufacturing,5,trt_female
+Sweden,32047.404540819098,0,Male,1,treatment,3,F: Construction,7,trt_male
+Sweden,21775.889800800094,1,Female,1,treatment,3,"M: Professional, scientific, and technical activites",5,trt_female
+Sweden,39249.8943527797,0,Male,1,treatment,4,K: Financial and insurance activities,7,trt_male
+Sweden,22858.756069701023,0,Male,1,treatment,4,F: Construction,3,trt_male
+Sweden,24823.81281515286,0,Male,1,treatment,3,"O: Public adminsitration and defence, compulsory social security",7,trt_male
+Sweden,15342.104177836434,1,Female,1,treatment,2,Q: Human health and social work,8,trt_female
+Sweden,19429.942659245873,1,Female,1,treatment,5,"O: Public adminsitration and defence, compulsory social security",3,trt_female
+Sweden,12948.21672152543,0,Male,1,treatment,4,P: Education,9,trt_male
+Sweden,16163.581426374749,0,Male,1,treatment,4,J: Information and communication,7,trt_male
+Sweden,22858.756069701023,1,Female,1,treatment,4,P: Education,3,trt_female
+Sweden,20997.108197068264,1,Female,1,treatment,5,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",6,trt_female
+Sweden,10848.505901818604,0,Male,1,treatment,4,C: Manufacturing,6,trt_male
+Sweden,10572.174682236724,1,Female,1,treatment,4,"R: Arts, entertainment and recreation",5,trt_female
+Sweden,23796.72262334403,0,Male,1,treatment,4,B: Mining and quarrying,8,trt_male
+Sweden,29694.395182909226,1,Female,1,treatment,5,S: Other service activities,5,trt_female
+Sweden,15397.879344516728,0,Male,1,treatment,4,F: Construction,4,trt_male
+Sweden,16826.823936981895,0,Male,1,treatment,3,L: Real estate activities,5,trt_male
+Sweden,27753.866457706103,1,Female,1,treatment,4,"M: Professional, scientific, and technical activites",6,trt_female
+Sweden,21775.889800800094,1,Female,1,treatment,3,P: Education,8,trt_female
+Sweden,32047.404540819098,1,Female,1,treatment,2,F: Construction,8,trt_female
+Sweden,12867.57124592733,1,Female,1,treatment,4,Q: Human health and social work,5,trt_female
+Sweden,12620.11795273642,1,Female,1,treatment,2,Q: Human health and social work,5,trt_female
+Sweden,15397.879344516728,1,Female,1,treatment,4,C: Manufacturing,3,trt_female
+Sweden,25735.14249185466,0,Male,1,treatment,5,H: Transportation and storage,4,trt_male
+Sweden,10848.505901818604,1,Female,1,treatment,5,P: Education,2,trt_female
+Sweden,19796.263455272816,1,Female,1,treatment,3,J: Information and communication,5,trt_female
+Sweden,17706.316314593954,0,Male,1,treatment,4,C: Manufacturing,5,trt_male
+Sweden,20997.108197068264,1,Female,1,treatment,5,P: Education,1,trt_female
+Sweden,24823.81281515286,0,Male,1,treatment,3,C: Manufacturing,7,trt_male
+Sweden,39249.8943527797,1,Female,1,treatment,5,S: Other service activities,6,trt_female
+Sweden,27753.866457706103,1,Female,1,treatment,2,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,trt_female
+Sweden,8857.767977009147,0,Male,1,treatment,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",4,trt_male
+Sweden,20997.108197068264,1,Female,1,treatment,4,P: Education,5,trt_female
+Sweden,20997.108197068264,1,Female,1,treatment,4,"D: Electricity, gas, steam and air conditioning",4,trt_female
+Sweden,18197.493770792495,0,Male,1,treatment,5,C: Manufacturing,1,trt_male
+Sweden,12948.21672152543,1,Female,1,treatment,5,S: Other service activities,3,trt_female
+Sweden,12948.21672152543,1,Female,1,treatment,3,"E: Water supply, sewerage, waste management and remediation",5,trt_female
+Sweden,20997.108197068264,0,Male,1,treatment,4,F: Construction,3,trt_male
+Sweden,18311.543696127355,0,Male,1,treatment,3,"E: Water supply, sewerage, waste management and remediation",5,trt_male
+Sweden,27753.866457706103,0,Male,1,treatment,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,trt_male
+Sweden,18311.543696127355,0,Male,1,treatment,5,Q: Human health and social work,3,trt_male
+Sweden,15397.879344516728,1,Female,1,treatment,4,Q: Human health and social work,6,trt_female
+Sweden,23796.72262334403,0,Male,1,treatment,3,L: Real estate activities,10,trt_male
+Sweden,16826.823936981895,0,Male,1,treatment,2,F: Construction,5,trt_male
+Sweden,5691.425743390935,1,Female,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",4,trt_female
+Sweden,39249.8943527797,0,Male,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",7,trt_male
+Sweden,23796.72262334403,1,Female,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",8,trt_female
+Sweden,21775.889800800094,0,Male,1,treatment,4,C: Manufacturing,5,trt_male
+Sweden,20997.108197068264,1,Female,1,treatment,5,P: Education,2,trt_female
+Sweden,19796.263455272816,1,Female,1,treatment,3,S: Other service activities,6,trt_female
+Sweden,18197.493770792495,1,Female,1,treatment,3,Q: Human health and social work,7,trt_female
+Sweden,23796.72262334403,1,Female,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",7,trt_female
+Sweden,27996.144262757683,1,Female,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",6,trt_female
+Sweden,19429.942659245873,1,Female,1,treatment,5,Q: Human health and social work,5,trt_female
+Sweden,27996.144262757683,1,Female,1,treatment,4,P: Education,2,trt_female
+Sweden,19796.263455272816,1,Female,1,treatment,3,C: Manufacturing,0,trt_female
+Sweden,10848.505901818604,1,Female,1,treatment,4,Q: Human health and social work,5,trt_female
+Sweden,15342.104177836434,0,Male,1,treatment,2,L: Real estate activities,1,trt_male
+Sweden,18311.543696127355,1,Female,1,treatment,4,S: Other service activities,4,trt_female
+Sweden,24823.81281515286,0,Male,1,treatment,4,P: Education,8,trt_male
+Sweden,9155.771848063678,0,Male,1,treatment,4,"A: Agriculture, forestry and fishing",9,trt_male
+Sweden,39249.8943527797,0,Male,1,treatment,2,C: Manufacturing,8,trt_male
+Sweden,25735.14249185466,1,Female,1,treatment,5,"O: Public adminsitration and defence, compulsory social security",3,trt_female
+Sweden,15397.879344516728,0,Male,1,treatment,5,C: Manufacturing,3,trt_male
+Sweden,24823.81281515286,1,Female,1,treatment,4,P: Education,5,trt_female
+Sweden,15050.368867404864,0,Male,1,treatment,2,C: Manufacturing,7,trt_male
+Sweden,19429.942659245873,0,Male,1,treatment,4,C: Manufacturing,7,trt_male
+Sweden,23796.72262334403,0,Male,1,treatment,4,C: Manufacturing,7,trt_male
+Sweden,15342.104177836434,0,Male,1,treatment,3,J: Information and communication,6,trt_male
+Sweden,39249.8943527797,1,Female,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",7,trt_female
+Sweden,24823.81281515286,1,Female,1,treatment,4,P: Education,5,trt_female
+Sweden,15342.104177836434,1,Female,1,treatment,5,"R: Arts, entertainment and recreation",2,trt_female
+Sweden,21775.889800800094,0,Male,1,treatment,4,"M: Professional, scientific, and technical activites",3,trt_male
+Sweden,21775.889800800094,1,Female,1,treatment,4,Q: Human health and social work,4,trt_female
+Sweden,18311.543696127355,0,Male,1,treatment,1,H: Transportation and storage,4,trt_male
+Sweden,5691.425743390935,0,Male,1,treatment,5,C: Manufacturing,4,trt_male
+Sweden,12867.57124592733,1,Female,1,treatment,4,Q: Human health and social work,3,trt_female
+Sweden,39249.8943527797,0,Male,1,treatment,3,H: Transportation and storage,7,trt_male
+Sweden,19796.263455272816,0,Male,1,treatment,3,C: Manufacturing,3,trt_male
+Sweden,17144.06705227577,0,Male,1,treatment,2,N: Adminsitrative and support service activities,8,trt_male
+Sweden,27996.144262757683,0,Male,1,treatment,4,F: Construction,8,trt_male
+Sweden,22858.756069701023,0,Male,1,treatment,3,"M: Professional, scientific, and technical activites",8,trt_male
+Sweden,5691.425743390935,0,Male,1,treatment,3,"D: Electricity, gas, steam and air conditioning",8,trt_male
+Sweden,22858.756069701023,0,Male,1,treatment,3,"O: Public adminsitration and defence, compulsory social security",5,trt_male
+Sweden,29694.395182909226,0,Male,1,treatment,3,H: Transportation and storage,8,trt_male
+Sweden,5691.425743390935,0,Male,1,treatment,4,N: Adminsitrative and support service activities,5,trt_male
+Sweden,15050.368867404864,0,Male,1,treatment,2,"O: Public adminsitration and defence, compulsory social security",5,trt_male
+Sweden,23796.72262334403,0,Male,1,treatment,5,F: Construction,5,trt_male
+Sweden,12620.11795273642,1,Female,1,treatment,4,Q: Human health and social work,2,trt_female
+Sweden,25735.14249185466,0,Male,1,treatment,4,F: Construction,2,trt_male
+Sweden,32047.404540819098,1,Female,1,treatment,1,Q: Human health and social work,7,trt_female
+Sweden,22858.756069701023,0,Male,1,treatment,4,N: Adminsitrative and support service activities,8,trt_male
+Sweden,19796.263455272816,0,Male,1,treatment,3,C: Manufacturing,2,trt_male
+Sweden,4024.445737771417,0,Male,1,treatment,4,P: Education,5,trt_male
+Sweden,10572.174682236724,1,Female,1,treatment,4,N: Adminsitrative and support service activities,4,trt_female
+Sweden,32047.404540819098,0,Male,1,treatment,2,"M: Professional, scientific, and technical activites",7,trt_male
+Sweden,12867.57124592733,1,Female,1,treatment,2,Q: Human health and social work,5,trt_female
+Sweden,15050.368867404864,1,Female,1,treatment,4,Q: Human health and social work,5,trt_female
+Sweden,14964.568568848026,1,Female,1,treatment,5,Q: Human health and social work,5,trt_female
+Sweden,16826.823936981895,1,Female,1,treatment,5,Q: Human health and social work,6,trt_female
+Sweden,23796.72262334403,1,Female,1,treatment,4,P: Education,3,trt_female
+Sweden,12620.11795273642,1,Female,1,treatment,5,P: Education,3,trt_female
+Sweden,27996.144262757683,0,Male,1,treatment,4,C: Manufacturing,6,trt_male
+Sweden,23796.72262334403,1,Female,1,treatment,5,"R: Arts, entertainment and recreation",3,trt_female
+Sweden,10572.174682236724,1,Female,1,treatment,5,P: Education,5,trt_female
+Sweden,17144.06705227577,0,Male,1,treatment,5,C: Manufacturing,3,trt_male
+Sweden,22660.937070241736,1,Female,1,treatment,4,Q: Human health and social work,5,trt_female
+Sweden,21775.889800800094,1,Female,1,treatment,5,"R: Arts, entertainment and recreation",1,trt_female
+Sweden,17144.06705227577,0,Male,1,treatment,5,Q: Human health and social work,5,trt_male
+Sweden,5691.425743390935,1,Female,1,treatment,4,Q: Human health and social work,3,trt_female
+Sweden,23796.72262334403,1,Female,1,treatment,3,N: Adminsitrative and support service activities,5,trt_female
+Sweden,21775.889800800094,1,Female,1,treatment,3,P: Education,6,trt_female
+Sweden,15342.104177836434,0,Male,1,treatment,4,L: Real estate activities,2,trt_male
+Sweden,14858.191445305669,1,Female,1,treatment,3,"O: Public adminsitration and defence, compulsory social security",8,trt_female
+Sweden,20997.108197068264,0,Male,1,treatment,4,F: Construction,5,trt_male
+Sweden,20997.108197068264,0,Male,1,treatment,4,F: Construction,5,trt_male
+Sweden,21775.889800800094,0,Male,1,treatment,5,"M: Professional, scientific, and technical activites",5,trt_male
+Sweden,15342.104177836434,0,Male,1,treatment,4,F: Construction,3,trt_male
+Sweden,12867.57124592733,1,Female,1,treatment,4,Q: Human health and social work,6,trt_female
+Sweden,4024.445737771417,1,Female,1,treatment,4,P: Education,5,trt_female
+Sweden,12948.21672152543,0,Male,1,treatment,5,S: Other service activities,2,trt_male
+Sweden,19796.263455272816,1,Female,1,treatment,4,S: Other service activities,10,trt_female
+Sweden,23796.72262334403,0,Male,1,treatment,2,"M: Professional, scientific, and technical activites",6,trt_male
+Sweden,39249.8943527797,0,Male,1,treatment,3,"M: Professional, scientific, and technical activites",6,trt_male
+Sweden,29694.395182909226,0,Male,1,treatment,2,C: Manufacturing,8,trt_male
+Sweden,19796.263455272816,0,Male,1,treatment,3,C: Manufacturing,7,trt_male
+Sweden,20997.108197068264,1,Female,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,trt_female
+Sweden,12948.21672152543,1,Female,1,treatment,5,Q: Human health and social work,3,trt_female
+Sweden,21775.889800800094,1,Female,1,treatment,5,"M: Professional, scientific, and technical activites",2,trt_female
+Sweden,18197.493770792495,1,Female,1,treatment,5,P: Education,3,trt_female
+Sweden,12948.21672152543,1,Female,1,treatment,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,trt_female
+Sweden,24823.81281515286,1,Female,1,treatment,5,P: Education,4,trt_female
+Sweden,21775.889800800094,0,Male,1,treatment,3,F: Construction,5,trt_male
+Sweden,18197.493770792495,0,Male,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",3,trt_male
+Sweden,12572.315838335564,1,Female,1,treatment,3,P: Education,2,trt_female
+Sweden,15342.104177836434,0,Male,1,treatment,4,P: Education,5,trt_male
+Sweden,18311.543696127355,1,Female,1,treatment,4,P: Education,6,trt_female
+Sweden,20997.108197068264,0,Male,1,treatment,4,C: Manufacturing,3,trt_male
+Sweden,27996.144262757683,1,Female,1,treatment,5,P: Education,4,trt_female
+Sweden,23796.72262334403,1,Female,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",4,trt_female
+Sweden,32047.404540819098,1,Female,1,treatment,3,"D: Electricity, gas, steam and air conditioning",8,trt_female
+Sweden,5691.425743390935,1,Female,1,treatment,5,Q: Human health and social work,8,trt_female
+Sweden,22858.756069701023,1,Female,1,treatment,4,Q: Human health and social work,3,trt_female
+Sweden,23796.72262334403,1,Female,1,treatment,4,H: Transportation and storage,7,trt_female
+Sweden,17144.06705227577,0,Male,1,treatment,4,C: Manufacturing,5,trt_male
+Sweden,20997.108197068264,0,Male,1,treatment,3,C: Manufacturing,9,trt_male
+Sweden,25735.14249185466,1,Female,1,treatment,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,trt_female
+Sweden,24823.81281515286,1,Female,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",5,trt_female
+Sweden,15397.879344516728,0,Male,1,treatment,5,H: Transportation and storage,0,trt_male
+Sweden,27996.144262757683,1,Female,1,treatment,4,K: Financial and insurance activities,7,trt_female
+Sweden,15397.879344516728,1,Female,1,treatment,5,Q: Human health and social work,0,trt_female
+Sweden,25735.14249185466,1,Female,1,treatment,4,J: Information and communication,3,trt_female
+Sweden,15342.104177836434,1,Female,1,treatment,4,P: Education,3,trt_female
+Sweden,25735.14249185466,0,Male,1,treatment,3,H: Transportation and storage,7,trt_male
+Sweden,15342.104177836434,1,Female,1,treatment,3,P: Education,8,trt_female
+Sweden,12948.21672152543,1,Female,1,treatment,4,Q: Human health and social work,9,trt_female
+Sweden,14847.197591454613,1,Female,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",6,trt_female
+Sweden,27753.866457706103,0,Male,1,treatment,2,P: Education,7,trt_male
+Sweden,5691.425743390935,1,Female,1,treatment,2,L: Real estate activities,8,trt_female
+Sweden,19796.263455272816,1,Female,1,treatment,2,"M: Professional, scientific, and technical activites",6,trt_female
+Sweden,18311.543696127355,1,Female,1,treatment,4,H: Transportation and storage,2,trt_female
+Sweden,19429.942659245873,0,Male,1,treatment,5,Q: Human health and social work,2,trt_male
+Sweden,27753.866457706103,1,Female,1,treatment,4,"M: Professional, scientific, and technical activites",4,trt_female
+Sweden,8857.767977009147,1,Female,1,treatment,4,C: Manufacturing,3,trt_female
+Sweden,14847.197591454613,1,Female,1,treatment,4,Q: Human health and social work,5,trt_female
+Sweden,11509.105604486069,1,Female,1,treatment,3,Q: Human health and social work,5,trt_female
+Sweden,17144.06705227577,1,Female,1,treatment,4,Q: Human health and social work,5,trt_female
+Sweden,25735.14249185466,0,Male,1,treatment,4,N: Adminsitrative and support service activities,5,trt_male
+Sweden,20997.108197068264,0,Male,1,treatment,3,Q: Human health and social work,6,trt_male
+Sweden,12620.11795273642,0,Male,1,treatment,4,C: Manufacturing,5,trt_male
+Sweden,39249.8943527797,0,Male,1,treatment,2,"D: Electricity, gas, steam and air conditioning",7,trt_male
+Sweden,15050.368867404864,0,Male,1,treatment,4,I: Accommodation and food services,6,trt_male
+Sweden,32047.404540819098,0,Male,1,treatment,4,"R: Arts, entertainment and recreation",4,trt_male
+Sweden,22858.756069701023,1,Female,1,treatment,4,S: Other service activities,5,trt_female
+Sweden,27996.144262757683,1,Female,1,treatment,5,Q: Human health and social work,6,trt_female
+Sweden,19796.263455272816,1,Female,1,treatment,5,Q: Human health and social work,5,trt_female
+Sweden,23796.72262334403,0,Male,1,treatment,5,B: Mining and quarrying,0,trt_male
+Sweden,22858.756069701023,0,Male,1,treatment,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",6,trt_male
+Sweden,21775.889800800094,1,Female,1,treatment,5,S: Other service activities,5,trt_female
+Sweden,24823.81281515286,0,Male,1,treatment,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",6,trt_male
+Sweden,18197.493770792495,0,Male,1,treatment,4,F: Construction,10,trt_male
+Sweden,8923.770983754011,1,Female,1,treatment,4,Q: Human health and social work,6,trt_female
+Sweden,12948.21672152543,1,Female,1,treatment,5,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",3,trt_female
+Sweden,14847.197591454613,1,Female,1,treatment,4,Q: Human health and social work,3,trt_female
+Sweden,16826.823936981895,1,Female,1,treatment,5,"O: Public adminsitration and defence, compulsory social security",0,trt_female
+Sweden,15342.104177836434,0,Male,1,treatment,5,J: Information and communication,6,trt_male
+Sweden,19796.263455272816,1,Female,1,treatment,3,"R: Arts, entertainment and recreation",4,trt_female
+Sweden,19796.263455272816,1,Female,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",5,trt_female
+Sweden,14847.197591454613,0,Male,1,treatment,3,F: Construction,8,trt_male
+Sweden,12620.11795273642,0,Male,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",3,trt_male
+Sweden,15050.368867404864,0,Male,1,treatment,4,C: Manufacturing,4,trt_male
+Sweden,15342.104177836434,1,Female,1,treatment,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,trt_female
+Sweden,22858.756069701023,1,Female,1,treatment,5,"M: Professional, scientific, and technical activites",3,trt_female
+Sweden,15342.104177836434,0,Male,1,treatment,4,N: Adminsitrative and support service activities,1,trt_male
+Sweden,27996.144262757683,0,Male,1,treatment,4,F: Construction,0,trt_male
+Sweden,18197.493770792495,0,Male,1,treatment,4,Q: Human health and social work,5,trt_male
+Sweden,20997.108197068264,0,Male,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,trt_male
+Sweden,12867.57124592733,1,Female,1,treatment,5,P: Education,5,trt_female
+Sweden,29694.395182909226,1,Female,1,treatment,4,P: Education,7,trt_female
+Sweden,32047.404540819098,0,Male,1,treatment,2,P: Education,6,trt_male
+Sweden,39249.8943527797,1,Female,1,treatment,2,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",6,trt_female
+Sweden,18311.543696127355,1,Female,1,treatment,4,C: Manufacturing,6,trt_female
+Sweden,27753.866457706103,1,Female,1,treatment,2,Q: Human health and social work,8,trt_female
+Sweden,10848.505901818604,1,Female,1,treatment,4,Q: Human health and social work,2,trt_female
+Sweden,4024.445737771417,1,Female,1,treatment,5,P: Education,4,trt_female
+Sweden,25735.14249185466,1,Female,1,treatment,5,Q: Human health and social work,5,trt_female
+Sweden,12948.21672152543,0,Male,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",6,trt_male
+Sweden,27753.866457706103,1,Female,1,treatment,4,Q: Human health and social work,7,trt_female
+Sweden,5691.425743390935,1,Female,1,treatment,4,"M: Professional, scientific, and technical activites",5,trt_female
+Sweden,20997.108197068264,1,Female,1,treatment,5,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,trt_female
+Sweden,17144.06705227577,1,Female,1,treatment,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",3,trt_female
+Sweden,20997.108197068264,0,Male,1,treatment,4,P: Education,3,trt_male
+Sweden,27996.144262757683,0,Male,1,treatment,4,K: Financial and insurance activities,10,trt_male
+Sweden,39249.8943527797,1,Female,1,treatment,3,Q: Human health and social work,5,trt_female
+Sweden,15050.368867404864,1,Female,1,treatment,4,Q: Human health and social work,5,trt_female
+Sweden,18197.493770792495,1,Female,1,treatment,3,P: Education,6,trt_female
+Sweden,12867.57124592733,0,Male,1,treatment,3,F: Construction,7,trt_male
+Sweden,27753.866457706103,1,Female,1,treatment,3,C: Manufacturing,7,trt_female
+Sweden,23796.72262334403,1,Female,1,treatment,4,I: Accommodation and food services,6,trt_female
+Sweden,18197.493770792495,1,Female,1,treatment,3,K: Financial and insurance activities,10,trt_female
+Sweden,17706.316314593954,1,Female,1,treatment,4,N: Adminsitrative and support service activities,3,trt_female
+Sweden,39592.52691054563,0,Male,1,treatment,4,C: Manufacturing,6,trt_male
+Sweden,5691.425743390935,1,Female,1,treatment,3,N: Adminsitrative and support service activities,3,trt_female
+Sweden,14858.191445305669,1,Female,1,treatment,5,"R: Arts, entertainment and recreation",0,trt_female
+Sweden,17706.316314593954,1,Female,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",3,trt_female
+Sweden,19796.263455272816,0,Male,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",4,trt_male
+Sweden,39249.8943527797,0,Male,1,treatment,4,K: Financial and insurance activities,6,trt_male
+Sweden,39249.8943527797,0,Male,1,treatment,3,C: Manufacturing,7,trt_male
+Sweden,25735.14249185466,0,Male,1,treatment,4,Q: Human health and social work,5,trt_male
+Sweden,24823.81281515286,1,Female,1,treatment,2,K: Financial and insurance activities,10,trt_female
+Sweden,17706.316314593954,0,Male,1,treatment,4,F: Construction,8,trt_male
+Sweden,19429.942659245873,1,Female,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",5,trt_female
+Sweden,27996.144262757683,1,Female,1,treatment,4,Q: Human health and social work,10,trt_female
+Sweden,32047.404540819098,0,Male,1,treatment,2,J: Information and communication,7,trt_male
+Sweden,12948.21672152543,1,Female,1,treatment,3,S: Other service activities,10,trt_female
+Sweden,18311.543696127355,0,Male,1,treatment,4,J: Information and communication,5,trt_male
+Sweden,27996.144262757683,0,Male,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",2,trt_male
+Sweden,27996.144262757683,0,Male,1,treatment,2,"O: Public adminsitration and defence, compulsory social security",7,trt_male
+Sweden,19796.263455272816,0,Male,1,treatment,4,C: Manufacturing,7,trt_male
+Sweden,21775.889800800094,0,Male,1,treatment,5,H: Transportation and storage,2,trt_male
+Sweden,10887.944900400047,0,Male,1,treatment,4,N: Adminsitrative and support service activities,2,trt_male
+Sweden,18311.543696127355,1,Female,1,treatment,3,"O: Public adminsitration and defence, compulsory social security",5,trt_female
+Sweden,15342.104177836434,0,Male,1,treatment,5,"R: Arts, entertainment and recreation",0,trt_male
+Sweden,20997.108197068264,0,Male,1,treatment,4,F: Construction,1,trt_male
+Sweden,12948.21672152543,0,Male,1,treatment,5,S: Other service activities,2,trt_male
+Sweden,15342.104177836434,1,Female,1,treatment,4,Q: Human health and social work,6,trt_female
+Sweden,15397.879344516728,0,Male,1,treatment,3,P: Education,4,trt_male
+Sweden,19796.263455272816,1,Female,1,treatment,3,J: Information and communication,5,trt_female
+Sweden,32047.404540819098,0,Male,1,treatment,2,C: Manufacturing,7,trt_male
+Sweden,32047.404540819098,1,Female,1,treatment,2,"O: Public adminsitration and defence, compulsory social security",8,trt_female
+Sweden,12867.57124592733,1,Female,1,treatment,4,Q: Human health and social work,5,trt_female
+Sweden,22858.756069701023,0,Male,1,treatment,3,C: Manufacturing,5,trt_male
+Sweden,27996.144262757683,1,Female,1,treatment,4,K: Financial and insurance activities,6,trt_female
+Sweden,16826.823936981895,0,Male,1,treatment,5,C: Manufacturing,0,trt_male
+Sweden,12948.21672152543,1,Female,1,treatment,3,P: Education,6,trt_female
+Sweden,20997.108197068264,0,Male,1,treatment,4,"M: Professional, scientific, and technical activites",3,trt_male
+Sweden,12620.11795273642,1,Female,1,treatment,2,Q: Human health and social work,10,trt_female
+Sweden,22660.937070241736,0,Male,1,treatment,4,C: Manufacturing,4,trt_male
+Sweden,20997.108197068264,1,Female,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",6,trt_female
+Sweden,27996.144262757683,1,Female,1,treatment,4,H: Transportation and storage,10,trt_female
+Sweden,12867.57124592733,1,Female,1,treatment,4,C: Manufacturing,5,trt_female
+Sweden,23796.72262334403,1,Female,1,treatment,4,Q: Human health and social work,4,trt_female
+Sweden,18197.493770792495,0,Male,1,treatment,5,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,trt_male
+Sweden,22858.756069701023,1,Female,1,treatment,3,N: Adminsitrative and support service activities,7,trt_female
+Sweden,8857.767977009147,1,Female,1,treatment,4,S: Other service activities,5,trt_female
+Sweden,27753.866457706103,0,Male,1,treatment,4,J: Information and communication,7,trt_male
+Sweden,20997.108197068264,0,Male,1,treatment,4,C: Manufacturing,3,trt_male
+Sweden,21775.889800800094,0,Male,1,treatment,4,F: Construction,7,trt_male
+Sweden,20997.108197068264,1,Female,1,treatment,4,P: Education,4,trt_female
+Sweden,18197.493770792495,0,Male,1,treatment,3,C: Manufacturing,3,trt_male
+Sweden,27996.144262757683,0,Male,1,treatment,4,F: Construction,7,trt_male
+Sweden,25735.14249185466,1,Female,1,treatment,4,P: Education,4,trt_female
+Sweden,14858.191445305669,0,Male,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",3,trt_male
+Sweden,4024.445737771417,1,Female,1,treatment,4,"A: Agriculture, forestry and fishing",4,trt_female
+Sweden,15342.104177836434,0,Male,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",5,trt_male
+Sweden,12620.11795273642,1,Female,1,treatment,2,N: Adminsitrative and support service activities,6,trt_female
+Sweden,19429.942659245873,0,Male,1,treatment,5,S: Other service activities,3,trt_male
+Sweden,12620.11795273642,0,Male,1,treatment,1,"O: Public adminsitration and defence, compulsory social security",9,trt_male
+Sweden,32047.404540819098,1,Female,1,treatment,3,P: Education,5,trt_female
+Sweden,27753.866457706103,0,Male,1,treatment,2,"M: Professional, scientific, and technical activites",7,trt_male
+Sweden,23796.72262334403,1,Female,1,treatment,4,Q: Human health and social work,5,trt_female
+Sweden,17706.316314593954,1,Female,1,treatment,3,"R: Arts, entertainment and recreation",5,trt_female
+Sweden,22858.756069701023,0,Male,1,treatment,5,"O: Public adminsitration and defence, compulsory social security",2,trt_male
+Sweden,12867.57124592733,0,Male,1,treatment,4,P: Education,3,trt_male
+Sweden,5691.425743390935,1,Female,1,treatment,2,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",10,trt_female
+Sweden,17144.06705227577,0,Male,1,treatment,4,C: Manufacturing,6,trt_male
+Sweden,19429.942659245873,0,Male,1,treatment,2,J: Information and communication,7,trt_male
+Sweden,27753.866457706103,1,Female,1,treatment,2,"M: Professional, scientific, and technical activites",7,trt_female
+Sweden,12867.57124592733,0,Male,1,treatment,4,L: Real estate activities,1,trt_male
+Sweden,12572.315838335564,1,Female,1,treatment,4,P: Education,3,trt_female
+Sweden,10848.505901818604,0,Male,1,treatment,4,C: Manufacturing,8,trt_male
+Sweden,5691.425743390935,0,Male,1,treatment,3,"A: Agriculture, forestry and fishing",8,trt_male
+Sweden,22858.756069701023,1,Female,1,treatment,2,"R: Arts, entertainment and recreation",8,trt_female
+Sweden,39249.8943527797,0,Male,1,treatment,2,N: Adminsitrative and support service activities,8,trt_male
+Sweden,8857.767977009147,1,Female,1,treatment,4,Q: Human health and social work,9,trt_female
+Sweden,32047.404540819098,1,Female,1,treatment,2,"M: Professional, scientific, and technical activites",7,trt_female
+Sweden,12620.11795273642,0,Male,1,treatment,3,C: Manufacturing,8,trt_male
+Sweden,19796.263455272816,1,Female,1,treatment,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,trt_female
+Sweden,18311.543696127355,1,Female,1,treatment,3,P: Education,8,trt_female
+Sweden,5691.425743390935,1,Female,1,treatment,4,Q: Human health and social work,8,trt_female
+Sweden,39249.8943527797,1,Female,1,treatment,5,P: Education,0,trt_female
+Sweden,32047.404540819098,0,Male,1,treatment,4,F: Construction,8,trt_male
+Sweden,19796.263455272816,0,Male,1,treatment,3,F: Construction,7,trt_male
+Sweden,21775.889800800094,1,Female,1,treatment,5,F: Construction,3,trt_female
+Sweden,27753.866457706103,1,Female,1,treatment,2,"M: Professional, scientific, and technical activites",9,trt_female
+Sweden,19796.263455272816,1,Female,1,treatment,3,"D: Electricity, gas, steam and air conditioning",5,trt_female
+Sweden,27753.866457706103,0,Male,1,treatment,2,C: Manufacturing,6,trt_male
+Sweden,18197.493770792495,1,Female,1,treatment,5,I: Accommodation and food services,4,trt_female
+Sweden,18197.493770792495,0,Male,1,treatment,4,C: Manufacturing,5,trt_male
+Sweden,27996.144262757683,1,Female,1,treatment,5,"M: Professional, scientific, and technical activites",4,trt_female
+Sweden,27996.144262757683,0,Male,1,treatment,3,"O: Public adminsitration and defence, compulsory social security",7,trt_male
+Sweden,19796.263455272816,0,Male,1,treatment,3,C: Manufacturing,5,trt_male
+Sweden,27996.144262757683,0,Male,1,treatment,4,F: Construction,9,trt_male
+Sweden,23796.72262334403,0,Male,1,treatment,5,"O: Public adminsitration and defence, compulsory social security",3,trt_male
+Sweden,23796.72262334403,1,Female,1,treatment,4,I: Accommodation and food services,5,trt_female
+Sweden,15397.879344516728,1,Female,1,treatment,5,F: Construction,5,trt_female
+Sweden,19796.263455272816,0,Male,1,treatment,4,C: Manufacturing,5,trt_male
+Sweden,32047.404540819098,0,Male,1,treatment,3,F: Construction,6,trt_male
+Sweden,15397.879344516728,0,Male,1,treatment,4,N: Adminsitrative and support service activities,6,trt_male
+Sweden,27753.866457706103,1,Female,1,treatment,2,"M: Professional, scientific, and technical activites",7,trt_female
+Sweden,12948.21672152543,1,Female,1,treatment,4,Q: Human health and social work,5,trt_female
+Sweden,5691.425743390935,0,Male,1,treatment,5,H: Transportation and storage,0,trt_male
+Sweden,5691.425743390935,1,Female,1,treatment,4,Q: Human health and social work,5,trt_female
+Sweden,4024.445737771417,0,Male,1,treatment,4,H: Transportation and storage,6,trt_male
+Sweden,32047.404540819098,1,Female,1,treatment,5,N: Adminsitrative and support service activities,2,trt_female
+Sweden,18197.493770792495,1,Female,1,treatment,4,K: Financial and insurance activities,6,trt_female
+Sweden,27996.144262757683,1,Female,1,treatment,4,Q: Human health and social work,4,trt_female
+Sweden,19796.263455272816,1,Female,1,treatment,4,L: Real estate activities,7,trt_female
+Sweden,20997.108197068264,1,Female,1,treatment,5,Q: Human health and social work,6,trt_female
+Sweden,14858.191445305669,1,Female,1,treatment,2,Q: Human health and social work,2,trt_female
+Sweden,39249.8943527797,1,Female,1,treatment,5,H: Transportation and storage,5,trt_female
+Sweden,20997.108197068264,0,Male,1,treatment,4,J: Information and communication,5,trt_male
+Sweden,23796.72262334403,1,Female,1,treatment,2,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,trt_female
+Sweden,16826.823936981895,1,Female,1,treatment,5,H: Transportation and storage,5,trt_female
+Sweden,20997.108197068264,1,Female,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",8,trt_female
+Sweden,18197.493770792495,1,Female,1,treatment,4,Q: Human health and social work,6,trt_female
+Sweden,10848.505901818604,0,Male,1,treatment,5,N: Adminsitrative and support service activities,2,trt_male
+Sweden,24823.81281515286,1,Female,1,treatment,4,Q: Human health and social work,6,trt_female
+Sweden,22858.756069701023,0,Male,1,treatment,4,P: Education,2,trt_male
+Sweden,39592.52691054563,0,Male,1,treatment,4,J: Information and communication,6,trt_male
+Sweden,27996.144262757683,0,Male,1,treatment,5,F: Construction,3,trt_male
+Sweden,22858.756069701023,0,Male,1,treatment,3,C: Manufacturing,4,trt_male
+Sweden,12867.57124592733,0,Male,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,trt_male
+Sweden,4024.445737771417,0,Male,1,treatment,5,P: Education,0,trt_male
+Sweden,12948.21672152543,1,Female,1,treatment,4,H: Transportation and storage,5,trt_female
+Sweden,14858.191445305669,0,Male,1,treatment,4,"A: Agriculture, forestry and fishing",7,trt_male
+Sweden,10887.944900400047,0,Male,1,treatment,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,trt_male
+Sweden,20997.108197068264,1,Female,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",3,trt_female
+Sweden,10848.505901818604,1,Female,1,treatment,4,J: Information and communication,9,trt_female
+Sweden,27753.866457706103,1,Female,1,treatment,3,P: Education,7,trt_female
+Sweden,20979.951019310713,0,Male,1,treatment,4,F: Construction,5,trt_male
+Sweden,39249.8943527797,0,Male,1,treatment,4,"O: Public adminsitration and defence, compulsory social security",5,trt_male
+Sweden,22858.756069701023,1,Female,1,treatment,3,I: Accommodation and food services,7,trt_female
+Sweden,19796.263455272816,1,Female,1,treatment,5,Q: Human health and social work,9,trt_female
+Sweden,10848.505901818604,1,Female,1,treatment,5,J: Information and communication,2,trt_female
+Sweden,15397.879344516728,1,Female,1,treatment,5,F: Construction,3,trt_female
+Sweden,8923.770983754011,1,Female,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",5,trt_female
+Sweden,39249.8943527797,1,Female,1,treatment,4,P: Education,10,trt_female
+Sweden,18311.543696127355,0,Male,1,treatment,4,H: Transportation and storage,5,trt_male
+Sweden,12867.57124592733,0,Male,1,treatment,4,C: Manufacturing,9,trt_male
+Sweden,17706.316314593954,1,Female,1,treatment,3,P: Education,5,trt_female
+Sweden,27753.866457706103,1,Female,1,treatment,3,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",7,trt_female
+Sweden,4024.445737771417,1,Female,1,treatment,5,Q: Human health and social work,0,trt_female
+Sweden,32047.404540819098,0,Male,1,treatment,2,"O: Public adminsitration and defence, compulsory social security",7,trt_male
+Sweden,19429.942659245873,0,Male,1,treatment,4,H: Transportation and storage,4,trt_male
+Sweden,18311.543696127355,0,Male,1,treatment,2,J: Information and communication,8,trt_male
+Sweden,27753.866457706103,1,Female,1,treatment,3,Q: Human health and social work,6,trt_female
+Sweden,8923.770983754011,0,Male,1,treatment,5,P: Education,1,trt_male
+Sweden,23796.72262334403,1,Female,1,treatment,4,S: Other service activities,6,trt_female
+Sweden,15397.879344516728,1,Female,1,treatment,5,Q: Human health and social work,5,trt_female
+Sweden,22858.756069701023,1,Female,1,treatment,1,Q: Human health and social work,7,trt_female
+Sweden,10848.505901818604,1,Female,1,treatment,4,Q: Human health and social work,4,trt_female
+Sweden,16826.823936981895,0,Male,1,treatment,3,"M: Professional, scientific, and technical activites",6,trt_male
+Sweden,19796.263455272816,1,Female,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",8,trt_female
+Sweden,17144.06705227577,1,Female,1,treatment,4,P: Education,7,trt_female
+Sweden,23796.72262334403,0,Male,1,treatment,4,C: Manufacturing,3,trt_male
+Sweden,22858.756069701023,1,Female,1,treatment,4,P: Education,7,trt_female
+Sweden,29694.395182909226,1,Female,1,treatment,3,"M: Professional, scientific, and technical activites",7,trt_female
+Sweden,12948.21672152543,0,Male,1,treatment,4,L: Real estate activities,4,trt_male
+Sweden,18197.493770792495,0,Male,1,treatment,4,C: Manufacturing,5,trt_male
+Sweden,27753.866457706103,1,Female,1,treatment,5,Q: Human health and social work,5,trt_female
+Sweden,32047.404540819098,1,Female,1,treatment,4,I: Accommodation and food services,8,trt_female
+Sweden,20979.951019310713,1,Female,1,treatment,5,S: Other service activities,7,trt_female
+Sweden,20997.108197068264,1,Female,1,treatment,3,P: Education,8,trt_female
+Sweden,11509.105604486069,0,Male,1,treatment,4,H: Transportation and storage,5,trt_male
+Sweden,39249.8943527797,1,Female,1,treatment,5,Q: Human health and social work,3,trt_female
+Sweden,23796.72262334403,1,Female,1,treatment,5,"M: Professional, scientific, and technical activites",3,trt_female
+Sweden,27753.866457706103,0,Male,1,treatment,2,P: Education,8,trt_male
+Sweden,15397.879344516728,1,Female,1,treatment,5,"O: Public adminsitration and defence, compulsory social security",0,trt_female
+Sweden,39249.8943527797,1,Female,1,treatment,4,C: Manufacturing,8,trt_female
+Sweden,14858.191445305669,1,Female,1,treatment,5,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",3,trt_female
+Sweden,24823.81281515286,1,Female,1,treatment,3,P: Education,5,trt_female
+Sweden,15050.368867404864,0,Male,1,treatment,4,"G: Wholesale and retail trade, repair of motor vehicles and motorcycles",4,trt_male
+Sweden,4024.445737771417,1,Female,1,treatment,4,S: Other service activities,5,trt_female

@@ -1,0 +1,135 @@
+---
+title: "Uncertainty and confidence intervals"
+author: "Lucas Owen"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+
+library(tidyverse)
+
+```
+
+
+# Prerequisite
+
+```{r}
+
+# data is simulated, no need to load anything
+
+# Set the seed for reproducibility
+set.seed(123)
+
+# Generate the population data with 1000 observations
+population <- runif(1000, min = 0, max = 4)
+
+```
+
+
+# Simulation of random sampling
+
+In this exercise, we'll randomly sample three distinct sets from the same underlying population. The objective is to compute the means and confidence intervals for each sample, capturing the associated uncertainty.
+
+To start, compute the mean and standard deviation for each sample. Remember:
+
+
+Sample mean
+
+$$\bar{X} = \frac{1}{n} (X_1 + X_2 + ... + X_n) = \frac{1}{n} \sum_{i=1}^n X_i$$
+
+Sample standard deviation
+
+
+$$S^2 = \sqrt{\frac{\sum_{i=1}^n (X_i - \bar{X})^2}{n-1}}$$
+
+
+
+```{r}
+# Calculate the true population mean
+true_mean <- mean(population)
+
+# Randomly select 3 sets of 100 observations each
+sample1 <- sample(population, size = 100)
+sample2 <- sample(population, size = 100)
+sample3 <- sample(population, size = 100)
+
+# Calculate the sample means
+sample1_mean <- mean(sample1)
+
+# Calculate the sample standard deviations
+sample1_sd <- sd(sample1)
+sample2_sd <- sd(sample2)
+sample3_sd <- sd(sample3)
+```
+
+
+Second, after obtaining the sample mean and standard deviation estimates, let's compute the **standard error** to account for uncertainty.
+
+
+$$SE(\bar{X}) = \frac{\hat{\sigma}}{\sqrt{n}}$$
+
+
+
+```{r}
+# Calculate the standard error of the mean
+se1 <- sample1_sd / sqrt(length(sample1))
+se2 <- sample2_sd / sqrt(length(sample2))
+se3 <- sample3_sd / sqrt(length(sample3))
+
+```
+
+
+Third, we estimate the margin error and the confidence interval under a particular confidence level.
+
+
+$$ME = \text{{critical value}} \times SE(\bar{X})$$
+
+
+
+
+```{r}
+# Calculate the margin of error for three different critical values
+
+me1 <- 1.645 * se1 # 90% confidence level
+me2 <- 1.96 * se2  # 95% confidence level
+me3 <- 2.576 * se3 # 99% confidence level
+
+# Calculate the confidence intervals
+ci1 <- c(sample1_mean - me1, sample1_mean + me1)
+ci2 <- c(sample2_mean - me2, sample2_mean + me2)
+ci3 <- c(sample3_mean - me3, sample3_mean + me3)
+
+# Create a data frame for plotting
+df <- data.frame(Sample = c("Sample 1 (90%)", "Sample 2 (95%)", "Sample 3 (99%)"),
+                 Mean = c(sample1_mean, sample2_mean, sample3_mean),
+                 CI_Lower = c(ci1[1], ci2[1], ci3[1]),
+                 CI_Upper = c(ci1[2], ci2[2], ci3[2]))
+```
+
+
+# Visualize your estimations using ggplot. Use the geometric shaoes `geom_pointrange()` and `geom_hline()` to show the confidence intervals and where the true parameter lies.
+
+
+```{r}
+# Plot the distribution of the sub-samples with confidence intervals
+
+
+ggplot(data=df,
+       mapping = aes(x = Sample,
+                     y = Mean,
+                     ymin = CI_Lower,
+                     ymax = CI_Upper)) +
+  geom_pointrange() +
+  geom_hline(yintercept = true_mean, 
+             color="red",
+             linetype="dashed") +
+  labs(x = "Sub-Sample",
+       y = "Sample Mean", 
+       title = "Distribution of Sub-Samples with Confidence Intervals") +
+  theme_minimal()
+
+
+```
+
+

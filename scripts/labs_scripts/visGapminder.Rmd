@@ -1,0 +1,107 @@
+---
+title: "Gapminder visualization"
+author: "Your name"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+
+rm(list=ls())
+
+# load the necessary libraries
+
+
+```
+
+# Prerequisite
+```{r}
+
+# load the gapminder data
+gapminder <- read_csv()
+```
+
+# Review of factors
+
+ - Create a new variable named **poor**, defined as any observation with a `gdpPercap` value below or equal to the 10th percentile (1st decile) of the distribution, assigning the value 1 if it is equal to or below the 10th percentile, and 0 otherwise. 
+
+
+ - After creating this variable, generate a new one named **poor_f** as a factor version. Set the correct levels and label them as *poor* for 1 and **not poor** for 0.
+
+
+```{r}
+
+## create variable poor using ifelse() and quantile()
+
+
+## create the factor variable "poor_f"
+
+gapminder$poor_f <- factor()
+
+```
+
+# Density plot by group
+
+Please create the following plots
+
+1. Distribution of `gdpPercap` using either a histogram or density plot. Inside the `geom_` function, define the `fill=` aesthetics with a color of your choice.
+
+2. Group `gdpPercap` distribution per continent defining `group=` and `fill=` in the general aesthetics `aes()`
+
+3. Repeat the previous plot but now take the logarithm `log()` of `gdpPercap.` You can define this transformation directly within the general `aes()`.
+
+4. Repeat the previous plot (3.) but now split each continent in multiple facets using `facet_wrap()`.
+
+
+```{r}
+
+# 1.
+
+
+# 2.
+
+
+# 3.
+
+
+# 4.
+
+
+```
+
+
+
+# Boxplot by group using `fill`
+
+Please plot the following box plots
+
+1. Distribution of `lifeExp` for each continent 
+
+2. Distribution of `lifeExp` for each continent by **poor** status. Note that you do not need to define the `group` in the aesthetics because the levels are already defined in the `x` aesthetic.
+
+
+
+```{r}
+# 1.
+
+# 2.
+
+
+```
+
+
+
+
+# Create a visual of your choice
+
+
+Generate a novel plot with the gapminder dataset, avoiding duplication of any previously created plots. Feel free to employ different aesthetics or geometries, such as `geom_line` or `geom_point`, ensuring the plot is informative. If applicable, incorporate colors for enhanced visualization.
+
+
+```{r}
+
+```
+
+
+
+

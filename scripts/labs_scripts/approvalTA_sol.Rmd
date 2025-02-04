@@ -1,0 +1,253 @@
+---
+title: "TA approvals"
+author: "Lucas Owen"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# load libraries
+library(broom)
+library(stargazer)
+library(tidyverse)
+
+rm(list = ls())
+
+
+```
+
+
+As the statistics department chair, you need to analyze the approval ratings (`approve`) of a Ph.D. candidate who applied to teach during the summer quarter. The data includes anonymized information on students' `age`, `gender`, and major: economics (`econ`), sociology (`soc`), and political science (`polisci`).
+
+
+```{r}
+# load data
+dat <- read.csv(file="data/approvalTA.csv")
+
+names(dat)
+```
+
+
+Run three separate models, each with one predictor. Each model regresses the bald TA's approval ratings against a major predictor: polisci, econ, and soc.
+
+Display the output of each `ml()` object using the summary() function.
+
+
+```{r}
+m1 <- lm(approve_TA ~ polisci, data = dat)
+
+summary(m1)
+
+
+m2 <- lm(approve_TA ~ econ, data = dat)
+
+summary(m2)
+
+
+m3 <- lm(approve_TA ~ soc, data = dat)
+
+summary(m3)
+
+```
+
+
+Display the three model's results together using `stargazer()`. Remember to set the code chunk option `results='asis'` when knitting stargazer output in PDF.
+
+
+
+```{r,results='asis'}
+
+
+stargazer(m1,m2,m3,
+          type="text")
+
+
+```
+
+
+Repeat the analysis with two predictors. For instance, in the first model, regress approvals on `polisci` and `econ`; in the second, on `polisci` and `soc`; and in the third model, on `econ` and `soc`.
+
+Consider using stargazer for easier comparisons. What differences do you observe, and why? How can you interpret these consistent results?
+
+```{r}
+m1 <- lm(approve_TA ~ polisci + econ, data = dat)
+
+summary(m1)
+
+
+m2 <- lm(approve_TA ~ polisci + soc, data = dat)
+
+summary(m2)
+
+
+m3 <- lm(approve_TA ~ econ + soc, data = dat)
+
+summary(m3)
+
+```
+
+
+Again, perhaps stargazer will make the comparisons easier. What do you see? Why are the results changing? How can you interpret these results in a consistent manner?
+
+```{r,results='asis'}
+
+stargazer(m1,m2,m3,
+          type="text")
+
+```
+
+
+Now, estimate the following model:
+
+
+$$ approval_i = \alpha + \beta_1 age_i + \beta_2 econ_i + \beta_3 female_i + e_i$$
+
+
+
+```{r}
+m1 <- lm(approve_TA ~ age, data = dat)
+m2 <- lm(approve_TA ~ age + econ, data = dat)
+m3 <- lm(approve_TA ~ age + econ + female, data = dat)
+```
+
+
+```{r,results='asis'}
+
+stargazer(m1,m2,m3,
+          type="text")
+```
+
+
+
+
+Finally, estimate the following model:
+
+
+$$ approval_i = \alpha + \beta_1 age_i + \beta_2 female_i + \beta_3 (age_i*female_i) + e_i$$
+
+Notice that $\beta_3$ represents an interaction effect. Interactions always require the estimation of the two (or more) variables interacting, including its lower order factors, $\beta_1$ and $\beta_2$
+
+
+
+```{r}
+m4 <- lm(approve_TA ~ age + female + age:female, data = dat)
+m4 <- lm(approve_TA ~ age*female, data = dat)
+
+summary(m4)
+```
+
+
+
+
+
+
+
+# Extra: poltting predictions
+
+
+*Note: This final section is optional and does not need to be submitted for earning participation points in this activity.*
+
+
+
+```{r}
+
+pred_female <-
+  data.frame(age=18:65,
+           female=1)
+
+pred_female$pred <- predict(m4, newdata = pred_female)
+
+
+pred_male <-
+  data.frame(age=18:65,
+           female=0)
+
+pred_male$pred <- predict(m4, newdata = pred_male)
+
+vis <- rbind(pred_female,pred_male)
+
+vis$pred <- round(vis$pred, digits = 3)
+
+vis$female_f <- factor(vis$female,
+                       levels = c(0,1),
+                       labels = c("male","female"))
+
+
+ggplot(data=vis,
+       aes(y=pred,
+           x=age,
+           color=female_f)) +
+  geom_line()
+
+
+```
+
+
+
+
+
+
+
+
+# Extra: coefficient plot
+
+
+*Note: This final section is optional and does not need to be submitted for earning participation points in this activity.*
+
+
+Use the `tidy()` fromt the package `broom` function to extract the regression analysis results and create a coefficient plot, which will effectively communicate the results in a table format.
+
+
+The function `tidy()` will extract all the estimates and its relevant statistics from a model object.
+
+```{r}
+res <- broom::tidy(m3, conf.int = T, conf.level = 0.95)
+
+res <- res %>% mutate_if(is.numeric,round,3) # dplyr code, roundic numeric columns to 3 digits
+```
+
+
+```{r}
+# remove the intercept and only keep the point estimates and the confidence intervals
+
+res <- filter(res, term != "(Intercept)")
+
+```
+
+
+```{r}
+
+
+# create a coefficient plot with ggplot
+
+ggplot(data=res,
+       aes(y= term,
+           x = estimate,
+           xmin= conf.low,
+           xmax= conf.high)) +
+  geom_pointrange() +
+  scale_x_continuous() +
+  geom_text(aes(label = round(estimate, 2)), hjust = -1, vjust = -1) +
+  geom_vline(xintercept = 0, linetype = "dashed", color="red") +
+  labs(y = "", 
+       x = "Estimated coefficients (95% confidence interval)",
+       title = "Dependent variable: TA approvals (Model 3)") +
+  theme_bw() +
+  theme(axis.text = element_text(size = 12),
+        axis.title = element_text(size = 14),
+        axis.title.y = element_blank(),
+        axis.ticks.x = element_blank())
+
+
+
+# width = 8
+# ggsave("output/coefplot_m4.pdf", width = width, height = width/1.5)
+
+
+
+```
+
+
+
+

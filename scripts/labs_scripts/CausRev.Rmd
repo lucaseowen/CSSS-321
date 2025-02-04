@@ -1,0 +1,225 @@
+---
+title: "Review on Causality"
+author: "Your Name"
+output: pdf_document
+---
+
+```{r setup, include=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# celan memory
+
+rm(list=ls())
+
+# load libraries
+
+library(questionr) # for NA check
+library(tidyverse) # for dplyr and ggplot
+library(stargazer)
+
+```
+
+
+
+# The data
+
+This data was collected to evaluate the National Supported Work (NSW) Demonstration project in Lalonde (1986).
+
+The NSWD evaluation employed a randomized experimental design, which is a key strength in causal inference. In a randomized controlled trial (RCT), participants are randomly assigned to either the treatment group (those receiving the intervention) or the control group (those not receiving the intervention). Randomization helps ensure that any observed differences in outcomes between the groups can be attributed to the intervention itself rather than pre-existing differences in participant characteristics.
+
+In the case of the NSWD, eligible individuals were randomly assigned to either the program group (those receiving supported work) or the control group (those not receiving the program). This random assignment aimed to create comparable groups, allowing researchers to isolate the causal impact of the intervention.
+
+
+Literature:
+
+*Lalonde, R. (1986) Evaluating the Econometric Evaluations of Training Programs, American Economic Review, 76, 604-620.*
+
+
+
+| Variable  | Description                                      |
+|-----------|--------------------------------------------------|
+| id        | Matched pair id, 1, 1, 2, 2, ..., 185, 185.      |
+| z         | z=1 for treated, z=0 for control                 |
+| age       | Age in years                                     |
+| edu       | Education in years                               |
+| black     | 1=black, 0=other                                 |
+| hisp      | 1=Hispanic, 0=other                              |
+| married   | 1=married, 0=other                               |
+| nodegree  | 1=no High School degree, 0=other                 |
+| re74      | Earnings in 1974, a covariate                    |
+| re75      | Earnings in 1975, a covariate                    |
+| re78      | Earnings in 1978, an outcome                     |
+
+
+
+
+# 1. Descriptive statistics
+
+First, load the data and ensure it is clean, if necessary. Rename variables and convert appropriate binary indicators into factors for analysis. Assess the balance between treatment and control groups for the variables `black`, `married`, `nondegree`, and `age`.
+
+
+
+```{r}
+# load data
+
+nsw <- read.csv(file="")
+
+# clean data
+
+
+
+## proportion of black people
+
+## proportion of college educated
+
+## proportion of married
+
+## balance on age
+
+
+
+```
+
+
+
+Second, report the correlation matrix of all the quantiative variables using the function `cor()`.
+
+
+```{r}
+
+
+```
+
+
+
+Third, generate a table displaying descriptive statistics for all variables except `id`. Utilize the `stargazer()` function, specifying only numerical/quantitative variables and setting the `type=` argument to `text` for console printing or \LaTeX for output in the knitted PDF.
+
+
+```{r, results='asis'}
+
+# Note: to display LaTeX tables from stargazer in your knitted PDF you must set your code chunk with the option  -- results='asis' --
+
+
+```
+
+
+# 2. Exploratory data analysis
+
+
+Create a **histogram** or **density plot** to compare age distribution of both the treatment and control groups, and display a vertical line showing the age **median** for the treatment and control group to visualize the balance of this distribution. If you will use ggplot, you will have to use the functions `geom_density` and `geom_vline`.
+
+Moreover, create a scatter plot between the `re78` and `edu`, and make sure to differentiate with colors those observations from the treatment and control groups. In ggplot, you will need to use the `color=` aesthetic and `geom_point`.
+
+
+```{r}
+
+## visualize the age distribution by treatment group
+
+
+# scatter plot
+
+
+
+
+```
+
+
+# 3. Estimation of policy effects
+
+
+We want to evaluate the treatment effect on the outcome. Before estimating this quantity, double check whether the outcome `re78` is correlated or associated with the unbalanced variables. Then, estimate the following conditional expectations:
+
+
+$$ E[\ re78 \ | \ z=treated ] \quad - \quad E[\ re78 \ | \ z=control ] $$
+
+Can we interpret this estimator as a causal effect? Why?
+
+```{r}
+
+
+```
+
+
+Re-estimate the quantity using linear regression. Fit one model with only the treatment variable and another controlling for all non-balanced variables. Assign the model outputs to objects and use the `stargazer` function to display the results in a nicely formatted table.
+
+In particular you must fit the following two models:
+
+\begin{align}
+re78_i & = \alpha + \beta_1 Z_i + e_i \\
+re78_i & = \alpha + \beta_1 Z_i + \beta_2 edu_i + \beta_3 nodegree_i + e_i
+\end{align}
+
+
+
+```{r}
+
+
+```
+
+
+```{r, results='asis'}
+
+# remember to set the code chunk option: 
+
+
+```
+
+
+
+Given the temporal dimension of this experiment, estimate a differences-in-differences estimator using `re75` to represent participants' earnings before the intervention and `re78` to represent earnings after the intervention. Under what assumptions this esitmator identifies a causal effect? Recall:
+
+
+$$\text{DiD} = [\bar{Y}(1)_{after} - \bar{Y}(0)_{after}] - [\bar{Y}(1)_{before} - \bar{Y}(0)_{before}]$$
+
+
+```{r}
+
+# differences in means before the intervention:
+
+# differences in means after the intervention:
+
+# differences in differences:
+
+
+```
+
+
+
+What is the **internal** and **external validity** of this experiment results?
+
+
+# 4. Parallel trends
+
+The assumption of parallel trends cannot be fully verified because both the treatment and control groups should exhibit parallel trends in their unobservable factors. However, providing visual evidence that parallel trends hold in the outcome during the years preceding the intervention is valuable.
+
+Create a line plot showing the average earnings of the control and treatment groups for the periods `74`, `75`, and `78`. Begin by extracting the columns `re74`, `re75`, and `re78` for the treatment group and transforming them from a wide to long data structure. This process will result in three variables: one for treatment, one for earnings, and one for year indicators. Utilize the `pivot_longer` function for this task.
+
+Once the data is in long format, employ the `aggregate` function to estimate the mean earnings by year and treatment group indicators. Use this aggregated data to plot the trends in earnings for both the control and treatment groups.
+
+You can find information on how to use these functions in my **Module 2** slides.
+
+
+
+```{r}
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,204 @@
+---
+title: "Labor Unions in Sweden"
+author: "Lucas Owen"
+date: "2024-01-31"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, error = FALSE)
+```
+
+# Prerequisite
+```{r}
+library(questionr)
+library(tidyverse)
+
+# load data
+unions <- read_csv(file = "data/union_sweden.csv")
+```
+
+
+We will be using data from the European Social Survey, specifically from wave 5 in 2010. The dataset, unions_sweden.csv, includes information on socioeconomic characteristics for over 1,289 respondents from Sweden. Our focus is on labor unions, and we will be utilizing the following variables:
+
+ -------------------------------- ----------------------------------------------------------
+ Name                             Description
+ -------------------------------- ----------------------------------------------------------
+ `Country`                         Name of the respondent's country of residence.
+ 
+ `union`                           Whether the respondent is an active member of a labor union (`0`= No, `1`= Yes)
+ 
+ `gndr`                           Respondent's gender (`0` = male, `1`= female)
+ 
+ `income`                         Respondent's disposable income.
+ 
+ `sector`                         Sector in which the respondent is employed. It follows the Industry, NACE classification.
+ 
+ `lrscale`                        Placement on left right scale (where `0` = left, `1`= right)
+ 
+ `gincdif`                        Respondent's answer to question "Government should reduce differences in income levels" (where `5` = Agree strongly, `4` = Agree, `3` = Neither agree nor disagree, `2` = Disagree, `1` = Disagree strongly)
+ 
+ -------------------------------------------------------------------------------------------
+ 
+
+# Union's treatment effects
+
+Estimate the differences between the control and treatment groups based on the "union" variable for the outcomes `income` and `gincdif.` Report these estimates. Do these estimates **identify** the causal effects of the "union" variable? Check the balance between the control and treatment groups.
+
+
+```{r}
+
+## check balance between treatment and control
+
+table(unions$union_f)
+
+
+## estimate union effect on income
+
+mean(unions$income[unions$union_f=="treatment"]) - mean(unions$income[unions$union_f=="control"])
+
+
+
+## estimate union effect on gincdif.
+
+mean(unions$gincdif[unions$union_f=="treatment"]) - mean(unions$gincdif[unions$union_f=="control"])
+
+```
+
+
+# Confounding
+
+Since this sample has been adjusted to achieve a nearly equal number of non-union (**control**) and union membership (**treatment**) respondents, we would anticipate an approximate 50% proportion of union members across various observable factors if, and only if, the **assumption of covariate balance** holds. This balance serves as a tentative assumption of the causal effects of union membership, conditioned on other factors. 
+
+To assess this assumption, let's examine the proportion of union members at each level of the left-right ideological scale (`lrscale`). Does the data corroborate this assumption?
+
+```{r}
+
+## Look at the proportion of union memberhsip with tapply
+
+tapply(unions$union, unions$lrscale, mean)
+
+## new function: aggregate
+
+aggregate(union ~ lrscale, data = unions, FUN= mean)
+
+```
+
+Additionally, consider identifying another variable that may confound union membership.
+
+```{r}
+
+## check balance of union membersip based on gender
+
+mean(unions$gndr[unions$union_f=="treatment"]) - mean(unions$gndr[unions$union_f=="control"])
+
+
+## check proportion of union membership conditional on sector
+
+aggregate(union ~ sector, data = unions, FUN= mean)
+
+```
+
+
+# Adjusting confounding
+
+Use the `lm()` function to regress the outcomes `income` and `gincdif` on the treatment variable union using a linear model. Save the output in an object and use the `summary()` function to examine the estimated coefficients. Compare these coefficients with the previously calculated differences for the union variable.
+
+```{r, results='asis'}
+
+m1 <- lm(income ~ union, data = unions)
+m2 <- lm(gincdif ~ union, data = unions)
+
+library(stargazer)
+
+stargazer(m1,m2,
+          type="latex")    # change to type="text" to display the results in the console
+
+
+```
+
+Repeat the same exercise, but this time include the variables `lrscale` and `sector`. How much have change your estimations after **adjusting for confounding**? Can we say that we have identified a causal estimate?
+
+
+```{r, results='asis'}
+
+m3 <- lm(income ~ sector + lrscale + union, data = unions)
+m4 <- lm(gincdif ~ sector + lrscale + union, data = unions)
+
+
+stargazer(m3,m4,
+          omit = "sector", # for space concern, omit reporting sector coefficients.
+          type="latex")    # change to type="text" to display the results in the console
+
+
+```
+
+
+Are there differences in redistributive attitudes between male and female union members? Compare the `gincdif` variable between the two groups.
+
+```{r}
+
+# group_by with dplyr
+
+unions %>% 
+  group_by(union_f,gndr_f) %>% 
+  summarize(gincdif=mean(gincdif,na.rm=T)) %>% 
+  pivot_wider(names_from = c("union_f","gndr_f"),
+              values_from = gincdif) %>% 
+  mutate(gndr_diff=treatment_Female-treatment_Male)
+
+# with base R
+
+women_union <- mean(unions$gincdif[unions$union_gndr=="trt_female"])
+men_union <- mean(unions$gincdif[unions$union_gndr=="trt_male"])
+women_union - men_union
+
+
+```
+
+Also, examine union-gender differences by sector and save your visualizations to your local folder. Are these differences considered **causal effects**?
+
+```{r}
+
+
+unions %>% 
+  # group by categories
+  group_by(sector,union_f,gndr_f) %>% 
+  # estimate the summaries of interest
+  summarize(ginunions=mean(gincdif,na.rm=T)) %>%
+  # pivot from long to wide
+  pivot_wider(id_cols = "sector",
+              names_from = c("union_f","gndr_f"), # note the two groups
+              values_from = "ginunions") %>% 
+  mutate(diff=treatment_Female-treatment_Male,
+         diff = round(diff,2))
+
+# save the data in an object for visualization  
+
+vis <-
+  unions %>% 
+  group_by(sector,union_f,gndr_f) %>% 
+  summarize(ginunions=mean(gincdif,na.rm=T)) %>%
+  pivot_wider(id_cols = "sector",
+              names_from = c("union_f","gndr_f"),
+              values_from = "ginunions") %>% 
+  mutate(diff=treatment_Female-treatment_Male,
+         diff = round(diff,2))
+
+vis %>% 
+  ggplot(aes(x=diff,
+             y=(sector=reorder(sector, diff)))) +
+  geom_point() +
+  geom_vline(xintercept = 0,linetype="dashed") +
+  theme_minimal() +
+  labs(y="sector",
+       x="Gender-union treatment differences",
+       title="Unionized gender effects on solidarity by sector")
+
+
+# width = 6
+# ggsave("output/gndr_diff.punions", width = width, height = width/1.618)
+
+
+```
+

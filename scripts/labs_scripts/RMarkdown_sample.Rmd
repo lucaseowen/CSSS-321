@@ -1,0 +1,148 @@
+---
+title: "RMarkdown sample"
+author: "Your name"
+date: "2024-01-10"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = FALSE, message = FALSE, warning = FALSE)
+
+rm(list = ls()) # clear the environment
+
+# load libraries
+# ....
+
+```
+
+
+# Prepare for analyses
+
+I typically use the first chunk, right after the YAML header, to establish general chunk options and load necessary libraries and packages for the analysis. Since these procedures are not particularly interesting to report, I always configure this initial chunk with `include=FALSE`.
+
+
+To produce PDF file, you need \TeX files.
+
+  - Easy way: Install the `tinytex` package: `install.packages("tinytex")`. Then run `tinytex::install_tinytex()`.
+    - *Warning*: Installing `tinytext`` will likely take few minutes.
+
+
+## Basic console output
+To insert an R code chunk, you can type it manually or just press `Chunks - Insert chunks` or use the shortcut key. 
+
+  - Windows: *Ctrl + Alt + I*
+  - macOS: *Cmd + Option + I*
+
+This will produce the following code chunk:
+
+
+```{r}
+
+```
+
+
+# Turnout data
+
+
+## Loading and Exploring the Data Frame
+
+Here I am going to create a new object called `turnout`, and load the .csv dataset that I have saved in the subfolder ``data.''
+
+```{r}
+turnout <- read.csv(file="data/turnout.csv") # function to load the data using a relative path
+```
+
+To determine the "class" of the object `turnout` that I just created, we can use the command `class()` and `R` will confirm that it is in fact a data frame:
+
+```{r}
+class(turnout) 
+```
+
+We can determine the dimensions of `turnout` with the commands `dim`, `nrow`, and `ncol`:
+
+```{r}
+dim(turnout)  # how many rows/observations and variables/columns?
+nrow(turnout) # how many rows/observations?
+ncol(turnout) # how many variables/columns?
+```
+
+There are a couple of different ways we can get a sense of the variables included in our data frame.  If we want to just see the list of variable (column) names, we can use:
+
+```{r}
+names(turnout) 
+```
+
+Alternatively, we can examine the first X rows of our data frame by using our square brackets, `turnout[1:X,]`.  Let's look at the first five rows of the data frame `turnout`:
+
+```{r}
+turnout[1:5,]
+```
+
+If we are only interested in looking at the first X rows of some of the variables, we can further subset or data frame by specifying specific columns we want to see:
+
+```{r}
+turnout[1:5,c("year","total","VEP","VAP","felons")]
+```
+
+Look at the data summary
+
+```{r}
+summary(turnout)
+```
+
+
+## Vectors
+
+### What are vectors exactly?
+
+(Atomic) vectors are the most basic units of data.
+
+**QUESTION**: is the following code going to be executed?
+
+x <- c(1, 2, 3)
+class(x)
+
+y <- c(TRUE, FALSE, FALSE)
+class(y)
+
+names <- c("Peter", "Paul", "Mary")
+class(names)
+
+
+Each column of a data frame like `turnout` is a vector which we can call individually using the command `$`.  To look at the variable `year` contained in the data frame `turnout`:
+
+```{r}
+turnout$year
+```
+
+And similar to how we used the square brackets to subset or data frame, we can do the same with individual vectors. To look at the 2nd observation of the vector `year` in the data frame `turnout`:
+
+```{r}
+turnout$year[2]
+```
+
+And if we want to call for the 2nd through the 4th observation of the variable `year` in the data frame `turnout`:
+
+```{r}
+turnout$year[2:4]
+```
+
+
+
+# In-class exercise
+
+
+
+1. Create two objects, one with the first five rows and the other with the last five rows from the dataset `turnout`.
+
+
+2. Print the vectors of *year* and *felons* for each created object. What observations can you make?
+
+
+3. Calculate the `mean()` of the *felons* column for each object and assign the results in *two new objects*. You should have **"pre"** for the mean of the first five rows and **"post"** for the last five rows.
+
+
+4. Contrast the **"post"** mean with the **"pre"** mean by subtracting the post period means from the pre period means. What differences do you observe?
+
+
+

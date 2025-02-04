@@ -1,0 +1,68 @@
+---
+title: "commonErrors"
+author: "Lucas"
+date: "2025-01-06"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Prerequisite
+
+Please read the `voted_na.csv` dataset and assign it as `data` object.
+```{r}
+data <- read.csv( )
+```
+
+## Check every step you do; don’t run a big block of codes at once
+
+Let's say, I create a new variable called `HispanOld` that takes the value of `TRUE` if a respondent is **Hispanic** (*racename*) and has an **age** equal or above of 60 years. And I want to know if there are differential **gender** (*female*) effects on **voting** across respondents who are `HispanOld` or not:
+
+```{r}
+
+data$HispanOld <- ifelse(data$racename == "Hispanic" & data$age >= 60, TRUE, FALSE)
+hoT.data <- subset(data, HispanOld == 1 & female == 1)
+hoC.data <- subset(data, HispanOld == 1 & female == 0)
+nhoT.data <- subset(data, Hispanold == 0 & female == 1)
+nhoC.data <- subset(data, HispanOld = 0 & female == 0)
+ho_diff <- mean(hoT.data$voted) - mean(hoC.dat$voted)
+nho_diff <- mean(nhot.data$voted) - mean(nhoC.data$voted)
+
+print(ho_dif)
+print(nho_diff)
+
+
+```
+
+Why is there an error? Why is there a `NA`? It is crucial to isolate at which exact step that the error or unexpected result first appears. 
+
+
+## Re-estimate the differences in means (`ho_diff` and `nho_diff`) using `tapply()`. 
+
+Recall that `tapply()` requires at least three arguments: a **numeric** vector, a vector containing the **index or groups**, and the **function** (`FUN`, e.g. `sum`) to apply in each group. 
+
+*Hint:* in some argument, you will need to use the function `list()`.
+
+
+```{r}
+
+## Calculate the average first difference by treatment group and by whiteConserv status
+first_diffs <- tapply( )
+
+first_diffs[ ] - first_diffs[ ]
+
+```
+
+
+
+## Knit to `PDF`.
+
+
+If you successfully compute all the expected quantities, **knit** the document into a `PDF`. If you encounter any issues, create a **minimal reproducible example** by copying the minimum necessary code to reproduce the error or the part where you need help into an `R script` file. Use the `write.csv()` function to save the data file, ensuring to include the correct extension `.csv`.
+
+Once you have either the `PDF` or the **minimal reproducible example**, send me those files via email. Alongside these files, include either a PDF with the solutions or an R script file + the saved data required for replication. Additionally, mention in your email which **section** you are in (AA or AD).
+
+
+

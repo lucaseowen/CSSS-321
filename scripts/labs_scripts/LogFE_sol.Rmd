@@ -1,0 +1,293 @@
+---
+title: "Log transformation and the Fixed Effects model"
+author: "Lucas Owen"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+
+library(questionr)
+library(stargazer)
+library(tidyverse)
+rm(list = ls())
+```
+
+
+
+# Prerequisite
+
+You will need to load the datasets `gapminder2.csv` and `polity2.csv`, available in the module's website.
+
+
+
+```{r}
+
+# load data
+gapminder <- read_csv("data/gapminder2.csv")
+polity <- read_csv("data/polity2.csv")
+```
+
+
+# Explore missing data
+
+Missing data may introduce selection bias. Thus, during cleaning, analyze the source of missingness. Merge datasets `gapminder2.csv` and `polity2.csv`, then report the amount of missing data.
+
+
+```{r}
+
+# merge data, but first check out the names
+names(gapminder)
+names(polity)
+
+# change the names
+names(gapminder)
+
+colnames(gapminder)[1] <- "country"
+
+# now merge
+
+merged_df <- merge(gapminder, polity,
+                   by = c("country", "year"))
+
+
+# create two new variables:
+
+## one with the log of gdpPercap
+## one dividing gdpPercap by 1000
+
+merged_df$ln_gdpPercap <- log(merged_df$gdpPercap)
+merged_df$gdpPercap <- merged_df$gdpPercap/1000
+
+
+# check missigness
+questionr::freq.na(merged_df)
+
+# For a single variable
+mean(is.na(merged_df$gdpPercap))
+
+# check missigness for each variable
+df_na <- ifelse(is.na(merged_df), 1, 0)
+colMeans(df_na)
+
+
+merged_df <- na.omit(merged_df)
+```
+
+
+
+
+# Statistical analysis
+
+
+## Pooled model
+
+
+In this section, we will fit a pooled model, formally:
+
+$$
+Y_{it} = \alpha + \beta X_{it} + \epsilon_{it} 
+$$
+
+Run this pooled model in three different specifications, each with `lifeExp` as the outcome variable. In the first model, regress the outcome on `gdpPercap`; in the second, regress it on `ln_gdpPercap`; and in the third, regress it on both `ln_gdpPercap` and `polity`.
+
+```{r}
+lm1_res <- lm(lifeExp ~ gdpPercap, merged_df)
+lm2_res <- lm(lifeExp ~ ln_gdpPercap, merged_df) 
+lm3_res <- lm(lifeExp ~ ln_gdpPercap + polity, merged_df)
+```
+
+
+```{r,results='asis'}
+stargazer(lm1_res,lm2_res,lm3_res,
+          type="text")
+
+```
+
+
+
+
+
+## Country fixed effects model
+
+Now, we will employ a **country fixed effects** model. Recall that our units ($N$) are countries, and for each country we have several observations that refer to a particular period of time ($T$). Formally:
+
+$$
+Y_{it} = \alpha_i + \beta X_{it} + \epsilon_{it} 
+$$
+
+
+By including the variable `country`, the model will automatically generate dummy variables for each country within the variable. The coefficients associated with each country represent the country-specific intercepts. While there are situations where these coefficients can be interpreted, it is not always necessary to do so.
+
+
+```{r}
+lm4_res <- lm(lifeExp ~ country + gdpPercap, merged_df)
+lm5_res <- lm(lifeExp ~ country + ln_gdpPercap, merged_df)
+lm6_res <- lm(lifeExp ~ country + ln_gdpPercap + polity, merged_df)
+```
+
+
+```{r, results='asis'}
+stargazer(lm4_res,lm5_res,lm6_res,
+          omit = "country",
+          add.lines = list(c("Country Fixed Effects", "Yes", "Yes", "Yes")), 
+          type="text")
+
+```
+
+
+
+
+## 2-way fixed effects model
+
+If in addition to country-specific intercepts ($\alpha_i$) we also include period-specific dummies ($\gamma_{t}$), then we are running a **Two-Way Fixed Effects model**. Formally:
+
+
+$$
+Y_{it} = \alpha_{i}  +\gamma_{t} + \beta X_{it} + \epsilon_{it} 
+$$
+
+
+**IMPORTANT**: Ensure that you treat the period variable, year, as a categorical factor. Otherwise, the variable will not be split into dummy variables for each specific year.
+
+
+```{r}
+# turn year into factor:
+
+merged_df$year <- as.factor(merged_df$year)
+
+lm7_res <- lm(lifeExp ~ country + year + gdpPercap, merged_df)
+lm8_res <- lm(lifeExp ~ country + year + ln_gdpPercap, merged_df) 
+lm9_res <- lm(lifeExp ~ country + year + ln_gdpPercap + polity, merged_df)
+```
+
+
+```{r, results='asis'}
+stargazer(lm7_res,lm8_res,lm9_res,
+          omit = c("country","year"),
+          add.lines = list(c("Country Fixed Effects", "Yes", "Yes", "Yes"),
+                           c("Year Fixed Effects", "Yes", "Yes", "Yes")), 
+          type="text")
+
+```
+
+
+
+## Compare the best fitted model from each specificaiton
+
+Check the prediction error in each model, and how the prediction increases as we fit more *"fixed effects"*.
+
+```{r, results='asis'}
+
+stargazer(lm3_res,lm6_res,lm9_res,
+          omit = c("country","year"),
+          add.lines = list(c("Country Fixed Effects", "No", "Yes", "Yes"),
+                           c("Year Fixed Effects", "No", "No", "Yes")), 
+          type="text")
+
+```
+
+
+# Logs and polynomials
+
+
+```{r, results='asis'}
+
+# run four models and save them into objects
+
+lm1_res <- lm(lifeExp ~ ln_gdpPercap, 
+              data= merged_df)
+
+lm2_res <- lm(lifeExp ~ ln_gdpPercap + polity, 
+              data = merged_df) 
+
+lm3_res <- lm(lifeExp ~ gdpPercap + I(gdpPercap^2), 
+              data = merged_df) 
+
+lm4_res <- lm(lifeExp ~ gdpPercap + I(gdpPercap^2) + polity, 
+              data = merged_df) 
+
+# what is the model that provides the best fit?
+
+stargazer(lm1_res,lm2_res,lm3_res,lm4_res,
+                     type="text", # change "latex" when knitting into pdf
+                     style = "ajps",
+          column.sep.width = "1pt",
+          omit.stat=c("f", "ser"))
+
+```
+
+
+
+
+# Prediction
+
+```{r}
+
+## prediction for model 2
+
+# hypothetical scenarios
+
+hypo_data <- 
+  data.frame(ln_gdpPercap = seq(min(merged_df$ln_gdpPercap),
+                                max(merged_df$ln_gdpPercap),
+                                length.out=50))
+
+hypo_data$polity <- mean(merged_df$polity)
+
+
+# prediction
+
+lm2_predict <- predict(lm2_res, 
+                       newdata = hypo_data, 
+                       interval = "confidence")
+
+lm2_predict <- as.data.frame(lm2_predict)
+
+lm2_predict <- cbind(hypo_data, lm2_predict)
+
+# visualization
+
+ggplot(data= lm2_predict, aes(x = ln_gdpPercap, 
+                        y = fit, 
+                        ymin = lwr, 
+                        ymax = upr)) +
+  geom_line() +
+  geom_ribbon(alpha = 0.3) +
+  theme_bw() +
+  labs(y="Predicted Expected Life",
+       x="GDP per Capita (logged)")
+
+
+## prediction for model 4
+
+hypo_data <- data.frame(gdpPercap = seq(1, 50, 1))
+
+hypo_data$polity <- mean(merged_df$polity)
+
+
+lm4_predict <- predict(lm4_res, 
+                       newdata = hypo_data, 
+                       interval = "confidence")
+
+lm4_predict <- as.data.frame(lm4_predict)
+
+lm4_predict <- cbind(hypo_data, lm4_predict)
+
+
+ggplot(data=lm4_predict,
+       aes(x = gdpPercap,
+           y = fit,
+           ymin = lwr,
+           ymax = upr)) +
+  geom_line() +
+  geom_ribbon(alpha = 0.3) +
+  theme_bw() +
+  labs(y="Predicted Expected Life",
+       x="GDP per Capita (1000)")
+
+
+
+
+```
+
