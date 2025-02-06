@@ -55,17 +55,14 @@ Estimate the differences between the control and treatment groups based on the "
 
 ## check balance between treatment and control
 
-table(unions$union_f)
 
 
 ## estimate union effect on income
 
-mean(unions$income[unions$union_f=="treatment"]) - mean(unions$income[unions$union_f=="control"])
 
 
 ## estimate union effect on gincdif.
 
-mean(unions$gincdif[unions$union_f=="treatment"]) - mean(unions$gincdif[unions$union_f=="control"])
 
 ```
 
@@ -80,11 +77,9 @@ To assess this assumption, let's examine the proportion of union members at each
 
 ## Look at the proportion of union membership with tapply
 
-tapply(unions$union, unions$lrscale, mean)
 
 ## new function: aggregate
 
-aggregate(union ~ lrscale, data = unions, FUN= mean)
 
 ```
 
@@ -114,7 +109,7 @@ Use the `lm()` function to regress the outcomes `income` and `gincdif` on the tr
 
 ```
 
-Repeat the same exercise, but this time include the variables `lrscale` and `sector`. How much have change your estimations after **adjusting for confounding**? Can we say that we have identified a causal estimate?
+Repeat the same exercise, but this time include the variables `lrscale` and `sector`. How much have your estimations changed after **adjusting for confounding**? Can we say that we have identified a causal estimate?
 
 
 ```{r, results='asis'}
