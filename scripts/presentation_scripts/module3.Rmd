@@ -438,7 +438,7 @@ T_i\perp\!\!\!\!\perp\left( Y_{i}\left( 0\right) ,Y_{i}\left( 1\right) \right) |
 
 
 
-# From previous model: Data Generating Process
+# From previous module: Data Generating Process
 
 - Two very useful pieces of information from a DGP are its **mean** and **standard deviation**.
 
@@ -454,7 +454,7 @@ where
 
 
 
-# Standard devitation and variance
+# Standard deviation and variance
 
   - The **standard deviation** and **variance** are both measures of the spread of a distribution.
     - To estimate the variance ($S^2$), we simply take the **square** of the standard deviation ($S$).
