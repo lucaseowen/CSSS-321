@@ -62,19 +62,46 @@ First, load the data and ensure it is clean, if necessary. Rename variables and 
 ```{r}
 # load data
 
-nsw <- read.csv(file="")
+nsw <- read.csv(file="data/nsw.csv")
+
+table(nsw$black, nsw$z)
 
 # clean data
+nsw$treat <- NA_character_
+nsw$treat <- "Control"
+nsw$treat[nsw$z==1] <- "Treated"
 
+a <- nsw$black[nsw$z==0] #black for the control group
+b <- nsw$black[nsw$z==1] #black for the treatment group
+data <- as.data.frame(cbind(a, b))
+table(a)
+table(b)
+
+mean(nsw$black[nsw$z==0]) - mean(nsw$black[nsw$z==1])
 
 
 ## proportion of black people
+table(nsw$treat, nsw$black)
 
 ## proportion of college educated
+sort(unique(nsw$edu))
+nsw$college <- "no"
+nsw$college[nsw$edu>=13] <- "yes"
+table(nsw$treat, nsw$college)
 
 ## proportion of married
+table(nsw$treat, nsw$married)
 
 ## balance on age
+table(nsw$treat, nsw$age)
+median(nsw$age[nsw$z==0])
+median(nsw$age[nsw$z==1])
+
+mean(nsw$age[nsw$z==0])
+mean(nsw$age[nsw$z==1])
+
+ggplot(data=nsw, aes(x=age, group=treat))+
+  geom_density(aes(color=treat))
 
 
 
@@ -86,8 +113,9 @@ Second, report the correlation matrix of all the quantiative variables using the
 
 
 ```{r}
-
-
+round(
+  cor(nsw[,-c(1,12:13)]), digits = 2
+)
 ```
 
 
@@ -99,6 +127,9 @@ Third, generate a table displaying descriptive statistics for all variables exce
 
 # Note: to display LaTeX tables from stargazer in your knitted PDF you must set your code chunk with the option  -- results='asis' --
 
+stargazer(nsw[,-1], 
+          header = FALSE,
+          type = "latex") # change to type = "text" to display in the console
 
 ```
 
@@ -113,10 +144,30 @@ Moreover, create a scatter plot between the `re78` and `edu`, and make sure to d
 
 ```{r}
 
-## visualize the age distribution by treatment group
+temp <- subset(nsw, z==0)
 
+ggplot(data=subset(nsw, z==0), aes(x=age))+
+  geom_histogram()
+ggplot(data=subset(nsw, z==1), aes(x=age))+
+  geom_histogram()
+  
+ggplot(data=nsw, aes(x=age, group=treat))+
+  geom_density(aes(color=treat))
+
+## visualize the age distribution by treatment group
+median(nsw$age[nsw$treat=="Control"])
+
+ggplot(data=nsw, aes(x=age, group=treat))+
+  geom_density(aes(color=treat))+
+  # geom_vline(xintercept=median(nsw$age[nsw$treat=="Control"]), linetype=1)+
+  # geom_vline(xintercept=median(nsw$age[nsw$treat=="Treated"]), linetype=2)
+  geom_vline(aes(xintercept = median(age),color = treat, linetype=treat), alpha=0.5)
+  
 
 # scatter plot
+ggplot(data=nsw, aes(x=edu, y=re78, group=treat))+
+  geom_point(aes(shape=treat, color=treat), alpha=0.7)+
+  scale_color_manual(values=c("purple", "green"))
 
 
 
