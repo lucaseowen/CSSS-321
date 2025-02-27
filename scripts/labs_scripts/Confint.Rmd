@@ -99,7 +99,7 @@ me3 <- 2.576 * se3 # 99% confidence level
 ```
 
 
-# Visualize your estimations using ggplot. Use the geometric shaoes `geom_pointrange()` and `geom_hline()` to show the confidence intervals and where the true parameter lies.
+# Visualize your estimations using ggplot. Use the geometric shapes `geom_pointrange()` and `geom_hline()` to show the confidence intervals and where the true parameter lies.
 
 
 ```{r}

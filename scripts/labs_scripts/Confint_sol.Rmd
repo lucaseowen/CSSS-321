@@ -56,6 +56,8 @@ sample3 <- sample(population, size = 100)
 
 # Calculate the sample means
 sample1_mean <- mean(sample1)
+sample2_mean <- mean(sample2)
+sample3_mean <- mean(sample3)
 
 # Calculate the sample standard deviations
 sample1_sd <- sd(sample1)
@@ -108,7 +110,7 @@ df <- data.frame(Sample = c("Sample 1 (90%)", "Sample 2 (95%)", "Sample 3 (99%)"
 ```
 
 
-# Visualize your estimations using ggplot. Use the geometric shaoes `geom_pointrange()` and `geom_hline()` to show the confidence intervals and where the true parameter lies.
+# Visualize your estimations using ggplot. Use the geometric shapes `geom_pointrange()` and `geom_hline()` to show the confidence intervals and where the true parameter lies.
 
 
 ```{r}
