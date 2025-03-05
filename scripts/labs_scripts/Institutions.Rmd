@@ -1,0 +1,159 @@
+---
+title: "Institutions"
+author: "Lucas Owen"
+date: "2024-03-05"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, error = FALSE)
+```
+
+# Prerequisite
+```{r}
+
+# load libraries
+library(tidyverse)
+library(ggplot2)
+
+# load data
+df <- read_csv(file = "data/institutions.csv")
+```
+
+
+For this lab, we will be using data from multiple sources, including Gapminder, Polity2, V-Dem, and the World Bank, focusing on country-level socioeconomic and political characteristics for the year 2007. Our dataset includes the following variables:
+
+ -------------------------------- ----------------------------------------------------------
+ Name                             Description
+ -------------------------------- ----------------------------------------------------------
+ `country`                        Name of the country.
+ 
+ `year`                           Year of observation (2007 for all entries).
+ 
+ `lifeExp`                        Life expectancy at birth, measured in years.
+ 
+ `inf_mort`                       Infant mortality rate, measured as deaths per 1,000 live births.
+ 
+ `gdpPercap`                      GDP per capita (Gross Domestic Product per person) in inflation-adjusted US dollars. This is, in other words, the average income of the country.
+ 
+ `gdp_growth`                     Annual percentage growth rate of GDP.
+ 
+ `polity`                         Polity2 score, measuring the level of democracy and autocracy in a country 
+                                  (ranges from -10 = full autocracy to +10 = full democracy).
+ 
+ `libdem`                         V-Dem Liberal Democracy Index, measuring the level of liberal democracy in a country 
+                                  (ranges from 0 = least democratic to 1 = most democratic).
+ 
+ -------------------------------------------------------------------------------------------
+
+Note that polity and libdem are similar but differ slightly. The Polity Score (Polity2) and V-Dem Liberal Democracy Index (libdem) differ in scope and detail. Polity2 classifies regimes from -10 (autocracy) to +10 (democracy) based on a few institutional rules, making it a simpler but limited measure that does not capture civil liberties. V-Dem libdem, on a 0 to 1 scale, provides a more detailed assessment of democracy, incorporating elections, civil liberties, judicial independence, and media freedom through expert surveys. While Polity2 is easier to interpret, V-Dem offers a richer but more complex picture of democracy.
+
+
+Your goal for this lab is to develop your own theory based on the available variables and test whether the relationship you propose exists. Choose an explanatory variable and an outcome variable that you believe are related, and explain why you expect a connection between them. We will then use linear regression to estimate this relationship and assess our confidence in our results.
+
+
+#Section 1
+
+Propose a relationship between two variables and explain why you think this relationship might exist. Do you think this relationship will be positive or negative?
+
+
+# Section 2
+
+## Correlations
+
+First, check the correlation between your two variables. Does this align with your theory above?
+
+```{r}
+
+#check correlation
+
+cor()
+
+```
+
+# Visual relationship
+
+Now let's use ggplot to check the relationship between these two variables visually. Create a scatter plot using geom_point().
+
+```{r}
+
+
+
+```
+
+
+#Section 3
+
+## Linear Regression
+
+Now estimate a linear model based on your theory above. DO NOT LOOK AT THE T-VALUES OR P-VALUES YET! Use the code below to only check the estimates and standard errors.
+
+```{r}
+
+# Run the linear regression
+model <- lm(outcome_variable ~ explanatory_variable, data = df) #replace with your variables
+
+# Extract coefficient estimates and standard errors
+estimates <- coef(model)
+std_errors <- sqrt(diag(vcov(model)))
+
+# Combine into a clean output
+results <- data.frame(Term = names(estimates), Estimate = estimates, Std_Error = std_errors)
+results
+
+```
+
+
+Create a 95% confidence interval for your estimate. What does this mean?
+
+```{r}
+
+est <- results$Estimate[2]
+se <- results$Std_Error[2]
+
+#lower bound
+
+
+#upper bound
+
+
+```
+
+
+What is the standard null hypothesis for your beta? By just looking at the estimate and standard error, can you reject this null hypothesis using the standard cutoff (p<0.05)?
+
+```{r}
+#room for math if you need it
+
+
+```
+
+
+Now create the t-value for your estimate manually. Can you reject the null hypothesis? Remember that the t-value is just a measure for how many standard errors your estimate is away from your null hypothesis value.
+
+```{r}
+
+## create t-value
+
+
+
+```
+
+
+# Section 4
+
+## Regression table
+
+Let's look now at the regression table for your model results. Do you reject the null hypothesis? What number did you use to make this decision?
+
+```{r, results='asis'}
+
+summary(model)
+
+```
+
+
+How much support do your results provide for your theory?
+
+
+
