@@ -1,5 +1,5 @@
 ---
-title: "Log transformation and the Fixed Effects model"
+title: "Panel Data & Fixed Effects models"
 author: "Lucas Owen"
 output: pdf_document
 ---
@@ -10,6 +10,7 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 library(questionr)
 library(stargazer)
 library(tidyverse)
+library(estimatr)
 rm(list = ls())
 ```
 
@@ -20,7 +21,7 @@ rm(list = ls())
 ```{r}
 
 # load data
-gapminder <- read_csv("data/gapminder2.csv")
+gapminder <- read.csv("data/gapminder2.csv", na.strings=c(-1))
 polity <- read_csv("data/polity2.csv")
 ```
 
@@ -60,9 +61,14 @@ mean(is.na(merged_df$lifeExp))
 df_na <- ifelse(is.na(merged_df), 1, 0)
 colMeans(df_na)
 
+merged_df$lifeExp[is.na(merged_df$lifeExp)] <- NA_character_
+
+
 temp <- na.omit(merged_df) #here's why you don't do this! what if we only care about the relationship between polity & gdp?
 nrow(merged_df)
 nrow(temp)
+
+temp <- merged_df[,!colnames(merged_df) %in% c("lifeExp")]
 
 ```
 
@@ -74,10 +80,12 @@ rm(df_na, gapminder, polity, temp)
 gc() #garbage can to clear RAM
 
 ggplot(data=merged_df, aes(x=gdpPercap, y=lifeExp))+
-  geom_point()
+  geom_point()+
+  theme_bw() #let's add a theme!
 
 ggplot(data=merged_df, aes(x=pop, y=gdpPercap))+
-  geom_point()
+  geom_point()+
+  theme_bw() #let's add a theme!
 
 length(unique(merged_df$cntry))
 ```
@@ -89,7 +97,8 @@ length(unique(merged_df$cntry))
 sample_countries <- c("Afghanistan", "Vietnam", "United States", "Germany", "Tanzania")
 ggplot(data=merged_df[merged_df$cntry %in% sample_countries,], aes(x=year, y=ln_gdpPercap))+
   geom_line()+
-  facet_wrap(~cntry)
+  facet_wrap(~cntry)+
+  theme_bw() #let's add a theme!
 ```
 
 #AUTOCORRELATION!
@@ -120,7 +129,6 @@ lm3 <- lm(lifeExp ~ ln_gdpPercap + polity, data=merged_df)
 ```{r,results='asis', warning=F}
 stargazer(lm1, lm2, lm3,
           type="text")
-
 ```
 
 
@@ -128,26 +136,26 @@ stargazer(lm1, lm2, lm3,
 ## Because of autocorrelation, our standard errors are going to be overly small! We need to correct them
 
 ```{r, warning=F}
-library(estimatr)
-library(stargazer)
 
 # Run robust regressions
 lm4 <- lm_robust(lifeExp ~ gdpPercap, data=merged_df, clusters=cntry, se_type="stata")
 lm5 <- lm_robust(lifeExp ~ ln_gdpPercap, data=merged_df, clusters=cntry, se_type="stata")
 lm6 <- lm_robust(lifeExp ~ ln_gdpPercap + polity, data=merged_df, clusters=cntry, se_type="stata")
 
-stargazer(lm4, lm5, lm6)
+stargazer(lm4, lm5, lm6) #doesn't work!
 
+#let's compare
 summary(lm1)
 summary(lm4)
+#only thing that's different is the standard errors
 
-# Convert lm_robust objects to standard lm objects for stargazer compatibility
+# Create standard lm objects for stargazer compatibility
 lm4_standard <- lm(lifeExp ~ gdpPercap, data=merged_df)
 lm5_standard <- lm(lifeExp ~ ln_gdpPercap, data=merged_df)
 lm6_standard <- lm(lifeExp ~ ln_gdpPercap + polity, data=merged_df)
 
 # Use stargazer with overridden coef and se
-stargazer(lm4_standard, lm5_standard, lm6_standard, type="text")
+stargazer(lm4_standard, lm5_standard, lm6_standard, type="text") #here's the starting point... we're just going to update the standard errors
 stargazer(lm4_standard, lm5_standard, lm6_standard,
           se = list(c(lm4$std.error[2]), 
                     c(lm5$std.error[2]), 
@@ -169,34 +177,24 @@ $$
 By including the variable `country`, the model will automatically generate dummy variables for each country within the variable. The coefficients associated with each country represent the country-specific intercepts. While there are situations where these coefficients can be interpreted, it is not always necessary to do so.
 
 ```{r, warning=F}
-library(estimatr)
-library(stargazer)
-
 # Run robust regressions
 lm4 <- lm_robust(lifeExp ~ gdpPercap + cntry, data=merged_df, clusters=cntry, se_type="stata")
 lm5 <- lm_robust(lifeExp ~ ln_gdpPercap + cntry, data=merged_df, clusters=cntry, se_type="stata")
 lm6 <- lm_robust(lifeExp ~ ln_gdpPercap + polity + cntry, data=merged_df, clusters=cntry, se_type="stata")
 
-# Prepare coefficient and SE matrices using starprep()
-models_prepped <- starprep(lm4, lm5, lm6, se_type="stata", clusters=merged_df$cntry)
-
-# Convert lm_robust objects to standard lm objects for stargazer compatibility
+# Create standard lm objects for stargazer compatibility
 lm4_standard <- lm(lifeExp ~ gdpPercap + cntry, data=merged_df)
 lm5_standard <- lm(lifeExp ~ ln_gdpPercap + cntry, data=merged_df)
 lm6_standard <- lm(lifeExp ~ ln_gdpPercap + polity + cntry, data=merged_df)
 
 # Use stargazer with overridden coef and se
 stargazer(lm4_standard, lm5_standard, lm6_standard,
-          coef = list(models_prepped$coefficients[,1], 
-                      models_prepped$coefficients[,2], 
-                      models_prepped$coefficients[,3]),
-          se = list(models_prepped$std.errors[,1], 
-                    models_prepped$std.errors[,2], 
-                    models_prepped$std.errors[,3]),
+          se = list(c(lm4$std.error[2]), 
+                    c(lm5$std.error[2]), 
+                    c(lm6$std.error[2], lm6$std.error[3])),
           omit = "cntry",
           add.lines = list(c("Country Fixed Effects", "Yes", "Yes", "Yes")), 
           type = "text")
-
 ```
 
 
@@ -219,26 +217,20 @@ $$
 merged_df$year <- as.factor(merged_df$year)
 
 # Run robust regressions
-lm4 <- lm_robust(lifeExp ~ gdpPercap + cntry  + year, data=merged_df, clusters=cntry, se_type="stata")
-lm5 <- lm_robust(lifeExp ~ ln_gdpPercap + cntry  + year, data=merged_df, clusters=cntry, se_type="stata")
+lm4 <- lm_robust(lifeExp ~ gdpPercap + cntry + year, data=merged_df, clusters=cntry, se_type="stata")
+lm5 <- lm_robust(lifeExp ~ ln_gdpPercap + cntry + year, data=merged_df, clusters=cntry, se_type="stata")
 lm6 <- lm_robust(lifeExp ~ ln_gdpPercap + polity + cntry + year, data=merged_df, clusters=cntry, se_type="stata")
 
-# Prepare coefficient and SE matrices using starprep()
-models_prepped <- starprep(lm4, lm5, lm6, se_type="stata", clusters=merged_df$cntry)
-
-# Convert lm_robust objects to standard lm objects for stargazer compatibility
+# Create standard lm objects for stargazer compatibility
 lm4_standard <- lm(lifeExp ~ gdpPercap + cntry + year, data=merged_df)
 lm5_standard <- lm(lifeExp ~ ln_gdpPercap + cntry + year, data=merged_df)
 lm6_standard <- lm(lifeExp ~ ln_gdpPercap + polity + cntry + year, data=merged_df)
 
 # Use stargazer with overridden coef and se
 stargazer(lm4_standard, lm5_standard, lm6_standard,
-          coef = list(models_prepped$coefficients[,1], 
-                      models_prepped$coefficients[,2], 
-                      models_prepped$coefficients[,3]),
-          se = list(models_prepped$std.errors[,1], 
-                    models_prepped$std.errors[,2], 
-                    models_prepped$std.errors[,3]),
+          se = list(c(lm4$std.error[2]), 
+                    c(lm5$std.error[2]), 
+                    c(lm6$std.error[2], lm6$std.error[3])),
           omit = c("cntry", "year"),
           add.lines = list(c("Country Fixed Effects", "Yes", "Yes", "Yes"), c("Year Fixed Effects", "Yes", "Yes", "Yes")), 
           type = "text")
