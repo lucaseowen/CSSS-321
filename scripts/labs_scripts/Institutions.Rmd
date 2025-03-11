@@ -67,7 +67,7 @@ First, check the correlation between your two variables. Does this align with yo
 
 #check correlation
 
-cor()
+cor( , use="pairwise.complete.obs")
 
 ```
 

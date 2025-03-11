@@ -17,10 +17,6 @@ rm(list = ls())
 
 # Prerequisite
 
-You will need to load the datasets `gapminder2.csv` and `polity2.csv`, available in the module's website.
-
-
-
 ```{r}
 
 # load data
@@ -36,20 +32,14 @@ Missing data may introduce selection bias. Thus, during cleaning, analyze the so
 
 ```{r}
 
-# merge data, but first check out the names
-names(gapminder)
-names(polity)
+# merge data, but first check out the names¡
 
-# change the names
-names(gapminder)
-
-colnames(gapminder)[1] <- "country"
+# change the names¡
 
 # now merge
 
-merged_df <- merge(gapminder, polity,
-                   by = c("country", "year"))
-
+merged_df <- full_join(gapminder, polity,
+                   by = c("cntry"="country","year"="year"))
 
 # create two new variables:
 
@@ -64,17 +54,13 @@ merged_df$gdpPercap <- merged_df$gdpPercap/1000
 questionr::freq.na(merged_df)
 
 # For a single variable
-mean(is.na(merged_df$gdpPercap))
+mean(is.na(merged_df$lifeExp))
 
 # check missigness for each variable
 df_na <- ifelse(is.na(merged_df), 1, 0)
 colMeans(df_na)
 
-
-merged_df <- na.omit(merged_df)
 ```
-
-
 
 
 # Statistical analysis
@@ -92,14 +78,15 @@ $$
 Run this pooled model in three different specifications, each with `lifeExp` as the outcome variable. In the first model, regress the outcome on `gdpPercap`; in the second, regress it on `ln_gdpPercap`; and in the third, regress it on both `ln_gdpPercap` and `polity`.
 
 ```{r}
-lm1_res <- lm(lifeExp ~ gdpPercap, merged_df)
-lm2_res <- lm(lifeExp ~ ln_gdpPercap, merged_df) 
-lm3_res <- lm(lifeExp ~ ln_gdpPercap + polity, merged_df)
+lm1 <- lm(lifeExp ~ gdpPercap, data=merged_df)
+lm2 <- lm(lifeExp ~ ln_gdpPercap, data=merged_df)
+lm3 <- lm(lifeExp ~ ln_gdpPercap + polity, data=merged_df)
+
 ```
 
 
-```{r,results='asis'}
-stargazer(lm1_res,lm2_res,lm3_res,
+```{r,results='asis', warning=F}
+stargazer(lm1, lm2, lm3,
           type="text")
 
 ```
@@ -121,26 +108,57 @@ By including the variable `country`, the model will automatically generate dummy
 
 
 ```{r}
-lm4_res <- lm(lifeExp ~ country + gdpPercap, merged_df)
-lm5_res <- lm(lifeExp ~ country + ln_gdpPercap, merged_df)
-lm6_res <- lm(lifeExp ~ country + ln_gdpPercap + polity, merged_df)
+lm4 <- lm(lifeExp ~ gdpPercap + cntry, data=merged_df)
+lm5 <- lm(lifeExp ~ ln_gdpPercap + cntry, data=merged_df)
+lm6 <- lm(lifeExp ~ ln_gdpPercap + polity + cntry, data=merged_df)
 ```
 
 
-```{r, results='asis'}
-stargazer(lm4_res,lm5_res,lm6_res,
-          omit = "country",
+```{r, results='asis', warning=F}
+stargazer(lm4,lm5,lm6,
+          omit = "cntry",
           add.lines = list(c("Country Fixed Effects", "Yes", "Yes", "Yes")), 
           type="text")
 
 ```
 
+## Because of autocorrelation, our standard errors are going to be overly small! We need to correct them
 
+```{r, warning=F}
+library(estimatr)
+library(stargazer)
+
+# Run robust regressions
+lm4 <- lm_robust(lifeExp ~ gdpPercap + cntry, data=merged_df, clusters=cntry, se_type="stata")
+lm5 <- lm_robust(lifeExp ~ ln_gdpPercap + cntry, data=merged_df, clusters=cntry, se_type="stata")
+lm6 <- lm_robust(lifeExp ~ ln_gdpPercap + polity + cntry, data=merged_df, clusters=cntry, se_type="stata")
+
+# Prepare coefficient and SE matrices using starprep()
+models_prepped <- starprep(lm4, lm5, lm6, se_type="stata", clusters=merged_df$cntry)
+
+# Convert lm_robust objects to standard lm objects for stargazer compatibility
+lm4_standard <- lm(lifeExp ~ gdpPercap + cntry, data=merged_df)
+lm5_standard <- lm(lifeExp ~ ln_gdpPercap + cntry, data=merged_df)
+lm6_standard <- lm(lifeExp ~ ln_gdpPercap + polity + cntry, data=merged_df)
+
+# Use stargazer with overridden coef and se
+stargazer(lm4_standard, lm5_standard, lm6_standard,
+          coef = list(models_prepped$coefficients[,1], 
+                      models_prepped$coefficients[,2], 
+                      models_prepped$coefficients[,3]),
+          se = list(models_prepped$std.errors[,1], 
+                    models_prepped$std.errors[,2], 
+                    models_prepped$std.errors[,3]),
+          omit = "cntry",
+          add.lines = list(c("Country Fixed Effects", "Yes", "Yes", "Yes")), 
+          type = "text")
+
+```
 
 
 ## 2-way fixed effects model
 
-If in addition to country-specific intercepts ($\alpha_i$) we also include period-specific dummies ($\gamma_{t}$), then we are running a **Two-Way Fixed Effects model**. Formally:
+If in addition to country-specific intercepts ($\alpha_i$) we can also include period-specific dummies ($\gamma_{t}$), then we are running a **Two-Way Fixed Effects model**. Formally:
 
 
 $$
@@ -151,143 +169,34 @@ $$
 **IMPORTANT**: Ensure that you treat the period variable, year, as a categorical factor. Otherwise, the variable will not be split into dummy variables for each specific year.
 
 
-```{r}
+```{r, warning=F}
 # turn year into factor:
 
 merged_df$year <- as.factor(merged_df$year)
 
-lm7_res <- lm(lifeExp ~ country + year + gdpPercap, merged_df)
-lm8_res <- lm(lifeExp ~ country + year + ln_gdpPercap, merged_df) 
-lm9_res <- lm(lifeExp ~ country + year + ln_gdpPercap + polity, merged_df)
-```
+# Run robust regressions
+lm4 <- lm_robust(lifeExp ~ gdpPercap + cntry  + year, data=merged_df, clusters=cntry, se_type="stata")
+lm5 <- lm_robust(lifeExp ~ ln_gdpPercap + cntry  + year, data=merged_df, clusters=cntry, se_type="stata")
+lm6 <- lm_robust(lifeExp ~ ln_gdpPercap + polity + cntry + year, data=merged_df, clusters=cntry, se_type="stata")
 
+# Prepare coefficient and SE matrices using starprep()
+models_prepped <- starprep(lm4, lm5, lm6, se_type="stata", clusters=merged_df$cntry)
 
-```{r, results='asis'}
-stargazer(lm7_res,lm8_res,lm9_res,
-          omit = c("country","year"),
-          add.lines = list(c("Country Fixed Effects", "Yes", "Yes", "Yes"),
-                           c("Year Fixed Effects", "Yes", "Yes", "Yes")), 
-          type="text")
+# Convert lm_robust objects to standard lm objects for stargazer compatibility
+lm4_standard <- lm(lifeExp ~ gdpPercap + cntry + year, data=merged_df)
+lm5_standard <- lm(lifeExp ~ ln_gdpPercap + cntry + year, data=merged_df)
+lm6_standard <- lm(lifeExp ~ ln_gdpPercap + polity + cntry + year, data=merged_df)
 
-```
-
-
-
-## Compare the best fitted model from each specificaiton
-
-Check the prediction error in each model, and how the prediction increases as we fit more *"fixed effects"*.
-
-```{r, results='asis'}
-
-stargazer(lm3_res,lm6_res,lm9_res,
-          omit = c("country","year"),
-          add.lines = list(c("Country Fixed Effects", "No", "Yes", "Yes"),
-                           c("Year Fixed Effects", "No", "No", "Yes")), 
-          type="text")
-
-```
-
-
-# Logs and polynomials
-
-
-```{r, results='asis'}
-
-# run four models and save them into objects
-
-lm1_res <- lm(lifeExp ~ ln_gdpPercap, 
-              data= merged_df)
-
-lm2_res <- lm(lifeExp ~ ln_gdpPercap + polity, 
-              data = merged_df) 
-
-lm3_res <- lm(lifeExp ~ gdpPercap + I(gdpPercap^2), 
-              data = merged_df) 
-
-lm4_res <- lm(lifeExp ~ gdpPercap + I(gdpPercap^2) + polity, 
-              data = merged_df) 
-
-# what is the model that provides the best fit?
-
-stargazer(lm1_res,lm2_res,lm3_res,lm4_res,
-                     type="text", # change "latex" when knitting into pdf
-                     style = "ajps",
-          column.sep.width = "1pt",
-          omit.stat=c("f", "ser"))
-
-```
-
-
-
-
-# Prediction
-
-```{r}
-
-## prediction for model 2
-
-# hypothetical scenarios
-
-hypo_data <- 
-  data.frame(ln_gdpPercap = seq(min(merged_df$ln_gdpPercap),
-                                max(merged_df$ln_gdpPercap),
-                                length.out=50))
-
-hypo_data$polity <- mean(merged_df$polity)
-
-
-# prediction
-
-lm2_predict <- predict(lm2_res, 
-                       newdata = hypo_data, 
-                       interval = "confidence")
-
-lm2_predict <- as.data.frame(lm2_predict)
-
-lm2_predict <- cbind(hypo_data, lm2_predict)
-
-# visualization
-
-ggplot(data= lm2_predict, aes(x = ln_gdpPercap, 
-                        y = fit, 
-                        ymin = lwr, 
-                        ymax = upr)) +
-  geom_line() +
-  geom_ribbon(alpha = 0.3) +
-  theme_bw() +
-  labs(y="Predicted Expected Life",
-       x="GDP per Capita (logged)")
-
-
-## prediction for model 4
-
-hypo_data <- data.frame(gdpPercap = seq(1, 50, 1))
-
-hypo_data$polity <- mean(merged_df$polity)
-
-
-lm4_predict <- predict(lm4_res, 
-                       newdata = hypo_data, 
-                       interval = "confidence")
-
-lm4_predict <- as.data.frame(lm4_predict)
-
-lm4_predict <- cbind(hypo_data, lm4_predict)
-
-
-ggplot(data=lm4_predict,
-       aes(x = gdpPercap,
-           y = fit,
-           ymin = lwr,
-           ymax = upr)) +
-  geom_line() +
-  geom_ribbon(alpha = 0.3) +
-  theme_bw() +
-  labs(y="Predicted Expected Life",
-       x="GDP per Capita (1000)")
-
-
-
-
+# Use stargazer with overridden coef and se
+stargazer(lm4_standard, lm5_standard, lm6_standard,
+          coef = list(models_prepped$coefficients[,1], 
+                      models_prepped$coefficients[,2], 
+                      models_prepped$coefficients[,3]),
+          se = list(models_prepped$std.errors[,1], 
+                    models_prepped$std.errors[,2], 
+                    models_prepped$std.errors[,3]),
+          omit = c("cntry", "year"),
+          add.lines = list(c("Country Fixed Effects", "Yes", "Yes", "Yes"), c("Year Fixed Effects", "Yes", "Yes", "Yes")), 
+          type = "text")
 ```
 

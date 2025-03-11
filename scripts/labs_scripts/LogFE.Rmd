@@ -17,9 +17,6 @@ rm(list = ls())
 
 # Prerequisite
 
-You will need to load the datasets `gapminder2.csv` and `polity2.csv`, available in the module's website.
-
-
 ```{r}
 
 # load data
@@ -41,7 +38,7 @@ Missing data may introduce selection bias. Thus, during cleaning, analyze the so
 
 # now merge
 
-merged_df <- merge(df1, df2,
+merged_df <- merge(gapminder, polity,
                    by = c("country", "year"))
 
 # create two new variables:
@@ -210,76 +207,4 @@ stargazer(lm1_res,lm2_res,lm3_res,lm4_res,
 ```
 
 
-
-
-# Prediction
-
-```{r}
-
-## prediction for model 2
-
-# hypothetical scenarios
-
-hypo_data <- 
-  data.frame(ln_gdpPercap = seq(min(merged_df$ln_gdpPercap),
-                                max(merged_df$ln_gdpPercap),
-                                length.out=50))
-
-hypo_data$polity <- mean(merged_df$polity)
-
-
-# prediction
-
-lm2_predict <- predict(lm2_res, 
-                       newdata = hypo_data, 
-                       interval = "confidence")
-
-lm2_predict <- as.data.frame(lm2_predict)
-
-lm2_predict <- cbind(hypo_data, lm2_predict)
-
-# visualization
-
-ggplot(data= lm2_predict, aes(x = ln_gdpPercap, 
-                        y = fit, 
-                        ymin = lwr, 
-                        ymax = upr)) +
-  geom_line() +
-  geom_ribbon(alpha = 0.3) +
-  theme_bw() +
-  labs(y="Predicted Expected Life",
-       x="GDP per Capita (logged)")
-
-
-## prediction for model 4
-
-hypo_data <- data.frame(gdpPercap = seq(1, 50, 1))
-
-hypo_data$polity <- mean(merged_df$polity)
-
-
-lm4_predict <- predict(lm4_res, 
-                       newdata = hypo_data, 
-                       interval = "confidence")
-
-lm4_predict <- as.data.frame(lm4_predict)
-
-lm4_predict <- cbind(hypo_data, lm4_predict)
-
-
-ggplot(data=lm4_predict,
-       aes(x = gdpPercap,
-           y = fit,
-           ymin = lwr,
-           ymax = upr)) +
-  geom_line() +
-  geom_ribbon(alpha = 0.3) +
-  theme_bw() +
-  labs(y="Predicted Expected Life",
-       x="GDP per Capita (1000)")
-
-
-
-
-```
 

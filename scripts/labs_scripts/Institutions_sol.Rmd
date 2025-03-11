@@ -56,7 +56,7 @@ Your goal for this lab is to develop your own theory based on the available vari
 
 Propose a relationship between two variables and explain why you think this relationship might exist. Do you think this relationship will be positive or negative?
 
-gdpPercap -> inf_mort
+gdpPercap -> lifeExp
 
 
 # Section 2
@@ -69,7 +69,7 @@ First, check the correlation between your two variables. Does this align with yo
 
 #check correlation
 
-cor(df$inf_mort, df$gdpPercap, use="pairwise.complete.obs")
+cor(df$lifeExp, df$gdpPercap, use="pairwise.complete.obs")
 
 ```
 
@@ -79,13 +79,13 @@ Now let's use ggplot to check the relationship between these two variables visua
 
 ```{r}
 
-ggplot(data=df, aes(x=gdpPercap, y=inf_mort))+
+ggplot(data=df, aes(x=gdpPercap, y=lifeExp))+
   geom_point()
 
 #since we're using linear regression, we want a linear relationship
 df$gdpPercap_ln <- log(df$gdpPercap)
 
-ggplot(data=df, aes(x=gdpPercap_ln, y=inf_mort))+
+ggplot(data=df, aes(x=gdpPercap_ln, y=lifeExp))+
   geom_point()
 #not perfect but better
 
@@ -101,7 +101,7 @@ Now estimate a linear model based on your theory above. DO NOT LOOK AT THE T-VAL
 ```{r}
 
 # Run the linear regression
-model <- lm(inf_mort ~ gdpPercap_ln, data = df) #replace with your variables
+model <- lm(lifeExp ~ gdpPercap_ln, data = df) #replace with your variables
 
 # Extract coefficient estimates and standard errors
 estimates <- coef(model)
